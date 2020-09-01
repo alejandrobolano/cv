@@ -71,10 +71,22 @@ nz-header {
 
 nz-content {
   margin: 24px;
+  overflow: inherit;
 }
 
 .inner-content {
   padding: 24px;
   background: #fff;
   height: 100%;
+}
+
+nz-footer {
+  background: #001529;
+  bottom: 0;
+  color: #f0f2f5;
+  text-align: center;
+}
+
+nz-layout:last-child {
+  margin: 0;
 }

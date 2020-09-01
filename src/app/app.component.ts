@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,18 @@ export class AppComponent {
   theme = 'dark';
   title = 'Alejandro M. Bolaño M.';
   imgLogo = 'https://ng.ant.design/assets/img/logo.svg';
+  language = 'es';
+
+  constructor(
+    public translate: TranslateService
+  ) {
+    const browserLang = translate.getBrowserLang();
+    translate.use(browserLang.match(/en|es|ca/) ? browserLang : this.language);
+    translate.setDefaultLang(this.language);
+  }
+
+  switchLanguage(lang: string): void {
+    this.translate.use(lang);
+  }
+
 }

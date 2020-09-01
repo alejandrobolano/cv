@@ -15,10 +15,10 @@
       <li nz-submenu nzOpen nzTitle="Navigation" nzIcon="home">
         <ul>
           <li nz-menu-item nzMatchRouter>
-            <a routerLink="/navigation">Welcome</a>
+            <a routerLink="/navigation/home">Welcome</a>
           </li>
           <li nz-menu-item nzMatchRouter>
-            <a>Portfolio</a>
+            <a routerLink="/navigation/portfolio">Portfolio</a>
           </li>
         </ul>
       </li>
@@ -47,6 +47,12 @@
                [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
             ></i>
         </span>
+
+        <nz-select nzPlaceHolder="Select a person" [(ngModel)]="language" (ngModelChange)="switchLanguage(language)">
+          <nz-option nzLabel="Español" nzValue="es"></nz-option>
+          <nz-option nzLabel="English" nzValue="en"></nz-option>
+          <nz-option nzLabel="Català" nzValue="ca"></nz-option>
+        </nz-select>
       </div>
     </nz-header>
     <nz-content>
@@ -54,5 +60,7 @@
         <router-outlet></router-outlet>
       </div>
     </nz-content>
+    <nz-footer>{{title}} ©2020 Implement By Angular</nz-footer>
   </nz-layout>
+
 </nz-layout>
