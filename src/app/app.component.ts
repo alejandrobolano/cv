@@ -1,28 +1,29 @@
-import {Component} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
+import {TranslateWrapperService} from './core/service/translate-wrapper.service';
+import {TranslateComponent} from './core/translate/translate.component';
 
 @Component({
-  selector: 'app-root',
+  selector: 'ambm-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  isCollapsed = false;
+
+export class AppComponent extends TranslateComponent implements OnInit {
+  @Input() isCollapsed = false;
+  @Input() language = 'es';
   theme = 'dark';
   title = 'Alejandro M. Bolaño M.';
   imgLogo = 'https://ng.ant.design/assets/img/logo.svg';
-  language = 'es';
 
-  constructor(
-    public translate: TranslateService
-  ) {
-    const browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/en|es|ca/) ? browserLang : this.language);
-    translate.setDefaultLang(this.language);
+
+  constructor(public translate: TranslateService,
+              public translateWrapperService: TranslateWrapperService) {
+    super(translate, translateWrapperService);
   }
 
-  switchLanguage(lang: string): void {
-    this.translate.use(lang);
+  ngOnInit(): void {
   }
+
 
 }

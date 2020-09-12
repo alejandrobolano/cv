@@ -1,11 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-navigation',
-  template: `<router-outlet></router-outlet>`
+  selector: 'ambm-navigation',
+  template: `
+      <router-outlet></router-outlet>`
 })
 export class NavigationComponent implements OnInit {
-  constructor() {}
 
-  ngOnInit(): void {}
+  constructor() {
+  }
+
+  ngOnInit(): void {
+  }
 }

@@ -17,8 +17,9 @@ import {NgZorroAntdModule} from 'ng-zorro-antd';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {NavigationModule} from './pages/navigation/navigation.module';
+import { StoreModule } from '@ngrx/store';
+import {CoreModule} from './core/core.module';
 
-//registerLocaleData(en);
 
 @NgModule({
   declarations: [
@@ -37,19 +38,21 @@ import {NavigationModule} from './pages/navigation/navigation.module';
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: httpLoaderFactory,
-        deps: [ HttpClient ]
+        useFactory: (createTranslateLoader),
+        deps: [HttpClient]
       },
       isolate: true
     }),
     AppRoutingModule,
-    NavigationModule
+    NavigationModule,
+    CoreModule,
+    StoreModule.forRoot({}, {})
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
 
-export function httpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
