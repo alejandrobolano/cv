@@ -1,3 +1,10 @@
 {
-  "title": "Benvingut al meu lloc web personal FOO"
+  "home": {
+    "title": "Benvingut al meu lloc web personal",
+    "h": "hhhhhhhhhh"
+  },
+  "portfolio": {
+    "title": "Aquest és el meu portafoli i emprenedoria personal"
+  }
 }
+

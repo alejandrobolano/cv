@@ -1,3 +1,9 @@
 {
-  "title": "Welcome to my personal website FOO"
+  "home": {
+    "title": "Welcome to my personal website",
+    "h": "hhhhhhhhhh"
+  },
+  "portfolio": {
+    "title": "This is my portfolio and personal enterprise"
+  }
 }
