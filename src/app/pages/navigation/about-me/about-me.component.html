@@ -1,0 +1,15 @@
+<div>
+  <nz-avatar class="profile" nzIcon="user" nzSrc="{{avatar}}" [nzSize]="128"></nz-avatar>
+
+  <nz-tabset [nzSize]="size" [nzTabPosition]="'left'">
+    <nz-tab *ngFor="let tab of tabs" [nzTitle]="titleTemplate">
+      <ng-template #titleTemplate>
+         {{getValue(tab) | translate}}
+      </ng-template>
+      <ambm-curriculum-container [curriculum-list]="getList(tab)"></ambm-curriculum-container>
+    </nz-tab>
+  </nz-tabset>
+
+</div>
+
+

@@ -10,6 +10,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HttpClient } from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {FormsModule} from '@angular/forms';
+import { AboutMeComponent } from './about-me/about-me.component';
+import {CommonModule} from '@angular/common';
+import { CurriculumContainerComponent } from './about-me/curriculum-container/curriculum-container.component';
 
 
 @NgModule({
@@ -25,9 +28,10 @@ import {FormsModule} from '@angular/forms';
       },
       isolate: true
     }),
-    FormsModule
+    FormsModule,
+    CommonModule
   ],
-  declarations: [NavigationComponent, HomeComponent, PortfolioComponent],
+  declarations: [NavigationComponent, HomeComponent, PortfolioComponent, AboutMeComponent, CurriculumContainerComponent],
   exports: [NavigationComponent]
 })
 export class NavigationModule {}

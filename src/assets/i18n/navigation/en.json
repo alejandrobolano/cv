@@ -5,5 +5,9 @@
   },
   "portfolio": {
     "title": "This is my portfolio and personal enterprise"
+  },
+  "curriculum": {
+    "experience": "Experiencie",
+    "education": "Education"
   }
 }

@@ -5,6 +5,10 @@
   },
   "portfolio": {
     "title": "Aquest és el meu portafoli i emprenedoria personal"
+  },
+  "curriculum": {
+    "experience": "Experiència",
+    "education": "Educaciò"
   }
 }
 

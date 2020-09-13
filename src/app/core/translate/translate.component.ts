@@ -5,7 +5,7 @@ import {TranslateWrapperService} from '../service/translate-wrapper.service';
 
 @Component({
   selector: 'ambm-core',
-  templateUrl: './translate.component.html'
+  template: ''
 })
 export class TranslateComponent implements OnInit {
   language;
