@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
   @Input() isCollapsed = false;
   language = 'es';
   title = 'Alejandro M. Bolaño M.';
-
+  gif = '/assets/img/alejandro-bolano.gif';
 
   constructor(public translate: TranslateService, public translateWrapperService: TranslateWrapperService) {
   }

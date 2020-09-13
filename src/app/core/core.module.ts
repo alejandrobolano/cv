@@ -7,13 +7,15 @@ import {FormsModule} from '@angular/forms';
 import { TranslateComponent } from './translate/translate.component';
 import {TranslateModule} from '@ngx-translate/core';
 import {AppRoutingModule} from '../app-routing.module';
+import {SidebarComponent} from './layout/sidebar/sidebar.component';
 
 @NgModule({
-  declarations: [FooterComponent, HeaderComponent, TranslateComponent],
+  declarations: [FooterComponent, HeaderComponent, TranslateComponent, SidebarComponent],
   exports: [
     FooterComponent,
     HeaderComponent,
-    TranslateComponent
+    TranslateComponent,
+    SidebarComponent
   ],
   imports: [
     NgZorroAntdModule,
