@@ -1,22 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import {en_US, NzI18nService} from 'ng-zorro-antd';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-navigation',
-  templateUrl: './navigation.component.html',
-  styleUrls: ['./navigation.component.css']
+  selector: 'ambm-navigation',
+  template: `
+      <router-outlet></router-outlet>`
 })
 export class NavigationComponent implements OnInit {
 
-  constructor(private i18n: NzI18nService) {
+  constructor() {
   }
 
-  switchLanguage() {
-    this.i18n.setLocale(en_US);
+  ngOnInit(): void {
   }
-
-  ngOnInit() {
-    this.switchLanguage();
-  }
-
 }

@@ -1,0 +1,23 @@
+<div class="app-header">
+        <span class="header-trigger"
+              (click)="collapseEvent()">
+            <i class="trigger"
+               nz-icon
+               [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
+            ></i>
+        </span>
+
+
+  <nz-select nzPlaceHolder="Select language" [nzSuffixIcon]="translationIcon" [(ngModel)]="language" (ngModelChange)="switchLanguage(language)">
+    <nz-option nzLabel="Español" nzValue="es"></nz-option>
+    <nz-option nzLabel="English" nzValue="en"></nz-option>
+    <nz-option nzLabel="Català" nzValue="ca"></nz-option>
+
+  </nz-select>
+
+  <span (click)="toggleFullScreen()"><img src="{{gif}}" alt="Alejandro Bolaño"/></span>
+</div>
+
+<ng-template #translationIcon>
+  <span class="flag-icon flag-icon-{{getCountryCode()}}"></span>
+</ng-template>
