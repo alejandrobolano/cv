@@ -1,0 +1,31 @@
+<nz-list *ngFor="let item of curriculumList"  nzItemLayout="horizontal" [nzLoading]="false" [nzSize]="'large'">
+
+  <nz-card [nzTitle]="item.title" [nzExtra]="countryTemplate" [nzHoverable]="true">
+    <ng-template #countryTemplate >
+      <nz-divider nzType="vertical"></nz-divider>
+      <span class="flag-icon flag-icon-{{item.countryCode}}"></span>
+      <span>{{item.country}}</span>
+    </ng-template>
+
+    <ng-template *ngTemplateOutlet="subtitleTemplate; context: { subtitle:item.subtitle}"></ng-template>
+    <nz-list>
+      <nz-list-item *ngFor="let item2 of item.list">
+        {{ item2 }}
+      </nz-list-item>
+    </nz-list>
+
+  </nz-card>
+
+  <nz-divider nzDashed [nzText]="dateTemplate">
+    <ng-template #dateTemplate>
+      <i nz-icon nzType="calendar" nzTheme="outline"></i>
+      <p>{{item.date}}</p>
+    </ng-template>
+  </nz-divider>
+
+</nz-list>
+
+
+<ng-template #subtitleTemplate let-subtitle="subtitle">
+  <h4 nz-typography>{{subtitle}}</h4>
+</ng-template>

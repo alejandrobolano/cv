@@ -1,0 +1,35 @@
+<div class="sidebar-logo">
+  <a>
+    <img src="{{imgLogo}}" alt="logo">
+    <h1>{{title}}</h1>
+  </a>
+</div>
+<ul nz-menu nzTheme="{{theme}}" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+  <li nz-submenu nzOpen nzTitle="{{'navigation'|translate}}" nzIcon="home">
+    <ul>
+      <li nz-menu-item nzMatchRouter>
+        <a routerLink="/navigation/home">Welcome</a>
+      </li>
+      <li nz-menu-item nzMatchRouter>
+        <a routerLink="/navigation/portfolio">Portfolio</a>
+      </li>
+      <li nz-menu-item nzMatchRouter>
+        <a routerLink="/navigation/about-me">About Me</a>
+      </li>
+    </ul>
+  </li>
+  <li nz-submenu nzOpen nzTitle="{{'private'|translate}}" nzIcon="lock">
+    <ul>
+      <li nz-menu-item nzMatchRouter>
+        <a routerLink="/private/sites">Sites</a>
+      </li>
+    </ul>
+  </li>
+  <li nz-submenu nzOpen nzTitle="{{'third'|translate}}" nzIcon="form">
+    <ul>
+      <li nz-menu-item nzMatchRouter>
+        <a href="https://ng.ant.design/" target="_blank">Ant Design Of Angular</a>
+      </li>
+    </ul>
+  </li>
+</ul>
