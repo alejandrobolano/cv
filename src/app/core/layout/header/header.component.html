@@ -12,11 +12,12 @@
     <nz-option nzLabel="Español" nzValue="es"></nz-option>
     <nz-option nzLabel="English" nzValue="en"></nz-option>
     <nz-option nzLabel="Català" nzValue="ca"></nz-option>
+
   </nz-select>
 
-  <img src="{{gif}}" alt="Alejandro Bolaño"/>
+  <span (click)="toggleFullScreen()"><img src="{{gif}}" alt="Alejandro Bolaño"/></span>
 </div>
 
 <ng-template #translationIcon>
-  <i nz-icon nzType="translation" nzTheme="outline"></i>
+  <span class="flag-icon flag-icon-{{getCountryCode()}}"></span>
 </ng-template>

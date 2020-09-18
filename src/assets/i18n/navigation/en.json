@@ -1,13 +1,8 @@
 {
   "home": {
-    "title": "Welcome to my personal website",
-    "h": "hhhhhhhhhh"
+    "title": "Welcome to my personal website"
   },
   "portfolio": {
     "title": "This is my portfolio and personal enterprise"
-  },
-  "curriculum": {
-    "experience": "Experiencie",
-    "education": "Education"
   }
 }

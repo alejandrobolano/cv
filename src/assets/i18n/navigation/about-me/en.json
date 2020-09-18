@@ -1,0 +1,113 @@
+{
+  "curriculum": {
+    "experience": "Experience",
+    "education": "Education"
+  },
+  "education": [
+    {
+      "title": "Professional Computing Center (CIPSA)",
+      "date": "[2019 - 2020]",
+      "subtitle": "Master Programming .NET",
+      "country": "Spain",
+      "countryCode": "es"
+    },
+    {
+      "title": "Professional Computing Center  (CIPSA)",
+      "date": "[2018 - 2019]",
+      "subtitle": "Web Design course",
+      "country": "Spain",
+      "countryCode": "es"
+    },
+    {
+      "title": "Professional Computing Center  (CIPSA)",
+      "date": "[2017 - 2018]",
+      "subtitle": "Digital Marketing and Content Management course",
+      "country": "Spain",
+      "countryCode": "es"
+    },
+    {
+      "title": "Technology University of Havana \"Jose Antonio Echeverria\" (CUJAE)",
+      "date": "[2011 - 2016]",
+      "subtitle": "Programming Engineer",
+      "country": "Cuba",
+      "countryCode": "cu"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Vueling",
+      "date": "August 2019 - Present",
+      "country": "Spain",
+      "subtitle": "Full-Stack (JR) developer",
+      "list": [
+        "Maintenance and web development of the company's website with architecture",
+        "Architecture: N-Tier",
+        "Methodology: Scrum",
+        "Technology: Git, TFS, Azure, ASP.Net, MVC, Entity Framework, Autofac, XSLT, XML, JavaScript, jQuery, Navitaire Products, C#"
+      ],
+      "countryCode": "es"
+    },
+    {
+      "title": "Freelance",
+      "date": "March 2018 - Present",
+      "country": "Spain",
+      "subtitle": "Development of web design",
+      "list": [
+        "Technology: CSS3, HTML5, JS",
+        "Tools: Photoshop, Wordpress",
+        "Methodology: Scrum",
+        "Extras: Kotlin"
+      ],
+      "countryCode": "es"
+    },
+    {
+      "title": "Combray Solutions",
+      "date": "October 2017 - January 2019",
+      "country": "Spain",
+      "subtitle": "Team Leader",
+      "list": [
+        "Head of sales team"
+      ],
+      "countryCode": "es"
+    },
+    {
+      "title": "DATYS",
+      "date": "September 2016 - August 2017",
+      "country": "Cuba",
+      "subtitle": "Java application developer",
+      "list": [
+        "Project: Citizen control tool",
+        "Development of client application in Java that connects with services using C # .Net",
+        "Architecture: MVC",
+        "Technology: Java, C#.Net",
+        "Tools: UML"
+      ],
+      "countryCode": "cu"
+    },
+    {
+      "title": "PAM International",
+      "date": "November 2014 - April 2016 ",
+      "country": "Cuba",
+      "subtitle": "Mobile app developer",
+      "list": [
+        "Project: Mobile Business Intelligence Tool",
+        "Native application development in Java for Android",
+        "Technology and tools: SQLite, Android, Java, JSON, MPAndroid Chart, Android Studio, ORM (Object Relational Mapping)"
+      ],
+      "countryCode": "cu"
+    },
+    {
+      "title": "PAM International",
+      "date": "November 2014 - July 2015",
+      "country": "Cuba",
+      "subtitle": "Web developer",
+      "list": [
+        "Project: Business Intelligence Tool",
+        "Architecture: N-Tier",
+        "Technology and tools: ASP.Net, WebForms, SQL Server, Internet Information Services, Reporting Services"
+      ],
+      "countryCode": "cu"
+    }
+  ]
+}
+

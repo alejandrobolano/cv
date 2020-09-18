@@ -1,14 +1,9 @@
 {
   "home": {
-    "title": "Benvingut al meu lloc web personal",
-    "h": "hhhhhhhhhh"
+    "title": "Benvingut al meu lloc web personal"
   },
   "portfolio": {
     "title": "Aquest és el meu portafoli i emprenedoria personal"
-  },
-  "curriculum": {
-    "experience": "Experiència",
-    "education": "Educaciò"
   }
 }
 

@@ -1,0 +1,112 @@
+{
+  "curriculum": {
+    "experience": "Experiència",
+    "education": "Educaciò"
+  },
+  "education": [
+    {
+      "title": "Centro de Informática Profesional (CIPSA)",
+      "date": "[2019 - 2020]",
+      "subtitle": "Màster Programació .NET",
+      "country": "España",
+      "countryCode": "es"
+    },
+    {
+      "title": "Centro de Informática Profesional (CIPSA)",
+      "date": "[2018 - 2019]",
+      "subtitle": "Curs de Disseny Web",
+      "country": "España",
+      "countryCode": "es"
+    },
+    {
+      "title": "Centro de Informática Profesional (CIPSA)",
+      "date": "[2017 - 2018]",
+      "subtitle": "Curs de Màrqueting Digital 2.0 i Gestió de Continguts",
+      "country": "España",
+      "countryCode": "es"
+    },
+    {
+      "title": "Universidad Tecnologica de la Habana \"Jose Antonio Echeverria\" (CUJAE)",
+      "date": "[2011 - 2016]",
+      "subtitle": "Enginyeria Informàtica",
+      "country": "Cuba",
+      "countryCode": "cu"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Vueling",
+      "date": "August 2019 - Present",
+      "country": "Espanya",
+      "subtitle": "Desenvolupador Full-Stack (JR)",
+      "list": [
+        "Manteniment i desenvolupament web de la pàgina web de l'empresa amb arquitectura",
+        "Arquitectura: N-Capas",
+        "Metodologia: Scrum",
+        "Tecnologias: Git, TFS, Azure, ASP.Net, MVC, Entity Framework, Autofac, XSLT, XML, JavaScript, jQuery, Navitaire Products, C#"
+      ],
+      "countryCode": "es"
+    },
+    {
+      "title": "Freelance",
+      "date": "March 2018 - Present",
+      "country": "Espanya",
+      "subtitle": "Desenvolupament de disseny web",
+      "list": [
+        "Tecnologaas: CSS3, HTML5, JS",
+        "Eines: Photoshop, Wordpress",
+        "Metodologia: Scrum",
+        "Extres: Kotlin"
+      ],
+      "countryCode": "es"
+    },
+    {
+      "title": "Combray Solutions",
+      "date": "October 2017 - January 2019",
+      "country": "Espanya",
+      "subtitle": "Cap d´equip",
+      "list": [
+        "Encarregat d'equip de comercials de venda"
+      ],
+      "countryCode": "es"
+    },
+    {
+      "title": "DATYS",
+      "date": "September 2016 - August 2017",
+      "country": "Cuba",
+      "subtitle": "Desenvolupador d'aplicacions Java",
+      "list": [
+        "Projecte: Eina per a control de ciutadans",
+        "Desenvolupament d'aplicació client en Java que connecta amb serveis utilitzant C # .Net",
+        "Arquitectura: MVC",
+        "Tecnologias: Java, C#.Net",
+        "Eines: UML"
+      ],
+      "countryCode": "cu"
+    },
+    {
+      "title": "PAM International",
+      "date": "November 2014 - April 2016 ",
+      "country": "Cuba",
+      "subtitle": "Desenvolupador d'aplicacions per a mòbils",
+      "list": [
+        "Projecte: Eina d'Intel·ligència de Negocis Mòbils",
+        "Desenvolupament d'aplicació nativa en Java per Android",
+        "Tecnologies i eines: SQLite, Android, Java, JSON, MPAndroid Chart, Android Studio, ORM (Object Relational Mapping)"
+      ],
+      "countryCode": "cu"
+    },
+    {
+      "title": "PAM International",
+      "date": "November 2014 - July 2015",
+      "country": "Cuba",
+      "subtitle": "Desenvolupador web",
+      "list": [
+        "Projecte: Eina d'Intel·ligència de Negocis",
+        "Arquitectura: N-Tier",
+        "Tecnologias y eines: ASP.Net, WebForms, SQL Server, Internet Information Services, Reporting Services"
+      ],
+      "countryCode": "cu"
+    }
+  ]
+}

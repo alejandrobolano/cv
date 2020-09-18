@@ -3,6 +3,7 @@ export interface ICurriculum {
   date: string;
   subtitle: string;
   country: string;
+  countryCode: string;
 }
 
 export interface IExperience extends ICurriculum {

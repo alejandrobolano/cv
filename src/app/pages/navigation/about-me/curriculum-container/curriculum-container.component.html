@@ -3,7 +3,7 @@
   <nz-card [nzTitle]="item.title" [nzExtra]="countryTemplate" [nzHoverable]="true">
     <ng-template #countryTemplate >
       <nz-divider nzType="vertical"></nz-divider>
-      <i nz-icon nzType="home" nzTheme="outline"></i>
+      <span class="flag-icon flag-icon-{{item.countryCode}}"></span>
       <span>{{item.country}}</span>
     </ng-template>
 

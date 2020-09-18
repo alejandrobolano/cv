@@ -33,4 +33,27 @@ export class HeaderComponent implements OnInit {
     this.collapseEmitter.emit(this.isCollapsed);
   }
 
+  getCountryCode(): string{
+    switch (this.language) {
+      case 'en':
+        return 'gb';
+      case 'ca':
+        return 'es-ca';
+      default:
+        return 'es';
+    }
+  }
+
+  toggleFullScreen(): void {
+    const documentElement = document.documentElement;
+    if (documentElement.requestFullscreen) {
+      documentElement.requestFullscreen();
+    } else if (documentElement.mozRequestFullScreen) {
+      documentElement.mozRequestFullScreen();
+    } else if (documentElement.webkitRequestFullscreen) {
+      documentElement.webkitRequestFullscreen();
+    } else if (documentElement.msRequestFullscreen) {
+      documentElement.msRequestFullscreen();
+    }
+  }
 }

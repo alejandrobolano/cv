@@ -1,7 +1,4 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {TranslateService} from '@ngx-translate/core';
-import {TranslateWrapperService} from './core/service/translate-wrapper.service';
-import {TranslateComponent} from './core/translate/translate.component';
 
 @Component({
   selector: 'ambm-root',
