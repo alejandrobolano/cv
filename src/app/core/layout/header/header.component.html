@@ -15,7 +15,10 @@
 
   </nz-select>
 
-  <span (click)="toggleFullScreen()"><img src="{{gif}}" alt="Alejandro Bolaño"/></span>
+  <span class="right" >
+    <i (click)="pushFullScreen()" nz-icon nzType="fullscreen" nzTheme="outline" nzTooltipTitle="{{'fullscreen' |translate}}" nzTooltipPlacement="bottomCenter" nz-tooltip></i>
+    <img src="{{gif}}" alt="Alejandro Bolaño"/>
+  </span>
 </div>
 
 <ng-template #translationIcon>

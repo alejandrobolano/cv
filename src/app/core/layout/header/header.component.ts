@@ -5,7 +5,7 @@ import {TranslateWrapperService} from '../../service/translate-wrapper.service';
 @Component({
   selector: 'ambm-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.less']
 })
 export class HeaderComponent implements OnInit {
   @Output() collapseEmitter = new EventEmitter();
@@ -33,7 +33,7 @@ export class HeaderComponent implements OnInit {
     this.collapseEmitter.emit(this.isCollapsed);
   }
 
-  getCountryCode(): string{
+  getCountryCode(): string {
     switch (this.language) {
       case 'en':
         return 'gb';
@@ -44,16 +44,11 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  toggleFullScreen(): void {
+  pushFullScreen(): void {
     const documentElement = document.documentElement;
     if (documentElement.requestFullscreen) {
       documentElement.requestFullscreen();
-    } else if (documentElement.mozRequestFullScreen) {
-      documentElement.mozRequestFullScreen();
-    } else if (documentElement.webkitRequestFullscreen) {
-      documentElement.webkitRequestFullscreen();
-    } else if (documentElement.msRequestFullscreen) {
-      documentElement.msRequestFullscreen();
     }
   }
+
 }
