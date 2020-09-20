@@ -13,7 +13,7 @@ import {ICurriculum, IExperience} from '../data/ICurriculum';
 export class AboutMeContainerComponent extends TranslateComponent implements OnInit {
   avatar = '/assets/img/dummy-user.png';
   size = 'large';
-  tabs = [EnumCurriculum.Experience, EnumCurriculum.Education];
+  tabs = [EnumCurriculum.EXPERIENCE, EnumCurriculum.EDUCATION];
   experience: IExperience[];
   education: ICurriculum[];
 
@@ -25,12 +25,13 @@ export class AboutMeContainerComponent extends TranslateComponent implements OnI
 
 
   ngOnInit(): void {
+    this.fillCurriculumArray();
   }
 
   getValue(type: EnumCurriculum): string {
-    if (type === EnumCurriculum.Experience) {
+    if (type === EnumCurriculum.EXPERIENCE) {
       return 'curriculum.experience';
-    } else if (type === EnumCurriculum.Education) {
+    } else if (type === EnumCurriculum.EDUCATION) {
       return 'curriculum.education';
     } else {
       return '';
@@ -38,38 +39,34 @@ export class AboutMeContainerComponent extends TranslateComponent implements OnI
   }
 
   getList(type: EnumCurriculum): ICurriculum[] {
-    if (type === EnumCurriculum.Experience) {
+    if (type === EnumCurriculum.EXPERIENCE) {
       return this.experience;
-    } else if (type === EnumCurriculum.Education) {
+    } else if (type === EnumCurriculum.EDUCATION) {
       return this.education;
     } else {
       return [];
     }
   }
 
-
   private onLangChange(): void {
     this.translate.onLangChange.subscribe((params: LangChangeEvent) => {
-
-      this.fillEducationArray();
-      this.fillCurriculumArray('experience', []);
-
+      this.fillCurriculumArray();
     });
   }
 
-  private fillEducationArray(): void {
-    this.translate.get('education').subscribe(
-      values => {
-        this.education = Object.keys(values).map(key => values[key]);
-      }
-    );
+  private fillCurriculumArray(): void {
+    this.education = this.fillArray(EnumCurriculum.EDUCATION);
+    this.experience = this.fillArray(EnumCurriculum.EXPERIENCE);
   }
 
-  private fillCurriculumArray(keyLanguage: string, array: ICurriculum[]): void {
-    this.translate.get(keyLanguage).subscribe(
+
+  private fillArray(type: EnumCurriculum): any[] {
+    let arrayResolved = [];
+    this.translate.get(type.toString()).subscribe(
       values => {
-        this.experience = Object.keys(values).map(key => values[key]);
+        arrayResolved = Object.keys(values).map(key => values[key]);
       }
     );
+    return arrayResolved;
   }
 }

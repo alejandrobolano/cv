@@ -1,4 +1,4 @@
 export enum EnumCurriculum {
-  Experience,
-  Education
+  EXPERIENCE = 'experience',
+  EDUCATION = 'education'
 }
