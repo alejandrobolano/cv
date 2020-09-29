@@ -49,20 +49,32 @@
     },
     {
       "title": "Freelance",
-      "date": "March 2018 - Present",
+      "date": "Marzo 2018 - Presente",
       "country": "España",
       "subtitle": "Desarrollo de diseño web",
       "list": [
         "Tecnologías: CSS3, HTML5, JS",
         "Herramientas: Photoshop, Wordpress",
-        "Metodología: Scrum",
-        "Extras: Kotlin"
+        "Encargado de web y de las redes sociales de Cuba Blue Diving"
+      ],
+      "countryCode": "es"
+    },
+    {
+      "title": "Desarrollador web",
+      "date": "Marzo 2020 - Agosto 2020",
+      "country": "España",
+      "subtitle": "Profesional independiente",
+      "list": [
+        "Biblioteca UX de angular que contiene un conjunto completo de componentes skeletons para la carga asíncrona de aplicaciones web",
+        "Metodología: Ágil con el Proceso Scrum",
+        "Heramientas: Git, GitHub",
+        "Lenguaje: Angular"
       ],
       "countryCode": "es"
     },
     {
       "title": "Combray Solutions",
-      "date": "October 2017 - January 2019",
+      "date": "Octubre 2017 - Enero 2019",
       "country": "España",
       "subtitle": "Jefe de equipo",
       "list": [
@@ -72,7 +84,7 @@
     },
     {
       "title": "DATYS",
-      "date": "September 2016 - August 2017",
+      "date": "Septiembre 2016 - Agosto 2017",
       "country": "Cuba",
       "subtitle": "Desarrollador de aplicaciones Java",
       "list": [
@@ -86,7 +98,7 @@
     },
     {
       "title": "PAM International",
-      "date": "November 2014 - April 2016 ",
+      "date": "Noviembre 2014 - Abril 2016 ",
       "country": "Cuba",
       "subtitle": "Desarrollador de aplicaciones para móviles",
       "list": [

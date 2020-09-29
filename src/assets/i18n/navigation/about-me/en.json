@@ -55,8 +55,20 @@
       "list": [
         "Technology: CSS3, HTML5, JS",
         "Tools: Photoshop, Wordpress",
-        "Methodology: Scrum",
-        "Extras: Kotlin"
+        "Web and social media leader of Cuba Blue Diving"
+      ],
+      "countryCode": "es"
+    },
+    {
+      "title": "Desarrollador web",
+      "date": "Marzo 2020 - Agosto 2020",
+      "country": "España",
+      "subtitle": "Profesional independiente",
+      "list": [
+        "Angular UX library de angular containing a complete set of skeletons components for asynchronous loading of web applications",
+        "Methodology: Agile with Scrum Process",
+        "Tools: Git, GitHub",
+        "Language: Angular"
       ],
       "countryCode": "es"
     },

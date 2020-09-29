@@ -53,10 +53,22 @@
       "country": "Espanya",
       "subtitle": "Desenvolupament de disseny web",
       "list": [
-        "Tecnologaas: CSS3, HTML5, JS",
-        "Eines: Photoshop, Wordpress",
-        "Metodologia: Scrum",
-        "Extres: Kotlin"
+        "Tecnologías: CSS3, HTML5, JS",
+        "Herramientas: Photoshop, Wordpress",
+        "Líder de web i de les xarxes socials de Cuba Blue Diving"
+      ],
+      "countryCode": "es"
+    },
+    {
+      "title": "Desenvolupador web",
+      "date": "Marzo 2020 - Agosto 2020",
+      "country": "España",
+      "subtitle": "Professional independent",
+      "list": [
+        "Biblioteca UX d'angular que conté un conjunt complet de components skeletons per a la càrrega asíncrona d'aplicacions web",
+        "Metodologia: Agile amb Procés Scrum",
+        "Eines: Git, GitHub",
+        "Llenguatge: Angular"
       ],
       "countryCode": "es"
     },
