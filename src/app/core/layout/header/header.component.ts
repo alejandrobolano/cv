@@ -1,6 +1,7 @@
 import {Component, OnInit, Output, EventEmitter, Input} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import {TranslateWrapperService} from '../../service/translate-wrapper.service';
+import {LanguageEnum} from '../../enum/LanguageEnum';
 
 @Component({
   selector: 'ambm-header',
@@ -10,7 +11,7 @@ import {TranslateWrapperService} from '../../service/translate-wrapper.service';
 export class HeaderComponent implements OnInit {
   @Output() collapseEmitter = new EventEmitter();
   @Input() isCollapsed = false;
-  language = 'es';
+  language: string = LanguageEnum.SPANISH;
   title = 'Alejandro M. Bolaño M.';
   gif = '/assets/img/alejandro-bolano.gif';
 
@@ -35,9 +36,9 @@ export class HeaderComponent implements OnInit {
 
   getCountryCode(): string {
     switch (this.language) {
-      case 'en':
+      case LanguageEnum.ENGLISH:
         return 'gb';
-      case 'ca':
+      case LanguageEnum.CATALAN:
         return 'es-ca';
       default:
         return 'es';

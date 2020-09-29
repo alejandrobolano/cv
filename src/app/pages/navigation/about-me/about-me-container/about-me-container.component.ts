@@ -2,7 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {TranslateComponent} from '../../../../core/translate/translate.component';
 import {LangChangeEvent, TranslateService} from '@ngx-translate/core';
 import {TranslateWrapperService} from '../../../../core/service/translate-wrapper.service';
-import {EnumCurriculum} from '../data/EnumCurriculum';
+import {CurriculumEnum} from '../data/CurriculumEnum';
 import {ICurriculum, IExperience} from '../data/ICurriculum';
 
 @Component({
@@ -11,9 +11,9 @@ import {ICurriculum, IExperience} from '../data/ICurriculum';
   styleUrls: ['./about-me-container.component.css']
 })
 export class AboutMeContainerComponent extends TranslateComponent implements OnInit {
-  avatar = '/assets/img/dummy-user.png';
+  avatar = '/assets/img/profile.png';
   size = 'large';
-  tabs = [EnumCurriculum.EXPERIENCE, EnumCurriculum.EDUCATION];
+  tabs = [CurriculumEnum.EXPERIENCE, CurriculumEnum.EDUCATION];
   experience: IExperience[];
   education: ICurriculum[];
 
@@ -28,20 +28,20 @@ export class AboutMeContainerComponent extends TranslateComponent implements OnI
     this.fillCurriculumArray();
   }
 
-  getValue(type: EnumCurriculum): string {
-    if (type === EnumCurriculum.EXPERIENCE) {
+  getValue(type: CurriculumEnum): string {
+    if (type === CurriculumEnum.EXPERIENCE) {
       return 'curriculum.experience';
-    } else if (type === EnumCurriculum.EDUCATION) {
+    } else if (type === CurriculumEnum.EDUCATION) {
       return 'curriculum.education';
     } else {
       return '';
     }
   }
 
-  getList(type: EnumCurriculum): ICurriculum[] {
-    if (type === EnumCurriculum.EXPERIENCE) {
+  getList(type: CurriculumEnum): ICurriculum[] {
+    if (type === CurriculumEnum.EXPERIENCE) {
       return this.experience;
-    } else if (type === EnumCurriculum.EDUCATION) {
+    } else if (type === CurriculumEnum.EDUCATION) {
       return this.education;
     } else {
       return [];
@@ -55,12 +55,12 @@ export class AboutMeContainerComponent extends TranslateComponent implements OnI
   }
 
   private fillCurriculumArray(): void {
-    this.education = this.fillArray(EnumCurriculum.EDUCATION);
-    this.experience = this.fillArray(EnumCurriculum.EXPERIENCE);
+    this.education = this.fillArray(CurriculumEnum.EDUCATION);
+    this.experience = this.fillArray(CurriculumEnum.EXPERIENCE);
   }
 
 
-  private fillArray(type: EnumCurriculum): any[] {
+  private fillArray(type: CurriculumEnum): any[] {
     let arrayResolved = [];
     this.translate.get(type.toString()).subscribe(
       values => {
