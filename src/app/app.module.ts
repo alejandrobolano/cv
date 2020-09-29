@@ -19,6 +19,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {NavigationModule} from './pages/navigation/navigation.module';
 import { StoreModule } from '@ngrx/store';
 import {CoreModule} from './core/core.module';
+import {PrivateModule} from './pages/private/private.module';
 
 
 @NgModule({
@@ -45,6 +46,7 @@ import {CoreModule} from './core/core.module';
     }),
     AppRoutingModule,
     NavigationModule,
+    PrivateModule,
     CoreModule,
     StoreModule.forRoot({}, {})
   ],

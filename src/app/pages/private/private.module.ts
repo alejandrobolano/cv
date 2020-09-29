@@ -7,6 +7,9 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {PrivateComponent} from './private.component';
 import {PrivateRoutingModule} from './private-routing.module';
 import { SitesComponent } from './sites/sites.component';
+import {CommonModule} from '@angular/common';
+import {FormsModule} from '@angular/forms';
+import { SearchComponent } from './sites/search/search.component';
 
 @NgModule({
   imports: [
@@ -20,9 +23,11 @@ import { SitesComponent } from './sites/sites.component';
         deps: [HttpClient]
       },
       isolate: true
-    })
+    }),
+    CommonModule,
+    FormsModule
   ],
-  declarations: [PrivateComponent, SitesComponent],
+  declarations: [PrivateComponent, SitesComponent, SearchComponent],
   exports: []
 })
 export class PrivateModule {}
