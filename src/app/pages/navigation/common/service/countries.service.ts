@@ -1,0 +1,14 @@
+import {Injectable} from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+
+export class CountriesService {
+
+  constructor() {
+  }
+
+  public getIPAddress(): any {
+  }
+}
