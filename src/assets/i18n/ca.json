@@ -2,5 +2,10 @@
   "navigation": "Navegaciò",
   "private": "Privat",
   "third": "Tercer",
-  "fullscreen": "Pantalla completa"
+  "fullscreen": "Pantalla completa",
+  "backHome": "Torna al principi",
+  "error": {
+    "title": "Houston, tenim un problema!",
+    "subtitle": "Ho sento, la pàgina que intentes visitar no existeix."
+  }
 }

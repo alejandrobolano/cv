@@ -8,9 +8,10 @@ import { TranslateComponent } from './translate/translate.component';
 import {TranslateModule} from '@ngx-translate/core';
 import {AppRoutingModule} from '../app-routing.module';
 import {SidebarComponent} from './layout/sidebar/sidebar.component';
+import { PageNotFoundComponent } from './layout/page-not-found/page-not-found.component';
 
 @NgModule({
-  declarations: [FooterComponent, HeaderComponent, TranslateComponent, SidebarComponent],
+  declarations: [FooterComponent, HeaderComponent, TranslateComponent, SidebarComponent, PageNotFoundComponent],
   exports: [
     FooterComponent,
     HeaderComponent,

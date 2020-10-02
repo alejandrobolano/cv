@@ -2,5 +2,10 @@
   "navigation": "Navigation",
   "private": "Private",
   "third": "Third",
-  "fullscreen": "Fullscreen"
+  "fullscreen": "Fullscreen",
+  "backHome": "Back home",
+  "error": {
+    "title": "Houston, we have a problem!",
+    "subtitle": "Sorry, the page you visited does not exist."
+  }
 }

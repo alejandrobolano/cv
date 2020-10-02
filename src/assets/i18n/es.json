@@ -2,5 +2,10 @@
   "navigation": "Navegación",
   "private": "Privado",
   "third": "Tercero",
-  "fullscreen": "Pantalla completa"
+  "fullscreen": "Pantalla completa",
+  "backHome": "Regresa al principio",
+  "error": {
+    "title": "¡Houston, tenemos un problema!",
+    "subtitle": "Lo siento, la página que intentas visitar no existe."
+  }
 }
