@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
-import {HttpClient} from '@angular/common/http';
 import {TranslateWrapperService} from '../../../core/service/translate-wrapper.service';
 import {TranslateComponent} from '../../../core/translate/translate.component';
 
