@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import {BehaviorSubject} from 'rxjs';
 import {TranslateService} from '@ngx-translate/core';
+import {LanguageEnum} from '../enum/LanguageEnum';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TranslateWrapperService {
-  language$ = new BehaviorSubject<string>('en');
+  language$ = new BehaviorSubject<string>(LanguageEnum.ENGLISH);
   languageChange = this.language$.asObservable();
 
   constructor(public translate: TranslateService) {
