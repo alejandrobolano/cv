@@ -10,7 +10,8 @@ export class IpService {
   constructor(private http: HttpClient) {
   }
 
-  public getIPAddress(): any {
+  public getIpServiceAddress(): any {
     return this.http.get('http://api.ipify.org/?format=json');
   }
+
 }

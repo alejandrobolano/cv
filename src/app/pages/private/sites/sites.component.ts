@@ -4,6 +4,7 @@ import {SITES} from './data/Sites';
 import {TranslateComponent} from '../../../core/translate/translate.component';
 import {TranslateService} from '@ngx-translate/core';
 import {TranslateWrapperService} from '../../../core/service/translate-wrapper.service';
+import {WindowResizeService} from '../../../core/service/window-resize.service';
 
 @Component({
   selector: 'ambm-sites',
@@ -13,12 +14,11 @@ import {TranslateWrapperService} from '../../../core/service/translate-wrapper.s
 export class SitesComponent extends TranslateComponent implements OnInit {
   sites: ISite[] = SITES;
   searchValue = '';
-  isVisible = true;
-  sitesForDisplay = [...this.sites];
   size = null;
 
   constructor(public translate: TranslateService,
-              public translateWrapperService: TranslateWrapperService) {
+              public translateWrapperService: TranslateWrapperService,
+              private windowResize: WindowResizeService) {
     super(translate, translateWrapperService);
   }
 
@@ -31,7 +31,7 @@ export class SitesComponent extends TranslateComponent implements OnInit {
   }
 
   get isMobile(): boolean {
-    return this.size && this.size < 768;
+    return this.windowResize.IsMobile;
   }
 
   search(text: string): ISite[] {

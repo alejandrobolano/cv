@@ -6,6 +6,8 @@ import {TranslateWrapperService} from '../../../core/service/translate-wrapper.s
 import {LangChangeEvent, TranslateService} from '@ngx-translate/core';
 import {IpService} from '../../../core/service/ip.service';
 import {CountriesService} from '../common/countries/countries.service';
+import {MessageService} from '../../service/message.service';
+import Message from '../../model/message';
 
 @Component({
   selector: 'ambm-contact',
@@ -18,12 +20,14 @@ export class ContactComponent extends TranslateComponent implements OnInit {
   country: ICountry;
   ip: string;
   countrySelected: ICountry;
+  message: Message;
 
   constructor(private formBuilder: FormBuilder,
               public translate: TranslateService,
               public translateWrapperService: TranslateWrapperService,
               private ipService: IpService,
-              private countriesService: CountriesService) {
+              private countriesService: CountriesService,
+              private messageService: MessageService) {
     super(translate, translateWrapperService);
     this.onLangChange();
     this.validateFormBuilder();
@@ -31,6 +35,7 @@ export class ContactComponent extends TranslateComponent implements OnInit {
 
   ngOnInit(): void {
     this.countries = this.countriesService.getCountries(this.translate.currentLang);
+    this.getIp();
   }
 
   private validateFormBuilder(): void {
@@ -50,7 +55,6 @@ export class ContactComponent extends TranslateComponent implements OnInit {
     country: string;
     countryName: string;
     subject: string;
-    confirm: string;
     comment: string;
     language: string;
     ip: string
@@ -58,17 +62,27 @@ export class ContactComponent extends TranslateComponent implements OnInit {
     value.countryName = this.countrySelected.name;
     value.country = this.countrySelected.iata;
     value.language = this.translate.currentLang;
-    value.ip = this.getIp();
+    value.ip = this.ip;
 
-    alert(JSON.stringify(value));
+    this.message = {
+      userName: value.userName,
+      email: value.email,
+      country: value.country,
+      countryName: value.countryName,
+      subject: value.subject,
+      comment: value.comment,
+      language: value.language,
+      ip: value.ip
+    };
+    this.saveMessage(this.message);
+    this.validateForm.reset();
   }
 
-  getIp(): string {
-    let ip = '';
-    this.ipService.getIPAddress().subscribe((result: any) => {
-      ip = result.ip;
+
+  getIp(): void {
+    this.ipService.getIpServiceAddress().subscribe((result: any) => {
+      this.ip = result.ip;
     });
-    return ip;
   }
 
   resetForm(e: MouseEvent): void {
@@ -80,13 +94,18 @@ export class ContactComponent extends TranslateComponent implements OnInit {
     this.countrySelected = country;
   }
 
-
   private onLangChange(): void {
     this.translate.onLangChange.subscribe((params: LangChangeEvent) => {
       this.countries = this.countriesService.getCountries(params.lang);
       if (this.country) {
         this.country = this.countriesService.searchCountry(this.country.iata);
       }
+    });
+  }
+
+  saveMessage(message: Message): void {
+    this.messageService.create(message).then(() => {
+      console.log('Created new item successfully!');
     });
   }
 

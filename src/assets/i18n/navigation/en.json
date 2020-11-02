@@ -4,5 +4,8 @@
   },
   "portfolio": {
     "title": "This is my portfolio and personal enterprise"
+  },
+  "contact": {
+    "title": "Fill the contact form to get in touch"
   }
 }

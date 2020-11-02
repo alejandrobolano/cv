@@ -1,7 +1,9 @@
+<h1 nz-typography>{{'contact.title' |translate}}</h1>
+
 <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm(validateForm.value)">
   <nz-form-item>
-    <nz-form-label [nzSpan]="7" nzRequired>Username</nz-form-label>
-    <nz-form-control [nzSpan]="12" nzHasFeedback nzValidatingTip="Validating..." [nzErrorTip]="userErrorTpl">
+    <nz-form-label [nzSm]="4" [nzXs]="12" nzRequired>Username</nz-form-label>
+    <nz-form-control [nzSm]="14" [nzXs]="12" nzHasFeedback nzValidatingTip="Validating..." [nzErrorTip]="userErrorTpl">
       <input nz-input formControlName="userName" placeholder="async validate try to write JasonWood" />
       <ng-template #userErrorTpl let-control>
         <ng-container *ngIf="control.hasError('required')">
@@ -14,8 +16,8 @@
     </nz-form-control>
   </nz-form-item>
   <nz-form-item>
-    <nz-form-label [nzSpan]="7" nzRequired>E-mail</nz-form-label>
-    <nz-form-control [nzSpan]="12" nzHasFeedback [nzErrorTip]="emailErrorTpl">
+    <nz-form-label [nzSm]="4" [nzXs]="12" nzRequired>E-mail</nz-form-label>
+    <nz-form-control [nzSm]="14" [nzXs]="12" nzHasFeedback [nzErrorTip]="emailErrorTpl">
       <input nz-input formControlName="email" placeholder="email" type="email" />
       <ng-template #emailErrorTpl let-control>
         <ng-container *ngIf="control.hasError('email')">
@@ -29,8 +31,8 @@
   </nz-form-item>
 
   <nz-form-item>
-    <nz-form-label [nzSpan]="7" nzRequired>Country</nz-form-label>
-    <nz-form-control [nzSpan]="12" nzHasFeedback nzErrorTip="Please select your country!">
+    <nz-form-label [nzSm]="4" [nzXs]="12" nzRequired>Country</nz-form-label>
+    <nz-form-control [nzSm]="14" [nzXs]="12" nzHasFeedback nzErrorTip="Please select your country!">
       <nz-select nzAllowClear
                  formControlName="country"
                  [nzPlaceHolder]="'Select country'"
@@ -49,20 +51,20 @@
   </nz-form-item>
 
   <nz-form-item>
-    <nz-form-label [nzSpan]="7" nzRequired>Subject</nz-form-label>
-    <nz-form-control [nzSpan]="12" nzHasFeedback nzErrorTip="Please input your subject!">
+    <nz-form-label [nzSm]="4" [nzXs]="12" nzRequired>Subject</nz-form-label>
+    <nz-form-control [nzSm]="14" [nzXs]="12" nzHasFeedback nzErrorTip="Please input your subject!">
       <input nz-input formControlName="subject" placeholder="subject" />
     </nz-form-control>
   </nz-form-item>
   <nz-form-item>
-    <nz-form-label [nzSpan]="7" nzRequired>Comment</nz-form-label>
-    <nz-form-control [nzSpan]="12" nzHasFeedback nzErrorTip="Please write something here!">
+    <nz-form-label [nzSm]="4" [nzXs]="12" nzRequired>Comment</nz-form-label>
+    <nz-form-control [nzSm]="14" [nzXs]="12" nzHasFeedback nzErrorTip="Please write something here!">
       <textarea formControlName="comment" nz-input [nzAutosize]="{ minRows: 1, maxRows: 6 }" placeholder="write any thing"></textarea>
     </nz-form-control>
   </nz-form-item>
 
   <nz-form-item>
-    <nz-form-control [nzOffset]="7" [nzSpan]="12">
+    <nz-form-control [nzOffset]="7" [nzSm]="14" [nzXs]="12">
       <button nz-button nzType="primary" [disabled]="!validateForm.valid">Submit</button>
       <button nz-button (click)="resetForm($event)">Reset</button>
     </nz-form-control>

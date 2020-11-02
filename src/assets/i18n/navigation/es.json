@@ -4,5 +4,8 @@
   },
   "portfolio": {
     "title": "Este es mi portafolio y emprendimiento personal"
+  },
+  "contact": {
+    "title": "Rellene el formulario para ponerse en contacto conmigo"
   }
 }
