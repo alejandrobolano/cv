@@ -1,11 +1,27 @@
 {
-  "navigation": "Navigation",
-  "private": "Private",
-  "third": "Third",
   "fullscreen": "Fullscreen",
   "backHome": "Back home",
   "error": {
     "title": "Houston, we have a problem!",
     "subtitle": "Sorry, the page you visited does not exist."
-  }
+  },
+  "navigation": {
+    "title": "Navigation",
+    "welcome": "Welcome",
+    "portfolio": "Portfolio",
+    "aboutMe": "About me",
+    "contact": "Contact"
+  },
+  "private": {
+    "title": "Private",
+    "sites": "Websites"
+  },
+  "third": {
+    "title": "Third"
+  },
+  "header":{
+    "selectLanguage" : "Select language"
+  },
+  "continue": "Continue",
+  "showCV": "Show curriculum"
 }

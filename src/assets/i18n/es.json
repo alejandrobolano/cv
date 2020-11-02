@@ -1,11 +1,31 @@
 {
-  "navigation": "Navegación",
-  "private": "Privado",
-  "third": "Tercero",
   "fullscreen": "Pantalla completa",
   "backHome": "Regresa al principio",
   "error": {
     "title": "¡Houston, tenemos un problema!",
     "subtitle": "Lo siento, la página que intentas visitar no existe."
-  }
+  },
+  "underBuilder": {
+    "title": "¡Houston, estamos reparando!",
+    "subtitle": "Lo siento, la página que intentas visitar está en pleno desarrollo."
+  },
+  "navigation": {
+    "title": "Navegación",
+    "welcome": "Bienvenido",
+    "portfolio": "Portafolio",
+    "aboutMe": "Acerca de mi",
+    "contact": "Contacto"
+  },
+  "private": {
+    "title": "Privado",
+    "sites": "Sitios web"
+  },
+  "third": {
+    "title": "Tercero"
+  },
+  "header":{
+    "selectLanguage" : "Selecciona el lenguaje"
+  },
+  "continue": "Continuar",
+  "showCV": "Ver currículum"
 }

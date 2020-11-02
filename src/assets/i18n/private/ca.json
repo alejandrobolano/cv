@@ -2,6 +2,28 @@
   "sites": {
     "title": "Sitios interesantes"
   },
+  "cubaApk": {
+    "description": "Aplicaciones creadas por cubanos."
+  },
+  "downloadBooks": {
+    "description": "Descarga cualquier libro interesante de manera interesante.",
+    "summary": "Descarga libros gratis"
+  },
+  "eliteTorrent": {
+    "description": "Descarga y visualización de películas y series en línea.",
+    "summary": "Series y películas en línea"
+  },
+  "fossHub": {
+    "description": "Descarga gratis de aplicaciones de windows de código abierto, sin malwares ni envolturas.",
+    "summary": "Descarga de aplicaciones gratis"
+  },
+  "googleExample": {
+    "description": "Ejemplo de aplicaciones de Google en diferentes lenguajes de programación",
+    "summary": "Ejemplos de Google"
+  },
+  "guru": {
+    "description": "Genial Guru - buenas ideas, últimas noticias y más información."
+  },
   "hubicCloud": {
     "description": "A great storage cloud. Up to 25Gb free.",
     "summary": "Storage Cloud"

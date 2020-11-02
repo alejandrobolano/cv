@@ -1,11 +1,27 @@
 {
-  "navigation": "Navegaciò",
-  "private": "Privat",
-  "third": "Tercer",
   "fullscreen": "Pantalla completa",
   "backHome": "Torna al principi",
   "error": {
     "title": "Houston, tenim un problema!",
     "subtitle": "Ho sento, la pàgina que intentes visitar no existeix."
-  }
+  },
+  "navigation": {
+    "title": "Navegaciò",
+    "welcome": "Benvigut",
+    "portfolio": "Cartera",
+    "aboutMe": "Sobre mi",
+    "contact": "Contacte"
+  },
+  "private": {
+    "title": "Privat",
+    "sites": "Llocs web"
+  },
+  "third": {
+    "title": "Tercer"
+  },
+  "header":{
+    "selectLanguage" : "Selecciona el llenguatge"
+  },
+  "continue": "Continuar",
+  "showCV": "Ver currículum"
 }
