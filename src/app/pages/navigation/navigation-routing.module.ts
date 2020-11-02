@@ -9,8 +9,10 @@ const routes: Routes = [
   { path: '', component: NavigationComponent,
   children: [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: 'home', component: HomeComponent },
+    { path: 'home', component: HomeComponent},
     { path: 'portfolio', component: PortfolioComponent },
+    { path: 'cv', pathMatch: 'full', redirectTo: 'about-me'},
+    { path: 'curriculum', pathMatch: 'full', redirectTo: 'about-me'},
     { path: 'about-me', loadChildren: () => import('./about-me/about-me.module').then(m => m.AboutMeModule)},
     { path: 'contact', component: ContactComponent }
   ]},

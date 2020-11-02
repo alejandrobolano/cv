@@ -15,6 +15,7 @@ import {AboutMeModule} from './about-me/about-me.module';
 import { ContactComponent } from './contact/contact.component';
 import { ModalComponent } from './common/modal/modal.component';
 import { ContentComponent } from './common/modal/content/content.component';
+import {CoreModule} from '../../core/core.module';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { ContentComponent } from './common/modal/content/content.component';
     FormsModule,
     CommonModule,
     AboutMeModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CoreModule
   ],
   declarations: [NavigationComponent, HomeComponent, PortfolioComponent, ContactComponent, ModalComponent, ContentComponent],
   exports: []
