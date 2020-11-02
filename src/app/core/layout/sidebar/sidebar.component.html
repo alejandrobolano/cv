@@ -5,30 +5,30 @@
   </a>
 </div>
 <ul nz-menu nzTheme="{{theme}}" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
-  <li nz-submenu nzOpen nzTitle="{{'navigation'|translate}}" nzIcon="home">
+  <li nz-submenu nzOpen nzTitle="{{'navigation.title'|translate}}" nzIcon="home">
     <ul>
       <li nz-menu-item nzMatchRouter>
-        <a routerLink="/navigation/home">Welcome</a>
+        <a routerLink="/navigation/home">{{'navigation.welcome'|translate}}</a>
       </li>
       <li nz-menu-item nzMatchRouter>
-        <a routerLink="/navigation/portfolio">Portfolio</a>
+        <a routerLink="/navigation/portfolio">{{'navigation.portfolio'|translate}}</a>
       </li>
       <li nz-menu-item nzMatchRouter>
-        <a routerLink="/navigation/about-me">About Me</a>
+        <a routerLink="/navigation/about-me">{{'navigation.aboutMe'|translate}}</a>
       </li>
       <li nz-menu-item nzMatchRouter>
-        <a routerLink="/navigation/contact">Contact</a>
+        <a routerLink="/navigation/contact">{{'navigation.contact'|translate}}</a>
       </li>
     </ul>
   </li>
-  <li nz-submenu nzOpen nzTitle="{{'private'|translate}}" nzIcon="lock">
+  <li nz-submenu nzOpen nzTitle="{{'private.title'|translate}}" nzIcon="lock">
     <ul>
       <li nz-menu-item nzMatchRouter>
-        <a routerLink="/private/sites">Sites</a>
+        <a routerLink="/private/sites">{{'private.sites'|translate}}</a>
       </li>
     </ul>
   </li>
-  <li nz-submenu nzOpen nzTitle="{{'third'|translate}}" nzIcon="form">
+  <li nz-submenu nzOpen nzTitle="{{'third.title'|translate}}" nzIcon="form">
     <ul>
       <li nz-menu-item nzMatchRouter>
         <a href="https://ng.ant.design/" target="_blank">Ant Design Of Angular</a>

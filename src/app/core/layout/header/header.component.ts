@@ -2,6 +2,7 @@ import {Component, OnInit, Output, EventEmitter, Input} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import {TranslateWrapperService} from '../../service/translate-wrapper.service';
 import {LanguageEnum} from '../../enum/LanguageEnum';
+import {WindowResizeService} from '../../service/window-resize.service';
 
 @Component({
   selector: 'ambm-header',
@@ -11,11 +12,13 @@ import {LanguageEnum} from '../../enum/LanguageEnum';
 export class HeaderComponent implements OnInit {
   @Output() collapseEmitter = new EventEmitter();
   @Input() isCollapsed = false;
-  language: string = LanguageEnum.SPANISH;
-  title = 'Alejandro M. Bolaño M.';
+  language: string;
+  title = 'Alejandro M. Bolaño Méndez';
   gif = '/assets/img/alejandro-bolano.gif';
 
-  constructor(public translate: TranslateService, public translateWrapperService: TranslateWrapperService) {
+  constructor(public translate: TranslateService,
+              public translateWrapperService: TranslateWrapperService,
+              private windowResize: WindowResizeService) {
   }
 
   switchLanguage(lang: string): void {
@@ -27,6 +30,10 @@ export class HeaderComponent implements OnInit {
     this.translateWrapperService.languageChange.subscribe(result => {
       this.language = result;
     });
+  }
+
+  get isMobile(): boolean {
+    return this.windowResize.IsMobile;
   }
 
   collapseEvent(): void {
