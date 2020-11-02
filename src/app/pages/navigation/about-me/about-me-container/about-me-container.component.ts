@@ -4,6 +4,7 @@ import {LangChangeEvent, TranslateService} from '@ngx-translate/core';
 import {TranslateWrapperService} from '../../../../core/service/translate-wrapper.service';
 import {CurriculumEnum} from '../data/CurriculumEnum';
 import {ICurriculum, IExperience} from '../data/ICurriculum';
+import {WindowResizeService} from '../../../../core/service/window-resize.service';
 
 @Component({
   selector: 'ambm-about-me',
@@ -17,8 +18,10 @@ export class AboutMeContainerComponent extends TranslateComponent implements OnI
   experience: IExperience[];
   education: ICurriculum[];
 
+
   constructor(public translate: TranslateService,
-              public translateWrapperService: TranslateWrapperService) {
+              public translateWrapperService: TranslateWrapperService,
+              private windowResize: WindowResizeService) {
     super(translate, translateWrapperService);
     this.onLangChange();
   }
@@ -27,6 +30,11 @@ export class AboutMeContainerComponent extends TranslateComponent implements OnI
   ngOnInit(): void {
     this.fillCurriculumArray();
   }
+
+  get isMobile(): boolean {
+    return this.windowResize.IsMobile;
+  }
+
 
   getValue(type: CurriculumEnum): string {
     if (type === CurriculumEnum.EXPERIENCE) {

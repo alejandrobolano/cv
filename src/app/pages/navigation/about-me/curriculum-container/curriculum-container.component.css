@@ -1,3 +1,7 @@
 .ant-card-hoverable {
   cursor: auto;
 }
+
+.title {
+  white-space: pre-wrap !important;
+}

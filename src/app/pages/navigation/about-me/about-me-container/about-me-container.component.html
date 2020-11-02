@@ -1,6 +1,7 @@
 <div>
   <nz-avatar class="profile" nzIcon="user" nzSrc="{{avatar}}" [nzSize]="156"></nz-avatar>
-  <nz-tabset [nzSize]="size" [nzTabPosition]="'left'">
+  <nz-tabset [nzSize]="size"
+             [nzTabPosition]="isMobile ? 'top' : 'left'">
     <nz-tab *ngFor="let tab of tabs" [nzTitle]="titleTemplate">
       <ng-template #titleTemplate>
         {{getValue(tab) | translate}}

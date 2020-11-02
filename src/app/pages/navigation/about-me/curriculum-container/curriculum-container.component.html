@@ -1,9 +1,13 @@
 <nz-list *ngFor="let item of curriculumList"  nzItemLayout="horizontal" [nzLoading]="false" [nzSize]="'large'">
 
-  <nz-card [nzTitle]="item.title" [nzExtra]="countryTemplate" [nzHoverable]="true">
+  <nz-card [nzTitle]="titleTemplate" [nzExtra]="countryTemplate" [nzHoverable]="true">
+    <ng-template #titleTemplate >
+      <h3 class="title">{{item.title}}</h3>
+    </ng-template>
+
     <ng-template #countryTemplate >
       <nz-divider nzType="vertical"></nz-divider>
-      <span class="flag-icon flag-icon-{{item.countryCode}}"></span>
+      <span class="flag-icon flag-icon-{{item.countryCode}}"> </span>
       <span>{{item.country}}</span>
     </ng-template>
 
