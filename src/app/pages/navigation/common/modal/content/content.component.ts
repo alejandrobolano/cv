@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MySocialNetworksEnum} from '../../../../../core/enum/MySocialNetworksEnum';
 
 @Component({
   selector: 'ambm-content',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
   avatar = '/assets/img/profile.png';
+  linkedInUrl = MySocialNetworksEnum.LinkedIn
 
   constructor() { }
 

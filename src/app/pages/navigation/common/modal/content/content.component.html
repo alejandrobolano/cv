@@ -1,9 +1,25 @@
 <nz-card [nzBordered]="false">
   <nz-card-meta [nzAvatar]="avatarTemplate"
-                nzTitle="Hola! Me llamo Alejandro"
-                nzDescription="Le doy la bienvenida! Visita mi currículum vitae si desea más información de mi"></nz-card-meta>
+                nzTitle="Hola! Me llaman Alejandro"
+                [nzDescription]="description"></nz-card-meta>
 </nz-card>
 
 <ng-template #avatarTemplate>
   <nz-avatar nzSrc="{{avatar}}"></nz-avatar>
 </ng-template>
+
+<ng-template #description>
+  <p>
+    Le doy la bienvenida a esta modesta web creada en Angular donde muestro pequeño contenido de mi experiencia.
+    Antes de todo, comentar <b>¿quién soy?</b>
+    <br>
+    Soy Ingeniero Informático graduado en la Universidad Tecnológica de La Habana, Cuba. Amplios deseos de superación personal y profesional.
+    Especializándome en el mundo del desarrollo web y la programación en Android.
+    Me encanta el mundo del marketing y las ventas.
+    <br>
+    Me considero un joven trabajador, discreto, humilde, sacrificado y ambicioso.
+    Visita mi currículum vitae documentado en esta web si desea más información de mi, o si prefiere <a href="{{linkedInUrl}}" target="_blank">pinche aquí para mi información de LinkedIn</a>.
+  </p>
+</ng-template>
+
+

@@ -14,23 +14,23 @@ export class ModalComponent implements OnInit {
 
   constructor(private router: Router,
               public cookies: CookiesService) {
-    this.process();
+    this.processVisibilityOfCookie();
   }
 
-  process(): void {
+  processVisibilityOfCookie(): void {
     if (this.cookies.getCookie('modal') === '1') {
       this.show = true;
-      this.setVisibility(false);
+      this.setVisibilityOfCookie(false);
     } else if (!this.cookies.getCookie('modal')) {
-      this.setVisibility(true);
+      this.setVisibilityOfCookie(true);
     }
   }
 
   ngOnInit(): void {
-    this.process();
+    this.processVisibilityOfCookie();
   }
 
-  setVisibility(showModal: boolean): void {
+  setVisibilityOfCookie(showModal: boolean): void {
     this.cookies.setCookie('modal',
       showModal ? VisibilityEnum.Visible : VisibilityEnum.NotVisible,
       7,
