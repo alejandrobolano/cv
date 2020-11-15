@@ -1,4 +1,5 @@
 @import "../node_modules/ng-zorro-antd/ng-zorro-antd.less";
+
 @theme: dark;
 
 // The prefix to use on all css classes from ant.
@@ -18,6 +19,7 @@
 @normal-color: #d9d9d9;
 @white: #fff;
 @black: #000;
+@color-sidebar: #001529;
 
 // Color used by default to control hover and active backgrounds and for
 // alert info backgrounds.
@@ -36,7 +38,6 @@
 
 // Base Scaffolding Variables
 // ---
-
 // Background color for `<body>`
 @body-background: #fff;
 // Base background color for most components
@@ -69,8 +70,8 @@
 @heading-4-size: ceil(@font-size-base * 1.42);
 // https://github.com/ant-design/ant-design/issues/20210
 @line-height-base: 1.5715;
-@border-radius-base: 2px;
-@border-radius-sm: @border-radius-base;
+@border-radius-base: 7px;
+@border-radius-sm: 5px;
 
 // vertical paddings
 @padding-lg: 24px; // containers
@@ -91,9 +92,9 @@
 @margin-xss: 4px; // more small
 
 // height rules
-@height-base: 32px;
-@height-lg: 40px;
-@height-sm: 24px;
+@height-base: 38px;
+@height-lg: 46px;
+@height-sm: 30px;
 
 // The background colors for active and hover states for things like
 // list items or table cells.
@@ -292,8 +293,8 @@
 @grid-gutter-width: 0;
 
 // Layout
-@layout-body-background: #f0f2f5;
-@layout-header-background: #001529;
+@layout-body-background: #f3f2ef;
+@layout-header-background: @color-sidebar;
 @layout-header-height: 64px;
 @layout-header-padding: 0 50px;
 @layout-header-color: @text-color;
