@@ -3,11 +3,7 @@
   "backHome": "Regresa al principio",
   "error": {
     "title": "¡Houston, tenemos un problema!",
-    "subtitle": "Lo siento, la página que intentas visitar no existe."
-  },
-  "underBuilder": {
-    "title": "¡Houston, estamos reparando!",
-    "subtitle": "Lo siento, la página que intentas visitar está en pleno desarrollo."
+    "subtitle": "¡Lo sentimos! la página que intentas visitar no existe."
   },
   "navigation": {
     "title": "Navegación",

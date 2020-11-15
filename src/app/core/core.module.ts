@@ -9,14 +9,17 @@ import {TranslateModule} from '@ngx-translate/core';
 import {AppRoutingModule} from '../app-routing.module';
 import {SidebarComponent} from './layout/sidebar/sidebar.component';
 import { PageNotFoundComponent } from './layout/page-not-found/page-not-found.component';
+import { PageUnderConstructionComponent } from './layout/page-under-construction/page-under-construction.component';
 
 @NgModule({
-  declarations: [FooterComponent, HeaderComponent, TranslateComponent, SidebarComponent, PageNotFoundComponent],
+  declarations: [FooterComponent, HeaderComponent, TranslateComponent, SidebarComponent, PageNotFoundComponent,
+  PageUnderConstructionComponent],
   exports: [
     FooterComponent,
     HeaderComponent,
     TranslateComponent,
-    SidebarComponent
+    SidebarComponent,
+    PageUnderConstructionComponent
   ],
   imports: [
     NgZorroAntdModule,
