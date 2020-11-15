@@ -1,10 +1,10 @@
 export default class Message {
-  userName: string;
+  name: string;
   email: string;
   country: string;
   countryName: string;
   subject: string;
-  comment: string;
+  message: string;
   language: string;
   ip: string;
 }
