@@ -7,7 +7,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./error-message.component.css']
 })
 export class ErrorMessageComponent implements OnInit {
-  @Input('error-message') errorMessage: any;
+  @Input('error-message') errorMessage = [];
   @Output('flag-message') flagMessageEmitter = new EventEmitter();
 
   constructor(private router: Router) {

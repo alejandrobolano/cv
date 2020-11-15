@@ -19,7 +19,10 @@
   <div class="subtitle">
     <p>Se ha generado un error:
       <br>
-      <code>{{errorMessage}}</code>
+      <code *ngFor="let error of errorMessage">
+        <br>
+        {{error}}
+      </code>
     </p>
   </div>
 </ng-template>
