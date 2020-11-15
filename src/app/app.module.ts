@@ -18,6 +18,9 @@ import {NavigationModule} from './pages/navigation/navigation.module';
 import { StoreModule } from '@ngrx/store';
 import {CoreModule} from './core/core.module';
 import {PrivateModule} from './pages/private/private.module';
+import { AngularFireModule } from '@angular/fire';
+import {AngularFirestoreModule} from '@angular/fire/firestore';
+import {environment} from '../environments/environment';
 
 
 @NgModule({
@@ -45,7 +48,9 @@ import {PrivateModule} from './pages/private/private.module';
     NavigationModule,
     PrivateModule,
     CoreModule,
-    StoreModule.forRoot({}, {})
+    StoreModule.forRoot({}, {}),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule, // for firestore
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
