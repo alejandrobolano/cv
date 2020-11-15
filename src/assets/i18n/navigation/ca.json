@@ -6,7 +6,23 @@
     "title": "Aquest és el meu portafoli i emprenedoria personal"
   },
   "contact": {
-    "title": "Ompli el formulari per posar-se en contacte amb mi"
+    "title": "Ompli el formulari per posar-se en contacte amb mi",
+    "name": "Nom",
+    "email": "Correu elèctronic",
+    "country": "País",
+    "subject": "Tema",
+    "message": "Missatge",
+    "messageDescription": "Escriu qualsevol missatge que vulguis que m’enviïs",
+    "subjectDescription": "Escriu el tema ",
+    "selectCountry": "Seleccioneu el vostre país",
+    "sendForm": "Enviar formulari",
+    "clearValues": "Suprimir valors"
+  },
+  "backForm": "Torna al formulari",
+  "backHome": "Torna al principi",
+  "underConstruction": {
+    "title": "Houston, estem reparant!",
+    "subtitle": "Ho sentim!, la pàgina que intentes visitar està en ple desenvolupament.."
   }
 }
 

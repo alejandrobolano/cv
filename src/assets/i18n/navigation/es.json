@@ -6,6 +6,22 @@
     "title": "Este es mi portafolio y emprendimiento personal"
   },
   "contact": {
-    "title": "Rellene el formulario para ponerse en contacto conmigo"
+    "title": "Rellene el formulario para ponerse en contacto conmigo",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "country": "País",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "messageDescription": "Escriba cualquier mensaje que quiera enviarme",
+    "subjectDescription": "Escriba el asunto ",
+    "selectCountry": "Seleccione su país",
+    "sendForm": "Enviar formulario",
+    "clearValues": "Borrar valores"
+  },
+  "backHome": "Regresa al principio",
+  "backForm": "Regresa al formulario",
+  "underConstruction": {
+    "title": "¡Houston, estamos reparando!",
+    "subtitle": "Lo sentimos, la página que intentas visitar está en pleno desarrollo."
   }
 }

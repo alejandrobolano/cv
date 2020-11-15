@@ -6,6 +6,22 @@
     "title": "This is my portfolio and personal enterprise"
   },
   "contact": {
-    "title": "Fill the contact form to get in touch"
+    "title": "Fill the contact form to get in touch",
+    "name": "Name",
+    "email": "Email",
+    "country": "Country",
+    "subject": "Subject",
+    "message": "Message",
+    "messageDescription": "Write any message that do you want send me",
+    "subjectDescription": "Write the subject",
+    "selectCountry": "Select your country",
+    "sendForm": "Send form",
+    "clearValues": "Clear values"
+  },
+  "backForm": "Back form",
+  "backHome": "Back home",
+  "underConstruction": {
+    "title": "Houston, we are in construction!",
+    "subtitle": "We are sorry! the page you are trying to visit is in development."
   }
 }

@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {ICountry} from '../common/countries/data/ICountry';
 import {TranslateComponent} from '../../../core/translate/translate.component';
@@ -21,6 +21,10 @@ export class ContactComponent extends TranslateComponent implements OnInit {
   ip: string;
   countrySelected: ICountry;
   message: Message;
+  isSuccessfulFlagMessage = false;
+  isErrorFlagMessage = false;
+  newValueId: any;
+  errorMessage: any;
 
   constructor(private formBuilder: FormBuilder,
               public translate: TranslateService,
@@ -40,22 +44,22 @@ export class ContactComponent extends TranslateComponent implements OnInit {
 
   private validateFormBuilder(): void {
     this.validateForm = this.formBuilder.group({
-      userName: ['', [Validators.required]],
+      name: ['', [Validators.required]],
       email: ['', [Validators.email, Validators.required]],
       country: ['', [Validators.required]],
       subject: ['', [Validators.required]],
-      comment: ['', [Validators.required]]
+      message: ['', [Validators.required]]
     });
   }
 
 
   submitForm(value: {
-    userName: string;
+    name: string;
     email: string;
     country: string;
     countryName: string;
     subject: string;
-    comment: string;
+    message: string;
     language: string;
     ip: string
   }): void {
@@ -65,17 +69,16 @@ export class ContactComponent extends TranslateComponent implements OnInit {
     value.ip = this.ip;
 
     this.message = {
-      userName: value.userName,
+      name: value.name,
       email: value.email,
       country: value.country,
       countryName: value.countryName,
       subject: value.subject,
-      comment: value.comment,
+      message: value.message,
       language: value.language,
       ip: value.ip
     };
     this.saveMessage(this.message);
-    this.validateForm.reset();
   }
 
 
@@ -103,10 +106,26 @@ export class ContactComponent extends TranslateComponent implements OnInit {
     });
   }
 
-  saveMessage(message: Message): void {
-    this.messageService.create(message).then(() => {
+  saveMessage(message: Message): any {
+    return this.messageService.create(message).then(docRef => {
       console.log('Created new item successfully!');
-    });
+      this.changeSuccessfulFlagValue(true);
+      this.newValueId = docRef.id;
+      this.validateForm.reset();
+    }).catch(error => {
+        console.error('Error adding document: ', error);
+        this.errorMessage = error;
+        this.changeErrorFlagValue(true);
+      }
+    );
+  }
+
+  changeSuccessfulFlagValue(newValue): void {
+    this.isSuccessfulFlagMessage = newValue;
+  }
+
+  changeErrorFlagValue(newValue): void {
+    this.isErrorFlagMessage = newValue;
   }
 
 }
