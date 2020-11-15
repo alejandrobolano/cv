@@ -1,0 +1,26 @@
+<nz-result
+  nzStatus="error"
+  [nzTitle]="title"
+  [nzSubTitle]="subtitle"
+>
+  <div nz-result-extra>
+    <button nz-button nzType="primary" (click)="goHome()">{{ 'backHome' | translate}}</button>
+    <button nz-button (click)="changeFlagValue(false)">{{ 'backForm' | translate}}</button>
+  </div>
+</nz-result>
+
+<ng-template #title>
+  <div class="title">
+    <h2>Error al enviar el mensaje</h2>
+  </div>
+</ng-template>
+
+<ng-template #subtitle>
+  <div class="subtitle">
+    <p>Se ha generado un error:
+      <br>
+      <code>{{errorMessage}}</code>
+    </p>
+  </div>
+</ng-template>
+

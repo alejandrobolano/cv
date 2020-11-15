@@ -16,6 +16,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ModalComponent } from './common/modal/modal.component';
 import { ContentComponent } from './common/modal/content/content.component';
 import {CoreModule} from '../../core/core.module';
+import { SuccessfulMessageComponent } from './contact/successful-message/successful-message.component';
+import { ErrorMessageComponent } from './contact/error-message/error-message.component';
 
 
 @NgModule({
@@ -34,12 +36,13 @@ import {CoreModule} from '../../core/core.module';
     FormsModule,
     CommonModule,
     AboutMeModule,
-    ReactiveFormsModule,
-    CoreModule
+    ReactiveFormsModule
   ],
-  declarations: [NavigationComponent, HomeComponent, PortfolioComponent, ContactComponent, ModalComponent, ContentComponent],
+  declarations: [NavigationComponent, HomeComponent, PortfolioComponent, ContactComponent, ModalComponent, ContentComponent,
+    SuccessfulMessageComponent, ErrorMessageComponent],
   exports: []
 })
+
 export class NavigationModule {}
 
 export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
