@@ -1,13 +1,12 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {TranslateComponent} from '../../translate/translate.component';
 import {TranslateService} from '@ngx-translate/core';
 import {TranslateWrapperService} from '../../service/translate-wrapper.service';
-import {WindowResizeService} from '../../service/window-resize.service';
 
 @Component({
   selector: 'ambm-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css']
+  styleUrls: ['./sidebar.component.less']
 })
 export class SidebarComponent extends TranslateComponent implements OnInit {
   @Input() isCollapsed = false;
