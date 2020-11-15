@@ -34,10 +34,10 @@
 
     <nz-form-item>
       <nz-form-label [nzSm]="4" [nzXs]="12" nzRequired>{{'contact.country'|translate}}</nz-form-label>
-      <nz-form-control [nzSm]="14" [nzXs]="12" nzHasFeedback nzErrorTip="Please select your country!">
+      <nz-form-control [nzSm]="14" [nzXs]="12" nzHasFeedback nzErrorTip="{{'contact.country'|translate}}">
         <nz-select nzAllowClear
                    formControlName="country"
-                   [nzPlaceHolder]="'Select country'"
+                   nzPlaceHolder="{{'contact.selectCountry'|translate}}"
                    [(ngModel)]="country"
                    (ngModelChange)="changeCountry($event)"
                    [nzShowSearch]="true"

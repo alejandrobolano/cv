@@ -8,6 +8,8 @@ import {IpService} from '../../../core/service/ip.service';
 import {CountriesService} from '../common/countries/countries.service';
 import {MessageService} from '../../service/message.service';
 import Message from '../../model/message';
+import {ErrorService} from '../../service/error.service';
+import BackError from '../../model/BackError';
 
 @Component({
   selector: 'ambm-contact',
@@ -21,17 +23,19 @@ export class ContactComponent extends TranslateComponent implements OnInit {
   ip: string;
   countrySelected: ICountry;
   message: Message;
+  backError: BackError;
   isSuccessfulFlagMessage = false;
   isErrorFlagMessage = false;
   newValueId: any;
-  errorMessage: any;
+  errorMessage = null;
 
   constructor(private formBuilder: FormBuilder,
               public translate: TranslateService,
               public translateWrapperService: TranslateWrapperService,
               private ipService: IpService,
               private countriesService: CountriesService,
-              private messageService: MessageService) {
+              private messageService: MessageService,
+              private errorService: ErrorService) {
     super(translate, translateWrapperService);
     this.onLangChange();
     this.validateFormBuilder();
@@ -78,7 +82,37 @@ export class ContactComponent extends TranslateComponent implements OnInit {
       language: value.language,
       ip: value.ip
     };
-    this.saveMessage(this.message);
+    const errors = this.checkUndefined(this.message);
+    if (errors.length === 0) {
+      this.saveMessage(this.message);
+    } else {
+      this.errorMessage = [];
+      errors.forEach(error => {
+        this.errorMessage.push(error.message);
+        this.createBackError(error);
+      });
+      this.changeErrorFlagValue(true);
+    }
+  }
+
+  createBackError(error: Error): void {
+    this.backError = {
+      component: this.constructor.name,
+      message: error.message,
+      stack: error.stack
+    };
+    this.errorService.create(this.backError);
+  }
+
+  checkUndefined(message: Message): Error[] {
+    const errors = [];
+    if (message.name === undefined) {
+      errors.push(Error('Error with name'));
+    }
+    if (message.ip === undefined) {
+      errors.push(Error('Error with ip'));
+    }
+    return errors;
   }
 
 
@@ -108,13 +142,12 @@ export class ContactComponent extends TranslateComponent implements OnInit {
 
   saveMessage(message: Message): any {
     return this.messageService.create(message).then(docRef => {
-      console.log('Created new item successfully!');
       this.changeSuccessfulFlagValue(true);
       this.newValueId = docRef.id;
       this.validateForm.reset();
     }).catch(error => {
-        console.error('Error adding document: ', error);
-        this.errorMessage = error;
+        this.errorMessage = [];
+        this.errorMessage.push(error);
         this.changeErrorFlagValue(true);
       }
     );
