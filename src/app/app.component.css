@@ -27,6 +27,7 @@ nz-header {
 nz-content {
   margin: 24px;
   overflow: inherit;
+  border-radius: 10px;
 }
 
 .inner-content {
