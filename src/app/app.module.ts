@@ -11,8 +11,6 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
-import { registerLocaleData } from '@angular/common';
-import en from '@angular/common/locales/en';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
@@ -44,7 +42,6 @@ import {PrivateModule} from './pages/private/private.module';
       },
       isolate: true
     }),
-    AppRoutingModule,
     NavigationModule,
     PrivateModule,
     CoreModule,
