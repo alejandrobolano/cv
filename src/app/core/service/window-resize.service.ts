@@ -17,6 +17,9 @@ export class WindowResizeService {
   get IsMobile(): boolean {
     return this.onWindowResize() && this.onWindowResize() < 768;
   }
+  get IsCustomDevice(): boolean {
+    return this.onWindowResize() && this.onWindowResize() < 1280;
+  }
 
   get Width(): any {
     return document.querySelector('body').offsetWidth;
