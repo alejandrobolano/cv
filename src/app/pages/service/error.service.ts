@@ -9,28 +9,28 @@ export class ErrorService {
 
   private dbPath = '/errors';
 
-  tutorialsRef: AngularFirestoreCollection<BackError> = null;
+  errorsRef: AngularFirestoreCollection<BackError> = null;
 
   constructor(private db: AngularFirestore) {
-    this.tutorialsRef = db.collection(this.dbPath);
+    this.errorsRef = db.collection(this.dbPath);
   }
 
   getAll(): AngularFirestoreCollection<BackError> {
-    return this.tutorialsRef;
+    return this.errorsRef;
   }
 
   create(error: BackError): any {
-    if (error.fixed === undefined) {
-      error.fixed = false;
+    if (error.isFixed === undefined) {
+      error.isFixed = false;
     }
-    return this.tutorialsRef.add({ ...error });
+    return this.errorsRef.add({ ...error });
   }
 
   update(id: string, data: any): Promise<void> {
-    return this.tutorialsRef.doc(id).update(data);
+    return this.errorsRef.doc(id).update(data);
   }
 
   delete(id: string): Promise<void> {
-    return this.tutorialsRef.doc(id).delete();
+    return this.errorsRef.doc(id).delete();
   }
 }

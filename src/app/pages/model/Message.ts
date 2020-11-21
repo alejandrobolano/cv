@@ -7,4 +7,5 @@ export default class Message {
   message: string;
   language: string;
   ip: string;
+  isRead?: boolean;
 }

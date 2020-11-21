@@ -9,25 +9,28 @@ export class MessageService {
 
   private dbPath = '/messages';
 
-  tutorialsRef: AngularFirestoreCollection<Message> = null;
+  messagesRef: AngularFirestoreCollection<Message> = null;
 
   constructor(private db: AngularFirestore) {
-    this.tutorialsRef = db.collection(this.dbPath);
+    this.messagesRef = db.collection(this.dbPath);
   }
 
   getAll(): AngularFirestoreCollection<Message> {
-    return this.tutorialsRef;
+    return this.messagesRef;
   }
 
   create(message: Message): any {
-    return this.tutorialsRef.add({ ...message });
+    if (message.isRead === undefined) {
+      message.isRead = false;
+    }
+    return this.messagesRef.add({ ...message });
   }
 
   update(id: string, data: any): Promise<void> {
-    return this.tutorialsRef.doc(id).update(data);
+    return this.messagesRef.doc(id).update(data);
   }
 
   delete(id: string): Promise<void> {
-    return this.tutorialsRef.doc(id).delete();
+    return this.messagesRef.doc(id).delete();
   }
 }
