@@ -28,4 +28,15 @@ export class CountriesService {
       return country.iata.toLowerCase().includes(id);
     })[0];
   }
+
+  getCountryCode(language: string): string {
+    switch (language) {
+      case LanguageEnum.ENGLISH:
+        return 'gb';
+      case LanguageEnum.CATALAN:
+        return 'es-ca';
+      default:
+        return 'es';
+    }
+  }
 }

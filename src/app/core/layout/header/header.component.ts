@@ -3,6 +3,7 @@ import {TranslateService} from '@ngx-translate/core';
 import {TranslateWrapperService} from '../../service/translate-wrapper.service';
 import {LanguageEnum} from '../../enum/LanguageEnum';
 import {WindowResizeService} from '../../service/window-resize.service';
+import {CountriesService} from '../../../pages/navigation/common/countries/countries.service';
 
 @Component({
   selector: 'ambm-header',
@@ -18,7 +19,8 @@ export class HeaderComponent implements OnInit {
 
   constructor(public translate: TranslateService,
               public translateWrapperService: TranslateWrapperService,
-              private windowResize: WindowResizeService) {
+              private windowResize: WindowResizeService,
+              private countriesService: CountriesService) {
   }
 
   switchLanguage(lang: string): void {
@@ -42,14 +44,7 @@ export class HeaderComponent implements OnInit {
   }
 
   getCountryCode(): string {
-    switch (this.language) {
-      case LanguageEnum.ENGLISH:
-        return 'gb';
-      case LanguageEnum.CATALAN:
-        return 'es-ca';
-      default:
-        return 'es';
-    }
+   return this.countriesService.getCountryCode(this.language);
   }
 
   pushFullScreen(): void {
