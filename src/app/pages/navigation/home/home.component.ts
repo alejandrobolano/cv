@@ -6,10 +6,11 @@ import {TranslateComponent} from '../../../core/translate/translate.component';
 @Component({
   selector: 'ambm-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.less']
 })
 export class HomeComponent extends TranslateComponent implements OnInit {
   language;
+  image = '/assets/img/code-banner.jpg';
 
   constructor(public translate: TranslateService,
               public translateWrapperService: TranslateWrapperService) {
