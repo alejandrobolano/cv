@@ -10,6 +10,8 @@ import { SitesComponent } from './sites/sites.component';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import { SearchComponent } from './sites/search/search.component';
+import { AdminComponent } from './admin/admin.component';
+import { ContactMessageComponent } from './admin/contact-message/contact-message.component';
 
 @NgModule({
   imports: [
@@ -27,7 +29,7 @@ import { SearchComponent } from './sites/search/search.component';
     CommonModule,
     FormsModule
   ],
-  declarations: [PrivateComponent, SitesComponent, SearchComponent],
+  declarations: [PrivateComponent, SitesComponent, SearchComponent, AdminComponent, ContactMessageComponent],
   exports: []
 })
 export class PrivateModule {}
