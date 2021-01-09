@@ -23,4 +23,8 @@ export class AppComponent implements OnInit {
     return this.windowResize.IsMobile;
   }
 
+  setCollapsed(event: boolean): void {
+    this.isCollapsed = event;
+  }
+
 }

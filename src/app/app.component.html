@@ -5,12 +5,13 @@
             [nzCollapsedWidth]="isMobile ? 0 : 80"
             [(nzCollapsed)]="isCollapsed"
             [nzTrigger]="null">
-    <ambm-sidebar [isCollapsed]="isCollapsed"></ambm-sidebar>
+    <ambm-sidebar [isCollapsed]="isCollapsed"
+                  (collapseEmitter)="setCollapsed($event)"></ambm-sidebar>
   </nz-sider>
   <nz-layout>
     <nz-header>
       <ambm-header [isCollapsed]="isCollapsed"
-                   (collapseEmitter)="isCollapsed = $event"></ambm-header>
+                   (collapseEmitter)="setCollapsed($event)"></ambm-header>
     </nz-header>
     <nz-content
       [class.opacity]="isMobile && !isCollapsed">

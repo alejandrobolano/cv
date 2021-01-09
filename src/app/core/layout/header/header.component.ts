@@ -15,6 +15,7 @@ export class HeaderComponent implements OnInit {
   @Input() isCollapsed = false;
   language: string;
   title = 'Alejandro M. Bolaño Méndez';
+  isVisibleGif = false;
   gif = '/assets/img/alejandro-bolano.gif';
 
   constructor(public translate: TranslateService,
