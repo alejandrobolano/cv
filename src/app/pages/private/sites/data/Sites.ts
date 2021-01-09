@@ -128,13 +128,13 @@ export const SITES: ISite[] = [
   },
   {
     name: 'Repelis',
-    url: 'https://repelis.live/',
+    url: 'https://repelis.io/',
     summary : 'repelis.summary',
     description : 'repelis.description'
   },
   {
     name: 'PoseidonHD',
-    url: 'https://poseidonhd.me/',
+    url: 'https://poseidonhd.org/',
     summary : 'poseidon.summary',
     description : 'poseidon.description'
   },
@@ -149,12 +149,6 @@ export const SITES: ISite[] = [
     url: 'https://www.kickasstorrents.pw/',
     summary : 'kickAss.summary',
     description : 'kickAss.description'
-  },
-  {
-    name: 'Torrent Locura',
-    url: 'https://torrentlocura.cc/',
-    summary : 'torrentLocura.summary',
-    description : 'torrentLocura.description'
   },
   {
     name: 'Foss Hub',
