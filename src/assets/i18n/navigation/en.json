@@ -1,6 +1,9 @@
 {
   "home": {
-    "title": "Welcome to my personal website"
+    "subtitle": "Welcome to my personal website",
+    "title": "Software Engineer from Cuba to the world",
+    "sitePresentation": "Site presentation",
+    "personalSummary": "Personal summary"
   },
   "portfolio": {
     "title": "This is my portfolio and personal enterprise"

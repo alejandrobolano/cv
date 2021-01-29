@@ -1,6 +1,9 @@
 {
   "home": {
-    "title": "Benvingut al meu lloc web personal"
+    "subtitle": "Benvigut al meu lloc personal",
+    "title": "Enginyer Informàtic de Cuba per al món",
+    "sitePresentation": "Presentació de el lloc",
+    "personalSummary": "Resum personal"
   },
   "portfolio": {
     "title": "Aquest és el meu portafoli i emprenedoria personal"

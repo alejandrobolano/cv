@@ -1,6 +1,9 @@
 {
   "home": {
-    "title": "Bienvenido a mi sitio personal"
+    "subtitle": "Bienvenido a mi sitio personal",
+    "title": "Ingeniero Informático de Cuba para el mundo",
+    "sitePresentation": "Presentación del sitio",
+    "personalSummary": "Resumen personal"
   },
   "portfolio": {
     "title": "Este es mi portafolio y emprendimiento personal"

@@ -1,11 +1,11 @@
-<h1 nz-typography>Ingeniero Informático de Cuba para el mundo</h1>
-<h2 nz-typography>{{'home.title' | translate}}</h2>
+<h1 nz-typography>{{'home.title' | translate}}</h1>
+<h2 nz-typography>{{'home.subtitle' | translate}}</h2>
 
 <ambm-modal></ambm-modal>
 
 <nz-space nzDirection="vertical">
   <nz-space-item>
-    <nz-card nzTitle="Presentación del sitio" [nzHoverable]="true">
+    <nz-card nzTitle="{{'home.sitePresentation' | translate}}" [nzHoverable]="true">
       <p nz-typography>Este simple sitio web lo he creado para presentar mi currículum vitae.</p>
       <p> Lo he desarrollado usando el framework de código libre de programación
         <a href="https://angular.io/cli" target="_blank">Angular Cli</a>,
@@ -14,6 +14,8 @@
         que es una plataforma en la nube donde me ha permitido gestionar base de datos en tiempo real
         y autenticación para este sitio,
         usando esta plataforma para alojar la aplicación en su servidor de forma gratuita.
+        El código de este sitio está publicado en
+        <a href="https://github.com/alejandrobolano/cv" target="_blank">GitHub</a>
       </p>
       <p>
         Para el diseño he usado
@@ -25,13 +27,13 @@
 
   <nz-space-item>
     <div id="ads-custom">
-      <img alt="example" src="{{image}}"/>
+      <img alt="Alejandro Dev" src="{{image}}"/>
     </div>
 
   </nz-space-item>
 
   <nz-space-item>
-    <nz-card nzTitle="Resumen personal" [nzHoverable]="true">
+    <nz-card nzTitle="{{'home.personalSummary' | translate}}" [nzHoverable]="true">
       <p nz-typography>Antes de todo me llamo Alejandro Manuel Bolaño Méndez y soy Ingeniero Informático graduado en
         la Universidad Tecnológica de La Habana "Jose Antonio Echevarría" y soy de nacionalidad cubana</p>
       <p nz-typography>
