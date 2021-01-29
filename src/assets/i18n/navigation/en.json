@@ -3,7 +3,11 @@
     "subtitle": "Welcome to my personal website",
     "title": "Software Engineer from Cuba to the world",
     "sitePresentation": "Site presentation",
-    "personalSummary": "Personal summary"
+    "personalSummary": {
+      "title": "Personal summary",
+      "text1": "First of all, I introduce myself, my name is Alejandro Manuel Bolaño Méndez and I am a Computer Engineer, graduated from the Technological University of Havana \"Jose Antonio Echevarría\" and I am from Cuban.",
+      "text2": "I am a young man with broad desires for personal and professional improvement. I have specialized in the world of web development and Android lover. Also, I love the world of marketing and sales. I consider myself a young worker, discreet, humble, self-sacrificing and ambitious."
+    }
   },
   "portfolio": {
     "title": "This is my portfolio and personal enterprise"
