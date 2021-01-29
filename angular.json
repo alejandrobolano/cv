@@ -33,7 +33,17 @@
               "src/theme.less",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "allowedCommonJsDependencies": [
+              "lodash",
+              "firebase",
+              "@firebase/app",
+              "firebase/app",
+              "@firebase/database",
+              "@firebase/auth",
+              "@ant-design/colors",
+              "@angular/fire/firestore"
+            ]
           },
           "configurations": {
             "production": {
