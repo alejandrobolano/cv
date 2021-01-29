@@ -11,7 +11,8 @@ import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import { SearchComponent } from './sites/search/search.component';
 import { AdminComponent } from './admin/admin.component';
-import { ContactMessageComponent } from './admin/contact-message/contact-message.component';
+import { AdminMessagesComponent } from './admin/admin-messages/admin-messages.component';
+import { AdminErrorsComponent } from './admin/admin-errors/admin-errors.component';
 
 @NgModule({
   imports: [
@@ -29,7 +30,7 @@ import { ContactMessageComponent } from './admin/contact-message/contact-message
     CommonModule,
     FormsModule
   ],
-  declarations: [PrivateComponent, SitesComponent, SearchComponent, AdminComponent, ContactMessageComponent],
+  declarations: [PrivateComponent, SitesComponent, SearchComponent, AdminComponent, AdminMessagesComponent, AdminErrorsComponent],
   exports: []
 })
 export class PrivateModule {}

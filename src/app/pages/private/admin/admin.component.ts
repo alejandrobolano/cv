@@ -7,7 +7,7 @@ import {WindowResizeService} from '../../../core/service/window-resize.service';
 @Component({
   selector: 'ambm-admin',
   templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css']
+  styleUrls: ['./admin.component.less']
 })
 export class AdminComponent extends TranslateComponent implements OnInit {
 

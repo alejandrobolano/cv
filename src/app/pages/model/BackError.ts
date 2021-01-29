@@ -3,4 +3,5 @@ export default class BackError {
   message: string;
   stack: string;
   isFixed?: boolean;
+  date: string;
 }

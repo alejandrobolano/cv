@@ -5,7 +5,7 @@ import {AngularFirestore, AngularFirestoreCollection} from '@angular/fire/firest
 @Injectable({
   providedIn: 'root'
 })
-export class ErrorService {
+export class BackErrorService {
 
   private dbPath = '/errors';
 

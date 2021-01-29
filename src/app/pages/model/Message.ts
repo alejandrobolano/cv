@@ -8,4 +8,5 @@ export default class Message {
   language: string;
   ip: string;
   isRead?: boolean;
+  date: string;
 }

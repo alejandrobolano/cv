@@ -1,3 +1,11 @@
 <h1 nz-typography>Admin</h1>
 <br>
-<ambm-contact-message [hide-columns]="isMobile || isCustomDevice"></ambm-contact-message>
+
+<nz-space nzDirection="vertical" [nzSize]="'large'">
+  <nz-space-item>
+    <ambm-admin-messages [responsive-device]="isMobile || isCustomDevice"></ambm-admin-messages>
+  </nz-space-item>
+  <nz-space-item>
+    <ambm-admin-errors></ambm-admin-errors>
+  </nz-space-item>
+</nz-space>
