@@ -3,6 +3,7 @@ import {TranslateComponent} from '../../translate/translate.component';
 import {TranslateService} from '@ngx-translate/core';
 import {TranslateWrapperService} from '../../service/translate-wrapper.service';
 import {WindowResizeService} from '../../service/window-resize.service';
+import {AuthService} from '../../service/authentication/auth.service';
 
 @Component({
   selector: 'ambm-sidebar',
@@ -14,12 +15,12 @@ export class SidebarComponent extends TranslateComponent implements OnInit {
   @Input() language: string;
   @Output() collapseEmitter = new EventEmitter<boolean>();
   theme = 'dark';
-  title = 'Alejandro M. Bolaño M.';
-  imgLogo = 'https://ng.ant.design/assets/img/logo.svg';
+  imgLogo = '/assets/img/web-programming.svg';
 
   constructor(public translate: TranslateService,
               public translateWrapperService: TranslateWrapperService,
-              private windowResize: WindowResizeService) {
+              private windowResize: WindowResizeService,
+              private authService: AuthService) {
     super(translate, translateWrapperService);
   }
 
@@ -32,6 +33,18 @@ export class SidebarComponent extends TranslateComponent implements OnInit {
       this.isCollapsed = !this.isCollapsed;
       this.collapseEmitter.emit(this.isCollapsed);
     }
+  }
+
+  get isLoggedIn(): boolean {
+    return this.authService.isLoggedIn;
+  }
+
+  get userDataLoggedIn(): any {
+    return this.authService.userData !== undefined ? this.authService.userData : '';
+  }
+
+  logOut(): void {
+    this.authService.signOut();
   }
 
 

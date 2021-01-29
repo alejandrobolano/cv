@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {BehaviorSubject} from 'rxjs';
 import {TranslateService} from '@ngx-translate/core';
-import {LanguageEnum} from '../enum/LanguageEnum';
+import {LanguageEnum} from '../enum/language.enum';
 import {CookiesService} from './cookies.service';
 
 @Injectable({

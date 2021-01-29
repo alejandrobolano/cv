@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {CookiesService} from '../../../../core/service/cookies.service';
-import {VisibilityEnum} from '../../../../core/enum/VisibilityEnum';
+import {VisibilityEnum} from '../../../../core/enum/visibility.enum';
 
 @Component({
   selector: 'ambm-modal',

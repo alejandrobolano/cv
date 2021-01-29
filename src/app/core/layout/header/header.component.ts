@@ -1,7 +1,7 @@
 import {Component, OnInit, Output, EventEmitter, Input} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import {TranslateWrapperService} from '../../service/translate-wrapper.service';
-import {LanguageEnum} from '../../enum/LanguageEnum';
+import {LanguageEnum} from '../../enum/language.enum';
 import {WindowResizeService} from '../../service/window-resize.service';
 import {CountriesService} from '../../../pages/navigation/common/countries/countries.service';
 

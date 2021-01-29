@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MySocialNetworksEnum} from '../../../../../core/enum/MySocialNetworksEnum';
+import {MySocialNetworksEnum} from '../../../../../core/enum/my-social-networks.enum';
 
 @Component({
   selector: 'ambm-content',

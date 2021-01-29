@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'curriculum', redirectTo: 'navigation/curriculum' },
   { path: 'navigation', loadChildren: () => import('./pages/navigation/navigation.module').then(m => m.NavigationModule) },
   { path: 'private', loadChildren: () => import('./pages/private/private.module').then(m => m.PrivateModule) },
+  { path: 'authentication', loadChildren: () => import('./pages/authentication/authentication.module').then(m => m.AuthenticationModule) },
   { path: '**', component: PageNotFoundComponent }
 ];
 

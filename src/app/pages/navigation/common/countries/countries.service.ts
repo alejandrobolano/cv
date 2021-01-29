@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {LanguageEnum} from '../../../../core/enum/LanguageEnum';
+import {LanguageEnum} from '../../../../core/enum/language.enum';
 import {COUNTRIES_EN} from './data/Countries_EN';
 import {COUNTRIES_ES} from './data/Countries_ES';
 import {ICountry} from './data/ICountry';
