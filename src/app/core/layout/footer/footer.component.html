@@ -1,35 +1,23 @@
-<div *ngIf="!isMobile">
-  <nz-row>
-    <nz-col [nzSpan]="18">
-      <ng-container *ngTemplateOutlet="quoteTemplate"></ng-container>
-    </nz-col>
-    <nz-col [nzSpan]="6" class="good-coding">
-      <ng-container *ngTemplateOutlet="authorTemplate"></ng-container>
-    </nz-col>
-  </nz-row>
-</div>
-
-<div *ngIf="isMobile">
+<div id="footer">
   <nz-row>
     <ng-container *ngTemplateOutlet="quoteTemplate"></ng-container>
   </nz-row>
-  <nz-row
-    class="good-coding">
+  <nz-row>
     <ng-container *ngTemplateOutlet="authorTemplate"></ng-container>
   </nz-row>
 </div>
 
 <ng-template #quoteTemplate>
-  <span class="phrase" nz-typography> ...{{quote.quote}}...</span>
-  <div>
-    <span class="phrase-author">- {{quote.author}}</span>
+  <div class="phrase">
+    <span> ...{{quote.quote}}...</span>
+    <nz-divider class="phrase-author" nzText="{{quote.author}}" nzOrientation="right"></nz-divider>
   </div>
 </ng-template>
 
 <ng-template #authorTemplate>
-  <span>
+  <span class="coding">
     <i nz-icon nzType="heart" nzTheme="fill" style="color: darkred;"></i>
-         Enjoy coding with me - {{title}}
+         Enjoy coding with me - {{"titleSidebar"|translate}}
     <i nz-icon nzType="heart" nzTheme="fill" style="color: darkred;"></i>
   </span>
 </ng-template>
