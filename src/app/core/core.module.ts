@@ -11,6 +11,7 @@ import {SidebarComponent} from './layout/sidebar/sidebar.component';
 import { PageNotFoundComponent } from './layout/page-not-found/page-not-found.component';
 import { PageUnderConstructionComponent } from './layout/page-under-construction/page-under-construction.component';
 import {IconModule} from '@ant-design/icons-angular';
+import {NzSpaceModule} from 'ng-zorro-antd/space';
 
 @NgModule({
   declarations: [FooterComponent, HeaderComponent, TranslateComponent, SidebarComponent, PageNotFoundComponent,
@@ -28,7 +29,8 @@ import {IconModule} from '@ant-design/icons-angular';
     FormsModule,
     TranslateModule,
     AppRoutingModule,
-    IconModule
+    IconModule,
+    NzSpaceModule
   ]
 })
 export class CoreModule {

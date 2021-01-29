@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {QUOTES} from './data/Quotes';
 import {IQuote} from './data/IQuote';
+import {MySocialNetworksEnum} from '../../enum/my-social-networks.enum';
 
 @Component({
   selector: 'ambm-footer',
@@ -9,6 +10,11 @@ import {IQuote} from './data/IQuote';
 })
 export class FooterComponent implements OnInit {
   quote: IQuote;
+  linkedInLink = MySocialNetworksEnum.LinkedIn;
+  instagramLink = MySocialNetworksEnum.Instagram;
+  facebookLink = MySocialNetworksEnum.Facebook;
+  twitterLink = MySocialNetworksEnum.Twitter;
+  gitHubLink = MySocialNetworksEnum.GitHub;
 
   constructor() {
   }

@@ -5,6 +5,9 @@
   <nz-row>
     <ng-container *ngTemplateOutlet="authorTemplate"></ng-container>
   </nz-row>
+  <nz-row>
+    <ng-container *ngTemplateOutlet="socialNetworks"></ng-container>
+  </nz-row>
 </div>
 
 <ng-template #quoteTemplate>
@@ -20,4 +23,36 @@
          Enjoy coding with me - {{"titleSidebar"|translate}}
     <i nz-icon nzType="heart" nzTheme="fill" style="color: darkred;"></i>
   </span>
+</ng-template>
+
+<ng-template #socialNetworks>
+  <div class="social-networks">
+    <nz-space>
+      <nz-space-item>
+        <a href="{{linkedInLink}}" target="_blank">
+          <i nz-icon nzType="linkedin" nzTheme="fill"></i>
+        </a>
+      </nz-space-item>
+      <nz-space-item>
+        <a href="{{instagramLink}}" target="_blank">
+          <i nz-icon nzType="instagram" nzTheme="fill"></i>
+        </a>
+      </nz-space-item>
+      <nz-space-item>
+        <a href="{{facebookLink}}" target="_blank">
+          <i nz-icon nzType="facebook" nzTheme="fill"></i>
+        </a>
+      </nz-space-item>
+      <nz-space-item>
+        <a href="{{twitterLink}}" target="_blank">
+          <i nz-icon nzType="twitter-circle" nzTheme="fill"></i>
+        </a>
+      </nz-space-item>
+      <nz-space-item>
+        <a href="{{gitHubLink}}" target="_blank">
+          <i nz-icon nzType="github" nzTheme="fill"></i>
+        </a>
+      </nz-space-item>
+    </nz-space>
+  </div>
 </ng-template>
