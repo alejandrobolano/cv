@@ -8,7 +8,7 @@ import {MySocialNetworksEnum} from '../../../../../core/enum/my-social-networks.
 })
 export class ContentComponent implements OnInit {
   avatar = '/assets/img/profile.png';
-  linkedInUrl = MySocialNetworksEnum.LinkedIn
+  radioValue: string;
 
   constructor() { }
 

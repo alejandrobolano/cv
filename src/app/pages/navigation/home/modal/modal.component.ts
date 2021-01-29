@@ -10,7 +10,6 @@ import {VisibilityEnum} from '../../../../core/enum/visibility.enum';
 })
 export class ModalComponent implements OnInit {
   show = false;
-  @Input('button-cancel') hasButtonCancel = false;
 
   constructor(private router: Router,
               public cookies: CookiesService) {
@@ -37,12 +36,12 @@ export class ModalComponent implements OnInit {
       '/');
   }
 
-  handleOk(): void {
+  handleLinkToLinkedIn(): void {
     this.show = false;
     this.router.navigate(['/navigation/about-me']).then(r => '');
   }
 
-  handleCancel(): void {
+  handleContinueInThisSite(): void {
     this.show = false;
   }
 

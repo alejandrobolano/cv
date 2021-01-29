@@ -1,0 +1,6 @@
+<nz-modal [(nzVisible)]="show"
+          nzCancelText="Continuar en este sitio" (nzOnCancel)="handleContinueInThisSite()"
+          nzOkText="Salir a LinkedIn" (nzOnOk)="handleLinkToLinkedIn()"
+          [nzClosable]="false" [nzMaskClosable]="false">
+  <ambm-content></ambm-content>
+</nz-modal>

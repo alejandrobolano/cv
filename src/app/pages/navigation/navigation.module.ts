@@ -13,9 +13,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CommonModule} from '@angular/common';
 import {AboutMeModule} from './about-me/about-me.module';
 import { ContactComponent } from './contact/contact.component';
-import { ModalComponent } from './common/modal/modal.component';
-import { ContentComponent } from './common/modal/content/content.component';
-import {CoreModule} from '../../core/core.module';
+import { ModalComponent } from './home/modal/modal.component';
+import { ContentComponent } from './home/modal/content/content.component';
 import { SuccessfulMessageComponent } from './contact/successful-message/successful-message.component';
 import { ErrorMessageComponent } from './contact/error-message/error-message.component';
 

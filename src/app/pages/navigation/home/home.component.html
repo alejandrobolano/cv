@@ -1,18 +1,24 @@
-<h1 nz-typography>A software engineer from Cuba for the world</h1>
+<h1 nz-typography>Ingeniero Informático de Cuba para el mundo</h1>
 <h2 nz-typography>{{'home.title' | translate}}</h2>
 
 <ambm-modal></ambm-modal>
 
 <nz-space nzDirection="vertical">
   <nz-space-item>
-    <nz-card nzTitle="Presentation" [nzHoverable]="true">
-      <p nz-typography [nzCopyable]="true">My name is Alejandro Manuel Bolaño Méndez</p>
-      <p nz-typography>This is a website development in <a href="https://angular.io/cli" target="_blank">Angular Cli</a>
-        using <a href="https://ng.ant.design/" target="_blank">NgZorro</a>, an Angular UI library</p>
-      <p nz-typography>I have translated the site to English, Catalan and Spanish (mother tongue) <i nz-icon
-                                                                                                     [nzType]="'heart'"
-                                                                                                     [nzTheme]="'twotone'"
-                                                                                                     [nzTwotoneColor]="'#ff3724'"></i>
+    <nz-card nzTitle="Presentación del sitio" [nzHoverable]="true">
+      <p nz-typography>Este simple sitio web lo he creado para presentar mi currículum vitae.</p>
+      <p> Lo he desarrollado usando el framework de código libre de programación
+        <a href="https://angular.io/cli" target="_blank">Angular Cli</a>,
+        además he usado
+        <a href="https://firebase.google.com/docs?authuser=0" target="_blank">Firebase de Google</a>
+        que es una plataforma en la nube donde me ha permitido gestionar base de datos en tiempo real
+        y autenticación para este sitio,
+        usando esta plataforma para alojar la aplicación en su servidor de forma gratuita.
+      </p>
+      <p>
+        Para el diseño he usado
+        <a href="https://ng.ant.design/" target="_blank">NgZorro</a>,
+        que es una librería de interfaz de usuario para Angular.
       </p>
     </nz-card>
   </nz-space-item>
@@ -25,11 +31,15 @@
   </nz-space-item>
 
   <nz-space-item>
-    <nz-card nzTitle="Briefing" [nzHoverable]="true">
-      <p nz-typography nzCopyable>I am computer Engineer, with desires for personal and professional improvement.
-        Specializing in the world of web development and Android programming.
-        I love the world of marketing and sales. I consider myself a young worker, discreet, humble, self-sacrificing
-        and ambitious. </p>
+    <nz-card nzTitle="Resumen personal" [nzHoverable]="true">
+      <p nz-typography>Antes de todo me llamo Alejandro Manuel Bolaño Méndez y soy Ingeniero Informático graduado en
+        la Universidad Tecnológica de La Habana "Jose Antonio Echevarría" y soy de nacionalidad cubana</p>
+      <p nz-typography>
+        Me considero tener amplios deseos de superación personal y profesional. Me he especializado en el mundo del
+        desarrollo web y
+        amante a Android. Además, me encanta el mundo del marketing y las ventas. Me considero un joven trabajador,
+        discreto, humilde, sacrificado y ambicioso.
+      </p>
     </nz-card>
   </nz-space-item>
 </nz-space>
