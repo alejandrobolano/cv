@@ -67,10 +67,14 @@
     </nz-form-item>
 
     <nz-form-item>
-      <nz-form-control [nzOffset]="7" [nzSm]="14" [nzXs]="12">
-        <button nz-button nzType="primary" [disabled]="!validateForm.valid">{{'contact.sendForm'|translate}}</button>
+
+      <nz-form-control>
+        <div id="buttons-area">
+        <button nz-button [nzType]="'primary'" [disabled]="!validateForm.valid">{{'contact.sendForm'|translate}}</button>
         <button nz-button (click)="resetForm($event)">{{'contact.clearValues'|translate}}</button>
+        </div>
       </nz-form-control>
+
     </nz-form-item>
   </form>
 </ng-container>

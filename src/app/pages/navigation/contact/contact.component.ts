@@ -8,13 +8,13 @@ import {IpService} from '../../../core/service/ip.service';
 import {CountriesService} from '../common/countries/countries.service';
 import {MessageService} from '../../service/message.service';
 import Message from '../../model/message';
-import {ErrorService} from '../../service/error.service';
+import {BackErrorService} from '../../service/back-error.service';
 import BackError from '../../model/BackError';
 
 @Component({
   selector: 'ambm-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.less']
 })
 export class ContactComponent extends TranslateComponent implements OnInit {
   validateForm: FormGroup;
@@ -35,7 +35,7 @@ export class ContactComponent extends TranslateComponent implements OnInit {
               private ipService: IpService,
               private countriesService: CountriesService,
               private messageService: MessageService,
-              private errorService: ErrorService) {
+              private errorService: BackErrorService) {
     super(translate, translateWrapperService);
     this.onLangChange();
     this.validateFormBuilder();
@@ -71,6 +71,7 @@ export class ContactComponent extends TranslateComponent implements OnInit {
     value.country = this.countrySelected.iata;
     value.language = this.translate.currentLang;
     value.ip = this.ip;
+   // const numberOfLineBreaks = (value.message.match(/\n/g) || []).length;
 
     this.message = {
       name: value.name,
@@ -80,7 +81,8 @@ export class ContactComponent extends TranslateComponent implements OnInit {
       subject: value.subject,
       message: value.message,
       language: value.language,
-      ip: value.ip
+      ip: value.ip,
+      date: new Date().toLocaleDateString('es-ES')
     };
     const errors = this.checkUndefined(this.message);
     if (errors.length === 0) {
@@ -99,7 +101,8 @@ export class ContactComponent extends TranslateComponent implements OnInit {
     this.backError = {
       component: this.constructor.name,
       message: error.message,
-      stack: error.stack
+      stack: error.stack,
+      date: new Date().toLocaleDateString('es-ES')
     };
     this.errorService.create(this.backError);
   }
