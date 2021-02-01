@@ -2,10 +2,15 @@
   "home": {
     "subtitle": "Bienvenido a mi sitio personal",
     "title": "Ingeniero Informático de Cuba para el mundo",
-    "sitePresentation": "Presentación del sitio",
+    "sitePresentation": {
+      "title": "Presentación del sitio",
+      "text1": "Este simple sitio web lo he creado para presentar mi currículum vitae.",
+      "text2": "Lo he desarrollado usando el framework de código libre de programación <a href=\"{{angular}}\" target=\"_blank\">Angular Cli</a>, además he usado <a href=\"{{firebase}}\" target=\"_blank\">Firebase de Google</a> que es una plataforma en la nube donde me ha permitido gestionar base de datos en tiempo real y autenticación para este sitio, usando esta plataforma para alojar la aplicación en su servidor de forma gratuita. El código de este sitio está publicado en <a href=\"{{github}}\" target=\"_blank\">GitHub</a>",
+      "text3": "Para el diseño he usado <a href=\"{{antDesign}}\" target=\"_blank\">NgZorro</a>, que es una librería de interfaz de usuario para Angular."
+    },
     "personalSummary": {
       "title": "Resumen personal",
-      "text1": "Antes de todo, me presento, me llamo Alejandro Manuel Bolaño Méndez y soy Ingeniero Informático, graduado en la Universidad Tecnológica de La Habana \"Jose Antonio Echevarría\" y soy de nacionalidad cubana.",
+      "text1": "Antes de todo me presento, me llamo <strong>Alejandro Manuel Bolaño Méndez</strong> y soy Ingeniero Informático, graduado en la Universidad Tecnológica de La Habana \"Jose Antonio Echevarría\" y soy de nacionalidad cubana.",
       "text2": "Soy un jóven con amplios deseos de superación personal y profesional. Me he especializado en el mundo del desarrollo web y amante a Android. Además, me encanta el mundo del marketing y las ventas. Me considero un joven trabajador, discreto, humilde, sacrificado y ambicioso."
     }
   },

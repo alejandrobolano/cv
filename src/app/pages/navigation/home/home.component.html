@@ -5,23 +5,16 @@
 
 <nz-space nzDirection="vertical">
   <nz-space-item>
-    <nz-card nzTitle="{{'home.sitePresentation' | translate}}" [nzHoverable]="true">
-      <p nz-typography>Este simple sitio web lo he creado para presentar mi currículum vitae.</p>
-      <p> Lo he desarrollado usando el framework de código libre de programación
-        <a href="https://angular.io/cli" target="_blank">Angular Cli</a>,
-        además he usado
-        <a href="https://firebase.google.com/docs?authuser=0" target="_blank">Firebase de Google</a>
-        que es una plataforma en la nube donde me ha permitido gestionar base de datos en tiempo real
-        y autenticación para este sitio,
-        usando esta plataforma para alojar la aplicación en su servidor de forma gratuita.
-        El código de este sitio está publicado en
-        <a href="https://github.com/alejandrobolano/cv" target="_blank">GitHub</a>
+    <nz-card nzTitle="{{'home.sitePresentation.title' | translate}}" [nzHoverable]="true">
+      <p nz-typography>{{'home.sitePresentation.text1'| translate}}</p>
+      <p [innerHTML]="'home.sitePresentation.text2' | translate: {
+            'angular': angularCliLink,
+            'firebase': firebaseLink,
+            'github': thisRepoGitHubLink
+            }">
       </p>
-      <p>
-        Para el diseño he usado
-        <a href="https://ng.ant.design/" target="_blank">NgZorro</a>,
-        que es una librería de interfaz de usuario para Angular.
-      </p>
+      <p [innerHTML]="'home.sitePresentation.text3' | translate: {
+      'antDesign': antDesignLink}"> </p>
     </nz-card>
   </nz-space-item>
 
@@ -34,7 +27,7 @@
 
   <nz-space-item>
     <nz-card nzTitle="{{'home.personalSummary.title' | translate}}" [nzHoverable]="true">
-      <p nz-typography>{{'home.personalSummary.text1' | translate}}</p>
+      <p nz-typography [innerHTML]="'home.personalSummary.text1' | translate"></p>
       <p nz-typography>{{'home.personalSummary.text2'| translate}}</p>
     </nz-card>
   </nz-space-item>

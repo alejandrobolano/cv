@@ -2,10 +2,14 @@
   "home": {
     "subtitle": "Benvigut al meu lloc personal",
     "title": "Enginyer Informàtic de Cuba per al món",
-    "sitePresentation": "Presentació de el lloc",
+    "sitePresentation": {
+      "title": "Presentació de el lloc",
+      "text1": "Aquest simple lloc web ho he creat per presentar el meu currículum vitae.",
+      "text2": "L'he desenvolupat usant el framework de codi lliure de programació <a href=\"{{angular}}\" target=\"_blank\"> Angular Cli </a>, a més he fet servir <a href = \"{{firebase}}\" target = \"_ blank\"> Firebase de Google </a> que és una plataforma en el núvol on m'ha permès gestionar base de dades en temps real i autenticació per a aquest lloc, usant aquesta plataforma per allotjar l'aplicació en el seu servidor de forma gratuïta. El codi d'aquest lloc està publicat a <a href=\"{{github}}\" target=\"_blank\"> GitHub </a>"
+    },
     "personalSummary": {
       "title": "Resum personal",
-      "text1": "Abans de tot, em presento, em dic Alejandro Manuel Bolaño Méndez i sóc Enginyer Informàtic, graduat a la Universitat Tecnològica de l'Havana \"Jose Antonio Echevarría\" i sóc de nacionalitat cubana.",
+      "text1": "Abans de tot em presento, em dic <strong>Alejandro Manuel Bolaño Méndez</strong> i sóc Enginyer Informàtic, graduat a la Universitat Tecnològica de l'Havana \"Jose Antonio Echevarría\" i sóc de nacionalitat cubana.",
       "text2": "Sóc un jove amb amplis desitjos de superació personal i professional. M'he especialitzat en el món de el desenvolupament web i amant a Android. A més, m'encanta el món de l'màrqueting i les vendes. Em considero un jove treballador, discret, humil, sacrificat i ambiciós."
     }
   },
