@@ -1,0 +1,34 @@
+name: Build and Deploy in develop
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build-and-deploy:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install Angular
+        run: npm install -g @angular/cli
+      - name: Replace API-KEY of service account
+        run: |
+          (get-content -path ./src/environments/environment.prod.ts -raw) -replace '{apiKey}', '${{secrets.DEV_API_KEY}}' |
+          set-content -path ./src/environments/environment.prod.ts
+      - name: Replace AUTH-DOMAIN of service account
+        run: |
+          (get-content -path ./src/environments/environment.prod.ts -raw) -replace '{authDomain}', '${{secrets.DEV_AUTH_DOMAIN}}' |
+          set-content -path ./src/environments/environment.prod.ts
+      - name: Replace DATABASE-URL of service account
+        run: |
+          (get-content -path ./src/environments/environment.prod.ts -raw) -replace '{databaseURL}', '${{secrets.DEV_DATABASE_URL}}' |
+          set-content -path ./src/environments/environment.prod.ts
+      - name: Install Npm
+        run: npm install
+      - name: Build
+        run: npm run build-prod
+      - name: Install Firebase CLI
+        run: npm install -g firebase-tools
+      - name: Deploy to Firebase
+        run: firebase deploy --token ${{secrets.DEV_FIREBASE_TOKEN}}
