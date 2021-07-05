@@ -10,8 +10,15 @@
     },
     "personalSummary": {
       "title": "Resumen personal",
-      "text1": "Antes de todo me presento, me llamo <strong>Alejandro Manuel Bolaño Méndez</strong> y soy Ingeniero Informático, graduado en la Universidad Tecnológica de La Habana \"Jose Antonio Echevarría\" y soy de nacionalidad cubana.",
-      "text2": "Soy un jóven con amplios deseos de superación personal y profesional. Me he especializado en el mundo del desarrollo web y amante a Android. Además, me encanta el mundo del marketing y las ventas. Me considero un joven trabajador, discreto, humilde, sacrificado y ambicioso."
+      "text1": "\uD83D\uDCBB <strong>Alejandro Manuel Bolaño Méndez</strong>, Ingeniero Informático, con deseos de superación personal y profesional.",
+      "text2": "〽 Me gustan los retos del día a día porque así puedo ganar nuevas experiencias, tratando de desafiarme cada día a mi mismo para ser mejor que ayer.",
+      "text3": "\uD83D\uDC49 Me especializo en el mundo del desarrollo web, aunque soy amante a la programación Android, pero esto es un capítulo que tengo que retomar nuevamente. Me gusta el mundo del marketing y las ventas, además. me gusta darle importancia a la calidad de lo que realizo.",
+      "text4": "\uD83C\uDF0E Por supuesto, no todo es trabajo por lo que también me gusta viajar, caminar, hacer ejercicios, estar en contacto con la naturaleza y poder descubrir nuevos rincones en este mundo y nuevas comidas.",
+      "text5": "\uD83D\uDC49 En resumen, me considero un joven trabajador, entregado, discreto, humilde, sacrificado, viajero, explorador, familiar, ambicioso y apasionado al trabajo en equipo."
+    },
+    "modal": {
+      "continue": "Continuar en el sitio",
+      "exitToLinkedIn": "Salir a LinkedIn"
     }
   },
   "portfolio": {

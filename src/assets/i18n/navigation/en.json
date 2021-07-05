@@ -12,6 +12,10 @@
       "title": "Personal summary",
       "text1": "First of all I introduce myself, my name is <strong>Alejandro Manuel Bolaño Méndez</strong> and I am a Computer Engineer, graduated from the Technological University of Havana \"Jose Antonio Echevarría\" and I am from Cuban.",
       "text2": "I am a young man with broad desires for personal and professional improvement. I have specialized in the world of web development and Android lover. Also, I love the world of marketing and sales. I consider myself a young worker, discreet, humble, self-sacrificing and ambitious."
+    },
+    "modal": {
+      "continue": "Continue in this site",
+      "exitToLinkedIn": "Exit to LinkedIn"
     }
   },
   "portfolio": {

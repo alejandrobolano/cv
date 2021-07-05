@@ -11,6 +11,10 @@
       "title": "Resum personal",
       "text1": "Abans de tot em presento, em dic <strong>Alejandro Manuel Bolaño Méndez</strong> i sóc Enginyer Informàtic, graduat a la Universitat Tecnològica de l'Havana \"Jose Antonio Echevarría\" i sóc de nacionalitat cubana.",
       "text2": "Sóc un jove amb amplis desitjos de superació personal i professional. M'he especialitzat en el món de el desenvolupament web i amant a Android. A més, m'encanta el món de l'màrqueting i les vendes. Em considero un jove treballador, discret, humil, sacrificat i ambiciós."
+    },
+    "modal": {
+      "continue": "Continuar en el lloc",
+      "exitToLinkedIn": "Sortir a LinkedIn"
     }
   },
   "portfolio": {
