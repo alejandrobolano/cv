@@ -3,7 +3,7 @@ import {TranslateComponent} from '../../../../core/translate/translate.component
 import {TranslateService} from '@ngx-translate/core';
 import {TranslateWrapperService} from '../../../../core/service/translate-wrapper.service';
 import {CurriculumEnum} from '../data/curriculum.enum';
-import {ICurriculum, IExperience} from '../data/ICurriculum';
+import {ICurriculum, IExperience} from '../data/icurriculum';
 import {WindowResizeService} from '../../../../core/service/window-resize.service';
 import {NzSizeLDSType} from 'ng-zorro-antd/core/types/size';
 

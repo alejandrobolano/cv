@@ -7,7 +7,7 @@ import {LangChangeEvent, TranslateService} from '@ngx-translate/core';
 import {IpService} from '../../../core/service/ip.service';
 import {CountriesService} from '../common/countries/countries.service';
 import {MessageService} from '../../service/message.service';
-import Message from '../../service/model/message';
+import Message from '../../service/model/Message';
 import {BackErrorService} from '../../service/back-error.service';
 import BackError from '../../service/model/BackError';
 

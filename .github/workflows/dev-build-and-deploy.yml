@@ -31,4 +31,4 @@ jobs:
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
       - name: Deploy to Firebase
-        run: firebase deploy --token ${{secrets.DEV_FIREBASE_TOKEN}}
+        run: firebase deploy --only hosting:dev-ngxsmartskeleton --token ${{secrets.DEV_FIREBASE_TOKEN}}
