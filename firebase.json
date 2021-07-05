@@ -17,7 +17,7 @@
     },
     {
       "site": "dev-alejandrobolano",
-      "public": "dist/alejandrobolano",
+      "public": "dist/dev-alejandrobolano",
       "ignore": [
         "firebase.json",
         "**/.*",
