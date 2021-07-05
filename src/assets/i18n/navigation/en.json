@@ -5,9 +5,10 @@
     "more": "To know more...",
     "sitePresentation": {
       "title": "Site presentation",
-      "text1": "Website to present my resume.",
-      "text2": "Developed it using the free code framework for programming <a href=\"{{angular}}\" target=\"_blank\"> Angular Cli </a>, it used <a href = \"{{firebase}}\" target = \"_ blank\"> Google Firebase </a> which is a cloud platform where it has allowed me to manage databases in real time and authentication for this site, using this platform to host the application on its server for free. The code for this site is posted at <a href=\"{{github}}\" target=\"_blank\"> GitHub </a>",
-      "text3": "For design:  <a href=\"{{antDesign}}\" target=\"_blank\"> NgZorro </a>, which is a Angular User Interface."
+      "text1": "\uD83D\uDCBB Website to present my resume.",
+      "text2": "✏ Developed it using the free code framework for programming <a href=\"{{angular}}\" target=\"_blank\"> Angular Cli </a>, it used <a href = \"{{firebase}}\" target = \"_ blank\"> Google Firebase </a> which is a cloud platform where it has allowed me to manage databases in real time and authentication for this site, using this platform to host the application on its server for free.",
+      "text3": "\uD83D\uDC49 For design:  <a href=\"{{antDesign}}\" target=\"_blank\"> NgZorro </a>, which is a Angular User Interface.",
+      "text4": "\uD83D\uDCCB The code for this site is posted at <a href=\"{{github}}\" target=\"_blank\"> GitHub </a>"
     },
     "personalSummary": {
       "title": "Personal summary",

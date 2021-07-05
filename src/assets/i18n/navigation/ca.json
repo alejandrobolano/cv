@@ -5,9 +5,10 @@
     "more": "Conèixer més...",
     "sitePresentation": {
       "title": "Presentació de el lloc",
-      "text1": "Lloc web creat per presentar el meu currículum vitae.",
-      "text2": "Desenvolupat usant el framework de codi lliure de programació <a href=\"{{angular}}\" target=\"_blank\"> Angular Cli </a>, s'usa, <a href = \"{{firebase}}\" target = \"_ blank\"> Firebase de Google </a> que és una plataforma en el núvol on m'ha permès gestionar base de dades en temps real i autenticació per a aquest lloc, usant aquesta plataforma per allotjar l'aplicació en el seu servidor de forma gratuïta. El codi d'aquest lloc està publicat a <a href=\"{{github}}\" target=\"_blank\"> GitHub </a>",
-      "text3": "Para el diseño: <a href=\"{{antDesign}}\" target=\"_blank\">NgZorro</a>, que es una librería de interfaz de usuario para Angular."
+      "text1": "\uD83D\uDCBB Lloc web creat per presentar el meu currículum vitae.",
+      "text2": "✏ Desenvolupat usant el framework de codi lliure de programació <a href=\"{{angular}}\" target=\"_blank\"> Angular Cli </a>, s'usa, <a href = \"{{firebase}}\" target = \"_ blank\"> Firebase de Google </a> que és una plataforma en el núvol on m'ha permès gestionar base de dades en temps real i autenticació per a aquest lloc, usant aquesta plataforma per allotjar l'aplicació en el seu servidor de forma gratuïta.",
+      "text3": "\uD83D\uDC49 Para el diseño: <a href=\"{{antDesign}}\" target=\"_blank\">NgZorro</a>, que es una librería de interfaz de usuario para Angular.",
+      "text4": "\uD83D\uDCCB El codi d'aquest lloc està publicat a <a href=\"{{github}}\" target=\"_blank\"> GitHub </a>"
     },
     "personalSummary": {
       "title": "Resum personal",

@@ -47,7 +47,8 @@
         "Languages and frameworks: ASP.Net, MVC, Entity Framework, Autofac, XSLT, XML, JavaScript, jQuery, C #, LINQ, Azure DevOps",
         "Business: Within the airline's own website, I am part of the small team (2-4) that is responsible for the Low Funnel denomination (as it refers in terms of Commercial Funnel conversion). In addition, the related work to Vueling Ancillaries through Merchandising, to present the products at the right time, in the place, with the right quantity and price to maximize sales. And on the other hand, with respect to the Ancillaries, since everything that be Post Booking."
       ],
-      "countryCode": "es"
+      "countryCode": "es",
+      "link": "https://vueling.com"
     },
     {
       "title": "Cuba Blue Diving",
@@ -59,7 +60,8 @@
         "Tools: Photoshop, Wordpress",
         "Web and social media manager of Cuba Blue Diving. Server management, domain and mail server management."
       ],
-      "countryCode": "es"
+      "countryCode": "es",
+      "link": "http://cubabluediving.com"
     },
     {
       "title": "NGX Smart Skeleton",
@@ -72,7 +74,8 @@
         "Tools: Git, GitHub, Firebase Google",
         "Language: Angular"
       ],
-      "countryCode": "es"
+      "countryCode": "es",
+      "link": "https://ngxsmartskeleton.web.app"
     },
     {
       "title": "Combray Solutions",
