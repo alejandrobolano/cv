@@ -5,6 +5,7 @@ import {TranslateWrapperService} from '../../../../core/service/translate-wrappe
 import {CurriculumEnum} from '../data/curriculum.enum';
 import {ICurriculum, IExperience} from '../data/ICurriculum';
 import {WindowResizeService} from '../../../../core/service/window-resize.service';
+import {NzSizeLDSType} from 'ng-zorro-antd/core/types/size';
 
 @Component({
   selector: 'ambm-about-me',
@@ -13,7 +14,7 @@ import {WindowResizeService} from '../../../../core/service/window-resize.servic
 })
 export class AboutMeContainerComponent extends TranslateComponent implements OnInit {
   avatar = '/assets/img/profile.png';
-  size = 'large';
+  size: NzSizeLDSType = 'large';
   tabs = [CurriculumEnum.EXPERIENCE, CurriculumEnum.EDUCATION];
   experience: IExperience[];
   education: ICurriculum[];
