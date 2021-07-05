@@ -122,19 +122,19 @@ export const SITES: ISite[] = [
   },
   {
     name: 'PelisPlay TV',
-    url: 'https://www.pelisplay.tv/',
+    url: 'https://www.pelisplay.co/',
     summary : 'pelisPlay.summary',
     description : 'pelisPlay.description'
   },
   {
     name: 'Repelis',
-    url: 'https://repelis.io/',
+    url: 'https://repelis.red',
     summary : 'repelis.summary',
     description : 'repelis.description'
   },
   {
     name: 'PoseidonHD',
-    url: 'https://poseidonhd.org/',
+    url: 'https://www.poseidonhd.in/',
     summary : 'poseidon.summary',
     description : 'poseidon.description'
   },
