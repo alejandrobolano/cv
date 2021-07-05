@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import BackError from '../model/BackError';
+import BackError from './model/BackError';
 import {AngularFirestore, AngularFirestoreCollection} from '@angular/fire/firestore';
 
 @Injectable({

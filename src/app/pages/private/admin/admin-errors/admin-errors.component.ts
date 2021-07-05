@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Data} from '@angular/router';
-import BackError from '../../../model/BackError';
+import BackError from '../../../service/model/BackError';
 import {TranslateComponent} from '../../../../core/translate/translate.component';
 import {TranslateService} from '@ngx-translate/core';
 import {TranslateWrapperService} from '../../../../core/service/translate-wrapper.service';

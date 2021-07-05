@@ -7,8 +7,8 @@ import {BackErrorService} from '../../../service/back-error.service';
 import {CountriesService} from '../../../navigation/common/countries/countries.service';
 import {map} from 'rxjs/operators';
 import {TranslateComponent} from '../../../../core/translate/translate.component';
-import Message from '../../../model/Message';
-import BackError from '../../../model/BackError';
+import Message from '../../../service/model/Message';
+import BackError from '../../../service/model/BackError';
 
 @Component({
   selector: 'ambm-admin-messages',

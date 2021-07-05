@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {ICountry} from '../common/countries/data/ICountry';
 import {TranslateComponent} from '../../../core/translate/translate.component';
@@ -7,9 +7,9 @@ import {LangChangeEvent, TranslateService} from '@ngx-translate/core';
 import {IpService} from '../../../core/service/ip.service';
 import {CountriesService} from '../common/countries/countries.service';
 import {MessageService} from '../../service/message.service';
-import Message from '../../model/message';
+import Message from '../../service/model/message';
 import {BackErrorService} from '../../service/back-error.service';
-import BackError from '../../model/BackError';
+import BackError from '../../service/model/BackError';
 
 @Component({
   selector: 'ambm-contact',
