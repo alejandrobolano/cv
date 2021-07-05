@@ -47,7 +47,8 @@
         "Llenguatges i frameworks: ASP.Net, MVC, Entity Framework, Autofac, XSLT, XML, JavaScript, jQuery, C #, LINQ, Azure devops",
         "Negoci: Dins de la pròpia web de l'aerolínia, sóc part de l'petit equip (2-4) que s'encarrega de la denominació Low Funnel (al que es refereix en termes de conversió de Funnel Comercial). A més, de la feina relacionat als Ancillaries de Vueling mitjançant Marxandatge, per presentar els productes en el moment adequat, en el lloc, amb la quantitat i el preu adequat per a maximitzar les vendes. i d'altra banda, pel que fa als Ancillaries, ja que també es contempla tot el que sigui Post Booking."
       ],
-      "countryCode": "es"
+      "countryCode": "es",
+      "link": "https://vueling.com"
     },
     {
       "title": "Cuba Blue Diving",
@@ -59,7 +60,8 @@
         "Herramientas: Photoshop, Wordpress",
         "Encarregat web i de les xarxes socials de Cuba Blue Diving. Maneig de servidor, domini i gestió de servidors de correus"
       ],
-      "countryCode": "es"
+      "countryCode": "es",
+      "link": "http://cubabluediving.com"
     },
     {
       "title": "NGX Smart Skeleton",
@@ -72,7 +74,8 @@
         "Eines: Git, GitHub, Firebase Google",
         "Llenguatge: Angular"
       ],
-      "countryCode": "es"
+      "countryCode": "es",
+      "link": "https://ngxsmartskeleton.web.app"
     },
     {
       "title": "Combray Solutions",
