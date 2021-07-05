@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import {MySocialNetworksEnum} from '../../../../../core/enum/my-social-networks.enum';
+import {Component, OnInit, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'ambm-content',
@@ -8,11 +7,15 @@ import {MySocialNetworksEnum} from '../../../../../core/enum/my-social-networks.
 })
 export class ContentComponent implements OnInit {
   avatar = '/assets/img/profile.png';
-  radioValue: string;
+  @Output() knowhow  = new EventEmitter<string>();
+  knowhowRadioValue = '';
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  emitKnowhow(): void {
+    this.knowhow.emit(this.knowhowRadioValue);
+  }
 }
