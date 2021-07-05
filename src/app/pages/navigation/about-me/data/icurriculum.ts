@@ -4,6 +4,7 @@ export interface ICurriculum {
   subtitle: string;
   country: string;
   countryCode: string;
+  link: string;
 }
 
 export interface IExperience extends ICurriculum {

@@ -38,36 +38,38 @@
       "title": "Vueling",
       "date": "August 2019 - Present",
       "country": "Spain",
-      "subtitle": "Full-Stack (JR) developer",
+      "subtitle": "Full-Stack developer",
       "list": [
-        "Maintenance and web development of the company's website with architecture",
-        "Architecture: N-Tier",
+        "Responsibility: Maintenance and development of the company's website.",
+        "Architecture: N-Layers",
         "Methodology: Scrum",
-        "Technology: Git, TFS, Azure, ASP.Net, MVC, Entity Framework, Autofac, XSLT, XML, JavaScript, jQuery, Navitaire Products, C#"
+        "Tools: Git, TFS, Azure, Navitaire Products",
+        "Languages and frameworks: ASP.Net, MVC, Entity Framework, Autofac, XSLT, XML, JavaScript, jQuery, C #, LINQ, Azure DevOps",
+        "Business: Within the airline's own website, I am part of the small team (2-4) that is responsible for the Low Funnel denomination (as it refers in terms of Commercial Funnel conversion). In addition, the related work to Vueling Ancillaries through Merchandising, to present the products at the right time, in the place, with the right quantity and price to maximize sales. And on the other hand, with respect to the Ancillaries, since everything that be Post Booking."
       ],
       "countryCode": "es"
     },
     {
-      "title": "Freelance",
+      "title": "Cuba Blue Diving",
       "date": "March 2018 - Present",
       "country": "Spain",
-      "subtitle": "Development of web design",
+      "subtitle": "Freelance - Development of web design",
       "list": [
         "Technology: CSS3, HTML5, JS",
         "Tools: Photoshop, Wordpress",
-        "Web and social media leader of Cuba Blue Diving"
+        "Web and social media manager of Cuba Blue Diving. Server management, domain and mail server management."
       ],
       "countryCode": "es"
     },
     {
-      "title": "Desarrollador web",
+      "title": "NGX Smart Skeleton",
       "date": "Marzo 2020 - Agosto 2020",
-      "country": "España",
-      "subtitle": "Profesional independiente",
+      "country": "Spain",
+      "subtitle": "Freelance - Web development",
       "list": [
-        "Angular UX library de angular containing a complete set of skeletons components for asynchronous loading of web applications",
+        "Angular UX library de angular containing a complete set of skeletons components for asynchronous loading of web applications.",
         "Methodology: Agile with Scrum Process",
-        "Tools: Git, GitHub",
+        "Tools: Git, GitHub, Firebase Google",
         "Language: Angular"
       ],
       "countryCode": "es"

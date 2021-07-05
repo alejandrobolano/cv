@@ -8,21 +8,21 @@
       "title": "Centro de Informática Profesional (CIPSA)",
       "date": "[2019 - 2020]",
       "subtitle": "Màster Programació .NET",
-      "country": "España",
+      "country": "Espanya",
       "countryCode": "es"
     },
     {
       "title": "Centro de Informática Profesional (CIPSA)",
       "date": "[2018 - 2019]",
       "subtitle": "Curs de Disseny Web",
-      "country": "España",
+      "country": "Espanya",
       "countryCode": "es"
     },
     {
       "title": "Centro de Informática Profesional (CIPSA)",
       "date": "[2017 - 2018]",
       "subtitle": "Curs de Màrqueting Digital 2.0 i Gestió de Continguts",
-      "country": "España",
+      "country": "Espanya",
       "countryCode": "es"
     },
     {
@@ -38,36 +38,38 @@
       "title": "Vueling",
       "date": "August 2019 - Present",
       "country": "Espanya",
-      "subtitle": "Desenvolupador Full-Stack (JR)",
+      "subtitle": "Desenvolupador Full-Stack",
       "list": [
-        "Manteniment i desenvolupament web de la pàgina web de l'empresa amb arquitectura",
-        "Arquitectura: N-Capas",
+        "Responsabilitat: Manteniment i desenvolupament de la pàgina web de l'empresa",
+        "Arquitectura: N-Capes",
         "Metodologia: Scrum",
-        "Tecnologias: Git, TFS, Azure, ASP.Net, MVC, Entity Framework, Autofac, XSLT, XML, JavaScript, jQuery, Navitaire Products, C#"
+        "Eines: Git, TFS, Azure, Navitaire Products",
+        "Llenguatges i frameworks: ASP.Net, MVC, Entity Framework, Autofac, XSLT, XML, JavaScript, jQuery, C #, LINQ, Azure devops",
+        "Negoci: Dins de la pròpia web de l'aerolínia, sóc part de l'petit equip (2-4) que s'encarrega de la denominació Low Funnel (al que es refereix en termes de conversió de Funnel Comercial). A més, de la feina relacionat als Ancillaries de Vueling mitjançant Marxandatge, per presentar els productes en el moment adequat, en el lloc, amb la quantitat i el preu adequat per a maximitzar les vendes. i d'altra banda, pel que fa als Ancillaries, ja que també es contempla tot el que sigui Post Booking."
       ],
       "countryCode": "es"
     },
     {
-      "title": "Freelance",
+      "title": "Cuba Blue Diving",
       "date": "March 2018 - Present",
       "country": "Espanya",
-      "subtitle": "Desenvolupament de disseny web",
+      "subtitle": "Freelance - Desenvolupament de disseny web",
       "list": [
         "Tecnologías: CSS3, HTML5, JS",
         "Herramientas: Photoshop, Wordpress",
-        "Líder de web i de les xarxes socials de Cuba Blue Diving"
+        "Encarregat web i de les xarxes socials de Cuba Blue Diving. Maneig de servidor, domini i gestió de servidors de correus"
       ],
       "countryCode": "es"
     },
     {
-      "title": "Desenvolupador web",
+      "title": "NGX Smart Skeleton",
       "date": "Marzo 2020 - Agosto 2020",
-      "country": "España",
-      "subtitle": "Professional independent",
+      "country": "Espanya",
+      "subtitle": "Freelance - Desenvolupador web",
       "list": [
         "Biblioteca UX d'angular que conté un conjunt complet de components skeletons per a la càrrega asíncrona d'aplicacions web",
         "Metodologia: Agile amb Procés Scrum",
-        "Eines: Git, GitHub",
+        "Eines: Git, GitHub, Firebase Google",
         "Llenguatge: Angular"
       ],
       "countryCode": "es"

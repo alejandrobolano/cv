@@ -1,8 +1,8 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {TranslateComponent} from '../../../../core/translate/translate.component';
-import {LangChangeEvent, TranslateService} from '@ngx-translate/core';
+import {TranslateService} from '@ngx-translate/core';
 import {TranslateWrapperService} from '../../../../core/service/translate-wrapper.service';
-import {CurriculumEnum} from '../data/CurriculumEnum';
+import {CurriculumEnum} from '../data/curriculum.enum';
 import {ICurriculum, IExperience} from '../data/ICurriculum';
 import {WindowResizeService} from '../../../../core/service/window-resize.service';
 
@@ -57,7 +57,7 @@ export class AboutMeContainerComponent extends TranslateComponent implements OnI
   }
 
   private onLangChange(): void {
-    this.translate.onLangChange.subscribe((params: LangChangeEvent) => {
+    this.translate.onLangChange.subscribe(() => {
       this.fillCurriculumArray();
     });
   }
