@@ -1,23 +1,27 @@
 <nz-layout class="app-layout">
   <nz-sider class="menu-sidebar"
-            nzCollapsible
             nzWidth="256px"
             nzBreakpoint="md"
+            [nzCollapsedWidth]="isMobile ? 0 : 80"
             [(nzCollapsed)]="isCollapsed"
             [nzTrigger]="null">
-    <ambm-sidebar [isCollapsed]="isCollapsed"></ambm-sidebar>
+    <ambm-sidebar [isCollapsed]="isCollapsed"
+                  (collapseEmitter)="setCollapsed($event)"></ambm-sidebar>
   </nz-sider>
   <nz-layout>
     <nz-header>
       <ambm-header [isCollapsed]="isCollapsed"
-                   (collapseEmitter)="isCollapsed = $event"></ambm-header>
+                   (collapseEmitter)="setCollapsed($event)"></ambm-header>
     </nz-header>
-    <nz-content>
-      <div class="inner-content">
+    <nz-content
+      [class.disabled]="isMobile && !isCollapsed">
+      <div
+        class="inner-content">
         <router-outlet></router-outlet>
       </div>
     </nz-content>
-    <nz-footer>
+    <nz-footer
+      [class.disabled]="isMobile && !isCollapsed">
       <ambm-footer></ambm-footer>
     </nz-footer>
   </nz-layout>

@@ -18,17 +18,28 @@
   color: #1890ff;
 }
 
-.app-header img {
-  height: 64px;
-  width: 84px;
-  right: 2em;
-  position: absolute;
-  top: 0;
+.app-header {
+  .right{
+    right: 2em;
+    position: absolute;
+    top: 0;
+  }
+  img {
+     height: 60px;
+     width: 84px;
+   }
+  i {
+    cursor: pointer;
+    margin-right: 1em;
+  }
 }
 
-@media screen and (max-width: 600px) {
-  .app-header img {
-  display: none;
+@media screen and (max-width: 768px) {
+  .app-header {
+    img, .hidden {
+      display: none;
+    }
   }
+
 }
 

@@ -1,21 +1,32 @@
 <div class="app-header">
-        <span class="header-trigger"
-              (click)="collapseEvent()">
+        <span
+          class="header-trigger"
+          (click)="collapseEvent()">
             <i class="trigger"
                nz-icon
                [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
             ></i>
         </span>
 
-
-  <nz-select nzPlaceHolder="Select language" [nzSuffixIcon]="translationIcon" [(ngModel)]="language" (ngModelChange)="switchLanguage(language)">
+  <nz-select
+    [class.hidden]="isMobile && !isCollapsed"
+    nzPlaceHolder="{{'header.selectLanguage'|translate}}"
+    [nzSuffixIcon]="translationIcon"
+    [(ngModel)]="language"
+    (ngModelChange)="switchLanguage(language)">
     <nz-option nzLabel="Español" nzValue="es"></nz-option>
     <nz-option nzLabel="English" nzValue="en"></nz-option>
     <nz-option nzLabel="Català" nzValue="ca"></nz-option>
 
   </nz-select>
 
-  <span (click)="toggleFullScreen()"><img src="{{gif}}" alt="Alejandro Bolaño"/></span>
+  <span
+    [class.hidden]="isMobile && !isCollapsed"
+    class="right">
+    <i (click)="pushFullScreen()" nz-icon nzType="fullscreen" nzTheme="outline"
+       nzTooltipTitle="{{'fullscreen' |translate}}" nzTooltipPlacement="bottomCenter" nz-tooltip></i>
+    <img *ngIf="isVisibleGif" src="{{gif}}" alt="{{title}}"/>
+  </span>
 </div>
 
 <ng-template #translationIcon>

@@ -1,22 +1,30 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {WindowResizeService} from './core/service/window-resize.service';
 
 @Component({
   selector: 'ambm-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.less']
 })
 
 export class AppComponent implements OnInit {
-  @Input() isCollapsed = false;
+  isCollapsed = false;
   theme = 'dark';
   title = 'Alejandro M. Bolaño M.';
 
 
-  constructor() {
+  constructor(private windowResize: WindowResizeService) {
   }
 
   ngOnInit(): void {
   }
 
+  get isMobile(): boolean {
+    return this.windowResize.IsMobile;
+  }
+
+  setCollapsed(event: boolean): void {
+    this.isCollapsed = event;
+  }
 
 }

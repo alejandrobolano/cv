@@ -38,41 +38,58 @@
       "title": "Vueling",
       "date": "August 2019 - Present",
       "country": "España",
-      "subtitle": "Desarrollador Full-Stack (JR)",
+      "subtitle": "Desarrollador Full-Stack",
       "list": [
-        "Mantenimiento y desarrollo web del sitio web de la empresa con arquitectura",
+        "Responsabilidad: Mantenimiento y desarrollo del sitio web de la empresa.",
         "Arquitectura: N-Capas",
         "Metodología: Scrum",
-        "Tecnologías: Git, TFS, Azure, ASP.Net, MVC, Entity Framework, Autofac, XSLT, XML, JavaScript, jQuery, Navitaire Products, C#"
+        "Herramientas: Git, TFS, Azure,Navitaire Products",
+        "Lenguajes y frameworks: ASP.Net, MVC, Entity Framework, Autofac, XSLT, XML, JavaScript, jQuery, C#, LINQ, Azure DevOps",
+        "Negocio: Dentro de la propia web de la aerolínea, soy parte del pequeño equipo (2-4) que se encarga de la denominación Low Funnel (a lo que se refiere en términos de conversión de Funnel Comercial). Además, del trabajo relacionado a los Ancillaries de Vueling mediante Merchandising, para presentar los productos en el momento adecuado, en el lugar, con la cantidad y el precio adecuado para maximizar las ventas. Y por otra parte, respecto a los Ancillaries, pues también se contempla todo lo que sea Post Booking."
       ],
-      "countryCode": "es"
+      "countryCode": "es",
+      "link": "https://vueling.com"
     },
     {
-      "title": "Freelance",
-      "date": "March 2018 - Present",
+      "title": "Cuba Blue Diving",
+      "date": "Marzo 2018 - Presente",
       "country": "España",
-      "subtitle": "Desarrollo de diseño web",
+      "subtitle": "Freelance - Desarrollo de diseño web",
       "list": [
         "Tecnologías: CSS3, HTML5, JS",
         "Herramientas: Photoshop, Wordpress",
-        "Metodología: Scrum",
-        "Extras: Kotlin"
+        "Encargado web y de las redes sociales de Cuba Blue Diving. Manejo del servidor, dominio y gestión de servidores de correos."
       ],
-      "countryCode": "es"
+      "countryCode": "es",
+      "link": "http://cubabluediving.com"
+    },
+    {
+      "title": "NGX Smart Skeleton",
+      "date": "Marzo 2020 - Agosto 2020",
+      "country": "España",
+      "subtitle": "Freelance - Desarrollador web",
+      "list": [
+        "Biblioteca UX de angular que contiene un conjunto completo de componentes skeletons para la carga asíncrona de aplicaciones web",
+        "Metodología: Ágil con el Proceso Scrum",
+        "Heramientas: Git, GitHub, Firebase Google",
+        "Lenguaje: Angular"
+      ],
+      "countryCode": "es",
+      "link": "https://ngxsmartskeleton.web.app"
     },
     {
       "title": "Combray Solutions",
-      "date": "October 2017 - January 2019",
+      "date": "Octubre 2017 - Enero 2019",
       "country": "España",
       "subtitle": "Jefe de equipo",
       "list": [
-        "Encargado de equipo de comerciales de ventas"
+        "Encargado de equipo de diez comerciales de ventas"
       ],
       "countryCode": "es"
     },
     {
       "title": "DATYS",
-      "date": "September 2016 - August 2017",
+      "date": "Septiembre 2016 - Agosto 2017",
       "country": "Cuba",
       "subtitle": "Desarrollador de aplicaciones Java",
       "list": [
@@ -86,7 +103,7 @@
     },
     {
       "title": "PAM International",
-      "date": "November 2014 - April 2016 ",
+      "date": "Noviembre 2014 - Abril 2016 ",
       "country": "Cuba",
       "subtitle": "Desarrollador de aplicaciones para móviles",
       "list": [

@@ -1,8 +1,44 @@
 {
   "home": {
-    "title": "Welcome to my personal website"
+    "subtitle": "Software Developer at Vueling ✈️ Full-stack \uD83D\uDCBB",
+    "title": "Software Engineer",
+    "more": "To know more...",
+    "sitePresentation": {
+      "title": "Site presentation",
+      "text1": "Website to present my resume.",
+      "text2": "Developed it using the free code framework for programming <a href=\"{{angular}}\" target=\"_blank\"> Angular Cli </a>, it used <a href = \"{{firebase}}\" target = \"_ blank\"> Google Firebase </a> which is a cloud platform where it has allowed me to manage databases in real time and authentication for this site, using this platform to host the application on its server for free. The code for this site is posted at <a href=\"{{github}}\" target=\"_blank\"> GitHub </a>",
+      "text3": "For design:  <a href=\"{{antDesign}}\" target=\"_blank\"> NgZorro </a>, which is a Angular User Interface."
+    },
+    "personalSummary": {
+      "title": "Personal summary",
+      "text1": "First of all I introduce myself, my name is <strong>Alejandro Manuel Bolaño Méndez</strong> and I am a Computer Engineer, graduated from the Technological University of Havana \"Jose Antonio Echevarría\" and I am from Cuban.",
+      "text2": "I am a young man with broad desires for personal and professional improvement. I have specialized in the world of web development and Android lover. Also, I love the world of marketing and sales. I consider myself a young worker, discreet, humble, self-sacrificing and ambitious."
+    },
+    "modal": {
+      "continue": "Continue in this site",
+      "exitToLinkedIn": "Exit to LinkedIn"
+    }
   },
   "portfolio": {
     "title": "This is my portfolio and personal enterprise"
+  },
+  "contact": {
+    "title": "Fill the contact form to get in touch",
+    "name": "Name",
+    "email": "Email",
+    "country": "Country",
+    "subject": "Subject",
+    "message": "Message",
+    "messageDescription": "Write any message that do you want send me",
+    "subjectDescription": "Write the subject",
+    "selectCountry": "Select your country",
+    "sendForm": "Send form",
+    "clearValues": "Clear values"
+  },
+  "backForm": "Back form",
+  "backHome": "Back home",
+  "underConstruction": {
+    "title": "Houston, we are in construction!",
+    "subtitle": "We are sorry! the page you are trying to visit is in development."
   }
 }

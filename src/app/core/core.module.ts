@@ -8,21 +8,29 @@ import { TranslateComponent } from './translate/translate.component';
 import {TranslateModule} from '@ngx-translate/core';
 import {AppRoutingModule} from '../app-routing.module';
 import {SidebarComponent} from './layout/sidebar/sidebar.component';
+import { PageNotFoundComponent } from './layout/page-not-found/page-not-found.component';
+import { PageUnderConstructionComponent } from './layout/page-under-construction/page-under-construction.component';
+import {IconModule} from '@ant-design/icons-angular';
+import {NzSpaceModule} from 'ng-zorro-antd/space';
 
 @NgModule({
-  declarations: [FooterComponent, HeaderComponent, TranslateComponent, SidebarComponent],
+  declarations: [FooterComponent, HeaderComponent, TranslateComponent, SidebarComponent, PageNotFoundComponent,
+  PageUnderConstructionComponent],
   exports: [
     FooterComponent,
     HeaderComponent,
     TranslateComponent,
-    SidebarComponent
+    SidebarComponent,
+    PageUnderConstructionComponent
   ],
   imports: [
     NgZorroAntdModule,
     CommonModule,
     FormsModule,
     TranslateModule,
-    AppRoutingModule
+    AppRoutingModule,
+    IconModule,
+    NzSpaceModule
   ]
 })
 export class CoreModule {

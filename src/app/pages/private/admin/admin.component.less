@@ -1,0 +1,34 @@
+@import "src/theme";
+
+#buttons-area {
+  text-align: end !important;
+
+  button {
+    margin: @margin-xs;
+  }
+
+  button:last-child {
+    margin-right: 0;
+  }
+}
+
+.message-by-device {
+  padding: @table-padding-vertical;
+}
+
+/*
+.ant-table-thead > tr > th:first-child.ant-table-selection-column {
+    margin-left: @margin-lg;
+}
+*/
+
+@media screen and (max-width: @screen-md-min) {
+  #buttons-area {
+    display: grid;
+
+    button:last-child {
+      margin-right: @margin-xs;
+    }
+  }
+
+}

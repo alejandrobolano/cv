@@ -1,35 +1,59 @@
 <div class="sidebar-logo">
-  <a>
+  <a routerLink="">
     <img src="{{imgLogo}}" alt="logo">
-    <h1>{{title}}</h1>
+    <h1>{{'titleSidebar'|translate}}</h1>
   </a>
 </div>
 <ul nz-menu nzTheme="{{theme}}" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
-  <li nz-submenu nzOpen nzTitle="{{'navigation'|translate}}" nzIcon="home">
+  <li nz-submenu nzOpen nzTitle="{{'navigation.title'|translate}}" nzIcon="home">
     <ul>
-      <li nz-menu-item nzMatchRouter>
-        <a routerLink="/navigation/home">Welcome</a>
+      <li nz-menu-item nzMatchRouter (click)="collapseEvent()">
+        <a routerLink="/navigation/home">{{'navigation.welcome'|translate}}</a>
       </li>
-      <li nz-menu-item nzMatchRouter>
-        <a routerLink="/navigation/portfolio">Portfolio</a>
+      <li nz-menu-item nzMatchRouter (click)="collapseEvent()">
+        <a routerLink="/navigation/portfolio">{{'navigation.portfolio'|translate}}</a>
       </li>
-      <li nz-menu-item nzMatchRouter>
-        <a routerLink="/navigation/about-me">About Me</a>
+      <li nz-menu-item nzMatchRouter (click)="collapseEvent()">
+        <a routerLink="/navigation/about-me">{{'navigation.aboutMe'|translate}}</a>
+      </li>
+      <li nz-menu-item nzMatchRouter (click)="collapseEvent()">
+        <a routerLink="/navigation/contact">{{'navigation.contact'|translate}}</a>
       </li>
     </ul>
   </li>
-  <li nz-submenu nzOpen nzTitle="{{'private'|translate}}" nzIcon="lock">
+  <li *ngIf="isLoggedIn" nz-submenu nzOpen nzTitle="{{'private.title'|translate}}" nzIcon="lock">
     <ul>
-      <li nz-menu-item nzMatchRouter>
-        <a routerLink="/private/sites">Sites</a>
+      <li nz-menu-item nzMatchRouter (click)="collapseEvent()">
+        <a routerLink="/private/sites">{{'private.sites'|translate}}</a>
+      </li>
+      <li nz-menu-item nzMatchRouter (click)="collapseEvent()">
+        <a routerLink="/private/admin">Admin</a>
       </li>
     </ul>
   </li>
-  <li nz-submenu nzOpen nzTitle="{{'third'|translate}}" nzIcon="form">
+  <li nz-submenu nzOpen nzTitle="{{'third.title'|translate}}" nzIcon="form">
     <ul>
-      <li nz-menu-item nzMatchRouter>
+      <li nz-menu-item nzMatchRouter (click)="collapseEvent()">
         <a href="https://ng.ant.design/" target="_blank">Ant Design Of Angular</a>
       </li>
     </ul>
+  </li>
+  <li *ngIf="!isLoggedIn" nz-menu-item nzMatchRouter (click)="collapseEvent()">
+    <a routerLink="/authentication/log-in">
+      <i nz-icon nzType="login" nzTheme="outline"></i>
+      <span *ngIf="!isCollapsed">Log in</span>
+    </a>
+  </li>
+  <li *ngIf="isLoggedIn" nz-menu-item nzMatchRouter (click)="collapseEvent()">
+    <a routerLink="/authentication/dashboard">
+      <i nz-icon nzType="user" nzTheme="outline"></i>
+      <span *ngIf="!isCollapsed">{{userDataLoggedIn.email}}</span>
+    </a>
+  </li>
+  <li *ngIf="isLoggedIn" nz-menu-item nzMatchRouter (click)="collapseEvent()">
+    <a (click)="logOut()">
+      <i nz-icon nzType="logout" nzTheme="outline"></i>
+      <span *ngIf="!isCollapsed">Log out</span>
+    </a>
   </li>
 </ul>

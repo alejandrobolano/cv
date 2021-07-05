@@ -11,14 +11,16 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
-import { registerLocaleData } from '@angular/common';
-import en from '@angular/common/locales/en';
 import {NgZorroAntdModule} from 'ng-zorro-antd';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {NavigationModule} from './pages/navigation/navigation.module';
 import { StoreModule } from '@ngrx/store';
 import {CoreModule} from './core/core.module';
+import {PrivateModule} from './pages/private/private.module';
+import { AngularFireModule } from '@angular/fire';
+import {AngularFirestoreModule} from '@angular/fire/firestore';
+import {environment} from '../environments/environment';
 
 
 @NgModule({
@@ -43,10 +45,12 @@ import {CoreModule} from './core/core.module';
       },
       isolate: true
     }),
-    AppRoutingModule,
     NavigationModule,
+    PrivateModule,
     CoreModule,
-    StoreModule.forRoot({}, {})
+    StoreModule.forRoot({}, {}),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule, // for firestore
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

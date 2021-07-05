@@ -1,0 +1,17 @@
+<nz-result [nzIcon]="'experiment-twotone'" [nzTitle]="title" [nzSubTitle]="subtitle">
+  <div nz-result-extra>
+    <button nz-button nzType="primary" (click)="goHome()">{{ 'backHome' | translate}}</button>
+  </div>
+</nz-result>
+
+<ng-template #title>
+  <div class="title">
+    <h2>{{'underConstruction.title' | translate}}</h2>
+  </div>
+</ng-template>
+
+<ng-template #subtitle>
+  <div class="subtitle">
+    <p>{{'underConstruction.subtitle' | translate}}</p>
+  </div>
+</ng-template>

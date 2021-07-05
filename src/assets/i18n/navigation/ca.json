@@ -1,9 +1,45 @@
 {
   "home": {
-    "title": "Benvingut al meu lloc web personal"
+    "subtitle": "Desenvolupador de programari a Vueling ✈️ Full-stack \uD83D\uDCBB",
+    "title": "Enginyer Informàtic",
+    "more": "Conèixer més...",
+    "sitePresentation": {
+      "title": "Presentació de el lloc",
+      "text1": "Lloc web creat per presentar el meu currículum vitae.",
+      "text2": "Desenvolupat usant el framework de codi lliure de programació <a href=\"{{angular}}\" target=\"_blank\"> Angular Cli </a>, s'usa, <a href = \"{{firebase}}\" target = \"_ blank\"> Firebase de Google </a> que és una plataforma en el núvol on m'ha permès gestionar base de dades en temps real i autenticació per a aquest lloc, usant aquesta plataforma per allotjar l'aplicació en el seu servidor de forma gratuïta. El codi d'aquest lloc està publicat a <a href=\"{{github}}\" target=\"_blank\"> GitHub </a>",
+      "text3": "Para el diseño: <a href=\"{{antDesign}}\" target=\"_blank\">NgZorro</a>, que es una librería de interfaz de usuario para Angular."
+    },
+    "personalSummary": {
+      "title": "Resum personal",
+      "text1": "Abans de tot em presento, em dic <strong>Alejandro Manuel Bolaño Méndez</strong> i sóc Enginyer Informàtic, graduat a la Universitat Tecnològica de l'Havana \"Jose Antonio Echevarría\" i sóc de nacionalitat cubana.",
+      "text2": "Sóc un jove amb amplis desitjos de superació personal i professional. M'he especialitzat en el món de el desenvolupament web i amant a Android. A més, m'encanta el món de l'màrqueting i les vendes. Em considero un jove treballador, discret, humil, sacrificat i ambiciós."
+    },
+    "modal": {
+      "continue": "Continuar en el lloc",
+      "exitToLinkedIn": "Sortir a LinkedIn"
+    }
   },
   "portfolio": {
     "title": "Aquest és el meu portafoli i emprenedoria personal"
+  },
+  "contact": {
+    "title": "Ompli el formulari per posar-se en contacte amb mi",
+    "name": "Nom",
+    "email": "Correu elèctronic",
+    "country": "País",
+    "subject": "Tema",
+    "message": "Missatge",
+    "messageDescription": "Escriu qualsevol missatge que vulguis que m’enviïs",
+    "subjectDescription": "Escriu el tema ",
+    "selectCountry": "Seleccioneu el vostre país",
+    "sendForm": "Enviar formulari",
+    "clearValues": "Suprimir valors"
+  },
+  "backForm": "Torna al formulari",
+  "backHome": "Torna al principi",
+  "underConstruction": {
+    "title": "Houston, estem reparant!",
+    "subtitle": "Ho sentim!, la pàgina que intentes visitar està en ple desenvolupament.."
   }
 }
 

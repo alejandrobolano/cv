@@ -1,3 +1,4 @@
+
 :host {
   display: flex;
   text-rendering: optimizeLegibility;
@@ -13,7 +14,9 @@
 }
 
 .app-layout {
-  height: 100vh;
+  //height: 100vh;
+  min-height: 100vh;
+  overflow: auto;
 }
 
 nz-header {
@@ -25,16 +28,18 @@ nz-header {
 nz-content {
   margin: 24px;
   overflow: inherit;
+  border-radius: 10px;
 }
 
 .inner-content {
   padding: 24px;
   background: #fff;
-  overflow-scrolling: touch;
+  overflow: hidden;
 }
 
 nz-footer {
-  background: #001529;
+  //primary-color from theme.less
+  background: #2E2C2F;
   bottom: 0;
   color: #f0f2f5;
   text-align: center;
@@ -42,4 +47,13 @@ nz-footer {
 
 nz-layout:last-child {
   margin: 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .disabled {
+    opacity: 0.1;
+    pointer-events: none;
+  }
 }
