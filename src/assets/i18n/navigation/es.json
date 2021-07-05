@@ -1,12 +1,14 @@
 {
   "home": {
-    "subtitle": "Bienvenido a mi sitio personal",
-    "title": "Ingeniero Informático de Cuba para el mundo",
+    "subtitle": "Desarrollador de Software en Vueling ✈️ Full-stack \uD83D\uDCBB",
+    "title": "Ingeniero Informático",
+    "more": "Conocer más...",
     "sitePresentation": {
       "title": "Presentación del sitio",
-      "text1": "Este simple sitio web lo he creado para presentar mi currículum vitae.",
-      "text2": "Lo he desarrollado usando el framework de código libre de programación <a href=\"{{angular}}\" target=\"_blank\">Angular Cli</a>, además he usado <a href=\"{{firebase}}\" target=\"_blank\">Firebase de Google</a> que es una plataforma en la nube donde me ha permitido gestionar base de datos en tiempo real y autenticación para este sitio, usando esta plataforma para alojar la aplicación en su servidor de forma gratuita. El código de este sitio está publicado en <a href=\"{{github}}\" target=\"_blank\">GitHub</a>",
-      "text3": "Para el diseño he usado <a href=\"{{antDesign}}\" target=\"_blank\">NgZorro</a>, que es una librería de interfaz de usuario para Angular."
+      "text1": "\uD83D\uDCBB Sitio web creado para presentar mi currículum vitae.",
+      "text2": "✏ Desarrollado usando el framework de código libre de programación <a href=\"{{angular}}\" target=\"_blank\">Angular Cli</a>, se usa <a href=\"{{firebase}}\" target=\"_blank\">Firebase de Google</a> que es una plataforma en la nube donde me ha permitido gestionar base de datos en tiempo real y autenticación para este sitio, usando esta plataforma para alojar la aplicación en su servidor de forma gratuita.",
+      "text3": "\uD83D\uDC49 Para el diseño: <a href=\"{{antDesign}}\" target=\"_blank\">NgZorro</a>, que es una librería de interfaz de usuario para Angular.",
+      "text4": "\uD83D\uDCCB El código de este sitio está publicado en <a href=\"{{github}}\" target=\"_blank\">GitHub</a>"
     },
     "personalSummary": {
       "title": "Resumen personal",
@@ -20,6 +22,7 @@
       "continue": "Continuar en el sitio",
       "exitToLinkedIn": "Salir a LinkedIn"
     }
+
   },
   "portfolio": {
     "title": "Este es mi portafolio y emprendimiento personal"
