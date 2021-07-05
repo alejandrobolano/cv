@@ -1,5 +1,5 @@
 export enum Permission {
-  'admin',
-  'guest'
+  'guest',
+  'admin'
 }
 

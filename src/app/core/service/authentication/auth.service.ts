@@ -1,11 +1,10 @@
-import {User, UserFirebase} from '../../model/User';
+import {IUserFirebase} from '../../model/IUser';
 import {Permission} from '../../enum/permission.enum';
 import {Injectable, NgZone} from '@angular/core';
 import {auth} from 'firebase/app';
 import {AngularFireAuth} from '@angular/fire/auth';
 import {AngularFirestore, AngularFirestoreDocument} from '@angular/fire/firestore';
 import {Router} from '@angular/router';
-import {UserService} from './user.service';
 
 
 @Injectable({
@@ -18,8 +17,7 @@ export class AuthService {
   constructor(public angularFirestore: AngularFirestore,
               public angularFireAuth: AngularFireAuth,
               public router: Router,
-              public ngZone: NgZone,
-              private userService: UserService
+              public ngZone: NgZone
   ) {
     this.authState();
   }
@@ -78,13 +76,15 @@ export class AuthService {
 
 
   setUserData(user): any {
-    const userRef: AngularFirestoreDocument<any> = this.angularFirestore.doc('users/${user.uid}');
-    const userData: UserFirebase = {
+    const userRef: AngularFirestoreDocument<any> = this.angularFirestore.doc(`users/${user.uid}`);
+    const userData: IUserFirebase = {
       uid: user.uid,
       email: user.email,
       displayName: user.displayName,
       photoURL: user.photoURL,
-      emailVerified: user.emailVerified
+      emailVerified: user.emailVerified,
+      isVisiblePrivate: false,
+      permission: Permission.guest
     };
     return userRef.set(userData, {
       merge: true
@@ -111,12 +111,6 @@ export class AuthService {
           window.alert(result.user)
         );
         this.setUserData(result.user);
-        const userTable: User = {
-          uid: result.user.uid,
-          isVisiblePrivate: false,
-          permission: Permission.guest
-        };
-        this.userService.create(userTable);
       }).catch((error) => {
         window.alert(error.message);
       });

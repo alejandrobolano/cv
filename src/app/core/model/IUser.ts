@@ -1,14 +1,16 @@
 import {Permission} from '../enum/permission.enum';
 
-export interface UserFirebase {
+export interface IUserFirebase {
   uid: string;
   email: string;
   displayName: string;
   photoURL: string;
   emailVerified: boolean;
+  permission: Permission;
+  isVisiblePrivate: boolean;
 }
 
-export interface User {
+export interface IUser {
   uid: string;
   permission: Permission;
   isVisiblePrivate: boolean;
