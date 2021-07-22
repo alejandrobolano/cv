@@ -1,0 +1,36 @@
+<h2 nz-typography>{{'sites.title' | translate}}</h2>
+
+<ambm-search (searchEmitter)="searchValue = $event"></ambm-search>
+
+<nz-table #basicTable [nzData]="getSites(searchValue)"  nzTableLayout="fixed">
+  <thead>
+  <tr>
+    <th>
+      Name
+    </th>
+    <th *ngIf="!isMobile">Url</th>
+    <th>Summary</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let data of basicTable.data">
+    <td>
+      {{data.name | translate}}
+    </td>
+    <td *ngIf="!isMobile">
+      <a target="_blank" href="{{data.url}}">{{data.url}}</a>
+    </td>
+    <td nzTooltipTitle="{{data.description | translate}}" nzTooltipPlacement="bottomLeft" nz-tooltip>
+      {{data.summary | translate}}
+    </td>
+    <td >
+      <div class="link">
+      <a nz-button nzType="default" nzShape="circle" href="{{data.url}}" target="_blank">
+        <i nz-icon nzType="arrow-right" nzTheme="outline"></i>
+      </a>
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</nz-table>

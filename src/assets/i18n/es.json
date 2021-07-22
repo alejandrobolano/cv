@@ -1,0 +1,28 @@
+{
+  "fullscreen": "Pantalla completa",
+  "backHome": "Regresa al principio",
+  "titleSidebar": "Alejandro M. Bolaño M.",
+  "error": {
+    "title": "¡Houston, tenemos un problema!",
+    "subtitle": "¡Lo sentimos! la página que intentas visitar no existe."
+  },
+  "navigation": {
+    "title": "Navegación",
+    "welcome": "Bienvenido",
+    "portfolio": "Portafolio",
+    "aboutMe": "Acerca de mi",
+    "contact": "Contacto"
+  },
+  "private": {
+    "title": "Privado",
+    "sites": "Sitios web"
+  },
+  "third": {
+    "title": "Tercero"
+  },
+  "header":{
+    "selectLanguage" : "Selecciona el lenguaje"
+  },
+  "continue": "Continuar",
+  "showCV": "Ver currículum"
+}

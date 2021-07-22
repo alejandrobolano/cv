@@ -1,0 +1,9 @@
+[nz-radio] {
+  display: block;
+  height: 48px;
+  line-height: 32px;
+}
+input {
+  width: 100px;
+  margin-left: 10px;
+}

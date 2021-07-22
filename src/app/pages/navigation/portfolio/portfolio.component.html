@@ -1,0 +1,19 @@
+<h1 nz-typography>{{'portfolio.title' |translate}}</h1>
+
+<nz-card nzHoverable [nzCover]="coverTemplate">
+  <a href="http://cubabluediving.com" target="_blank">
+    <nz-card-meta nzTitle="Cuba Blue Diving"
+                  nzDescription="Centro de buceo y experiencias extremas Cuba Blue Diving, este club se encuentra en La Habana, Cuba. Es un sitio web de negocio personal"></nz-card-meta>
+  </a>
+</nz-card>
+
+<ng-template #coverTemplate>
+  <img alt="example" src="{{img}}"/>
+</ng-template>
+
+<!--
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6722161654848737280"
+      height="{{height}}" width="555"
+      style="border:none" allowfullscreen="true" title="Publicación integrada"></iframe>
+-->
+

@@ -1,0 +1,6 @@
+<nz-modal [(nzVisible)]="isPossibleToShow"
+          nzCancelText="{{'home.model.continue' | translate}}" (nzOnCancel)="handleContinueInThisSite()"
+          nzOkText="{{'home.model.exitToLinkedIn' | translate}}" (nzOnOk)="handleLinkToLinkedIn()"
+          [nzClosable]="false" [nzMaskClosable]="false">
+  <ambm-content (knowhow)="knowhow = $event"></ambm-content>
+</nz-modal>

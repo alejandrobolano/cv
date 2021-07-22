@@ -1,0 +1,45 @@
+.app-header {
+  position: relative;
+  height: 64px;
+  padding: 0;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,21,41,.08);
+}
+
+.header-trigger {
+  height: 64px;
+  padding: 20px 24px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .3s,padding 0s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.app-header {
+  .right{
+    right: 2em;
+    position: absolute;
+    top: 0;
+  }
+  img {
+     height: 60px;
+     width: 84px;
+   }
+  i {
+    cursor: pointer;
+    margin-right: 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app-header {
+    img, .hidden {
+      display: none;
+    }
+  }
+
+}
+

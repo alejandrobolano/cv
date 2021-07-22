@@ -1,0 +1,30 @@
+@import "src/theme";
+
+#buttons-area {
+  text-align: center !important;
+
+  button {
+    margin: @margin-xs;
+  }
+
+  button:last-child {
+    margin-right: 0;
+  }
+}
+
+
+[nz-form] {
+  width: 100%;
+}
+
+@media screen and (max-width: @screen-sm-min) {
+  #buttons-area {
+    display: grid;
+
+    button:last-child {
+      margin-right: @margin-xs;
+    }
+  }
+
+}
+

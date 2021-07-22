@@ -1,0 +1,92 @@
+{
+  "sites": {
+    "title": "Sitios interesantes"
+  },
+  "cubaApk": {
+    "description": "Aplicaciones creadas por cubanos."
+  },
+  "downloadBooks": {
+    "description": "Descarga cualquier libro interesante de manera interesante.",
+    "summary": "Descarga libros gratis"
+  },
+  "eliteTorrent": {
+    "description": "Descarga y visualización de películas y series en línea.",
+    "summary": "Series y películas en línea"
+  },
+  "fossHub": {
+    "description": "Descarga gratis de aplicaciones de windows de código abierto, sin malwares ni envolturas.",
+    "summary": "Descarga de aplicaciones gratis"
+  },
+  "googleExample": {
+    "description": "Ejemplo de aplicaciones de Google en diferentes lenguajes de programación",
+    "summary": "Ejemplos de Google"
+  },
+  "guru": {
+    "description": "Genial Guru - buenas ideas, últimas noticias y más información."
+  },
+  "hubicCloud": {
+    "description": "Gran almacenamiento en la nube. Hasta 25Gb gratis.",
+    "summary": "Almacenamiento en la nube"
+  },
+  "kickAss": {
+    "description": "Descarga de películas y series en línea.",
+    "summary": "Cine Torrent"
+  },
+  "linksOfTorrents": {
+    "description": "Los mejores enlaces de Torrents para descargas.",
+    "summary": "Enlaces de Torrents"
+  },
+  "megaCloud": {
+    "description": "Uno de los mejores almacenamiento gratuitos en la nube con gran capacidad. Hasta 50Gb gratis.",
+    "summary": "Almacenamiento en la nube"
+  },
+  "mejorTorrent": {
+    "description": "Descarga de películas y series en línea.",
+    "summary": "Cine Torrent"
+  },
+  "mybookingtravel": {
+    "alt": "Agencia de Viajes My Booking Travel",
+    "description": "Agencia de Viajes en línea, localizada en Barcelona, España. Este sitio web es un negocio personal, es una marca blanca de agencias de viajes online.",
+    "name": "My Booking Travel"
+  },
+  "pCloud": {
+    "description": "Hasta 11Gb gratis.",
+    "summary": "Almacenamiento en la nube"
+  },
+  "pelisPlay": {
+    "description": "Ver películas y series en línea.",
+    "summary": "Series y películas en línea"
+  },
+  "poseidon": {
+    "description": "Ver películas y series en línea.",
+    "summary": "Series y películas en línea"
+  },
+  "redCuba": {
+    "description": "Directorio, red de Cuba.",
+    "summary": "Red Cuba"
+  },
+  "repelis": {
+    "description": "Ver películas y series en línea.",
+    "summary": "Series y películas en línea"
+  },
+  "seriesOnline": {
+    "description": "Ver series en línea.",
+    "summary": "Series y películas en línea"
+  },
+  "shodan": {
+    "description": "El motor de búsqueda para cámaras, refrigeradores, SO, plantas de energías y más. Shodan es el primer motor de búsqueda del mundo dedicado al Internet de los dispositivos.",
+    "summary": "Motor de búsqueda"
+  },
+  "torrentLocura": {
+    "description": "Descarga de películas y series en línea.",
+    "summary": "Cine Torrent"
+  },
+  "oneTimeSecret": {
+    "description": "Genera un enlace con información secreta.",
+    "summary": "Información Secreta"
+  },
+  "freecodecamp": {
+    "description": "Musica for programar. Radio código",
+    "summary": "Free Code Camp"
+  }
+}

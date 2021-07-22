@@ -1,5 +1,6 @@
 @import "../node_modules/ng-zorro-antd/ng-zorro-antd.less";
-@theme: default;
+
+@theme: dark;
 
 // The prefix to use on all css classes from ant.
 @ant-prefix: ant;
@@ -8,9 +9,10 @@
 @html-selector: html;
 
 // -------- Colors -----------
-@primary-color: @blue-6;
-@info-color: @blue-6;
-@success-color: @green-6;
+@light-sea-green-color: #00A9A5;
+@primary-color: #2E2C2F;
+@info-color: #475B63;
+@success-color: @light-sea-green-color;
 @processing-color: @blue-6;
 @error-color: @red-5;
 @highlight-color: @red-5;
@@ -18,6 +20,8 @@
 @normal-color: #d9d9d9;
 @white: #fff;
 @black: #000;
+@sidebar-color: @primary-color;
+@accent-color: #D8315B;
 
 // Color used by default to control hover and active backgrounds and for
 // alert info backgrounds.
@@ -36,7 +40,6 @@
 
 // Base Scaffolding Variables
 // ---
-
 // Background color for `<body>`
 @body-background: #fff;
 // Base background color for most components
@@ -69,8 +72,8 @@
 @heading-4-size: ceil(@font-size-base * 1.42);
 // https://github.com/ant-design/ant-design/issues/20210
 @line-height-base: 1.5715;
-@border-radius-base: 2px;
-@border-radius-sm: @border-radius-base;
+@border-radius-base: 7px;
+@border-radius-sm: 5px;
 
 // vertical paddings
 @padding-lg: 24px; // containers
@@ -91,9 +94,9 @@
 @margin-xss: 4px; // more small
 
 // height rules
-@height-base: 32px;
-@height-lg: 40px;
-@height-sm: 24px;
+@height-base: 38px;
+@height-lg: 46px;
+@height-sm: 30px;
 
 // The background colors for active and hover states for things like
 // list items or table cells.
@@ -104,7 +107,7 @@
 @iconfont-css-prefix: anticon;
 
 // LINK
-@link-color: @primary-color;
+@link-color: @accent-color;
 @link-hover-color: color(~`colorPalette('@{link-color}', 5) `);
 @link-active-color: color(~`colorPalette('@{link-color}', 7) `);
 @link-decoration: none;
@@ -292,8 +295,8 @@
 @grid-gutter-width: 0;
 
 // Layout
-@layout-body-background: #f0f2f5;
-@layout-header-background: #001529;
+@layout-body-background: #f3f2ef;
+@layout-header-background: @sidebar-color;
 @layout-header-height: 64px;
 @layout-header-padding: 0 50px;
 @layout-header-color: @text-color;
@@ -519,7 +522,7 @@
 @menu-dark-color: @text-color-secondary-dark;
 @menu-dark-bg: @layout-header-background;
 @menu-dark-arrow-color: #fff;
-@menu-dark-submenu-bg: #000c17;
+@menu-dark-submenu-bg: #475B63;
 @menu-dark-highlight-color: #fff;
 @menu-dark-item-active-bg: @primary-color;
 @menu-dark-selected-item-icon-color: @white;
