@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-open": "npm run build && npm run start -o"
+    "build-open": "npm run build && npm run start -open"
   },
   "private": true,
   "dependencies": {
@@ -30,7 +30,7 @@
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3",
-    "firebase": "^7.13.1"
+    "firebase": "^9.4.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1000.3",
