@@ -1,8 +1,23 @@
 {
   "hosting": [
     {
-      "site": "dev-alejandrobolano",
+      "site": "alejandrobolano",
       "public": "dist/alejandrobolano",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "site": "dev-alejandrobolano",
+      "public": "dist/dev-alejandrobolano",
       "ignore": [
         "firebase.json",
         "**/.*",
