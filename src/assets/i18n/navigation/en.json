@@ -1,6 +1,6 @@
 {
   "home": {
-    "subtitle": "Software Developer at Vueling ✈️ Full-stack \uD83D\uDCBB",
+    "subtitle": "Software Developer at Vueling ✈️️ Full-stack \uD83D\uDCBB",
     "title": "Software Engineer",
     "more": "To know more...",
     "sitePresentation": {
@@ -12,8 +12,11 @@
     },
     "personalSummary": {
       "title": "Personal summary",
-      "text1": "First of all I introduce myself, my name is <strong>Alejandro Manuel Bolaño Méndez</strong> and I am a Computer Engineer, graduated from the Technological University of Havana \"Jose Antonio Echevarría\" and I am from Cuban.",
-      "text2": "I am a young man with broad desires for personal and professional improvement. I have specialized in the world of web development and Android lover. Also, I love the world of marketing and sales. I consider myself a young worker, discreet, humble, self-sacrificing and ambitious."
+      "text1": "\uD83D\uDCBB <strong> Alejandro Manuel Bolaño Méndez </strong>, Computer Engineer, with desires for personal and professional improvement.",
+      "text2": "〽 I like day-to-day challenges because that way I can gain new experiences, trying to challenge myself every day to be better than yesterday.",
+      "text3": "\uD83D\uDC49 I am specializes in the world of web development, although I am a lover of Android programming, but this is a chapter that I have to take up again. I like the world of marketing and sales, as well. I like to give importance to the quality of what I do. ",
+      "text4": "\uD83C\uDF0E Of course, not everything is work so I also like traveling, walking, exercising, being in contact with nature and being able to discover new corners in this world and new foods.",
+      "text5": "\uD83D\uDC49 In summary, I consider myself a young worker, dedicated, discreet, humble, self-sacrificing, traveler, explorer, familiar, ambitious and passionate about teamwork."
     },
     "modal": {
       "continue": "Continue in this site",
