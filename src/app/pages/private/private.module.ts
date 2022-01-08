@@ -30,7 +30,13 @@ import { AdminErrorsComponent } from './admin/admin-errors/admin-errors.componen
     CommonModule,
     FormsModule
   ],
-  declarations: [PrivateComponent, SitesComponent, SearchComponent, AdminComponent, AdminMessagesComponent, AdminErrorsComponent],
+  declarations: [
+    PrivateComponent,
+    SitesComponent,
+    SearchComponent,
+    AdminComponent,
+    AdminMessagesComponent,
+    AdminErrorsComponent],
   exports: []
 })
 export class PrivateModule {}
