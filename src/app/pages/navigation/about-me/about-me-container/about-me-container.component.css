@@ -1,0 +1,10 @@
+:host nz-avatar.profile{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+:host nz-tabset {
+  top: 2em;
+  bottom: 2em;
+}

@@ -1,0 +1,21 @@
+<nz-card [nzBordered]="false">
+  <nz-card-meta [nzAvatar]="avatarTemplate"
+                nzTitle="¡Hola! Me llaman Alejandro."
+                [nzDescription]="description"></nz-card-meta>
+</nz-card>
+
+<ng-template #avatarTemplate>
+  <nz-avatar nzSrc="{{avatar}}"></nz-avatar>
+</ng-template>
+
+<ng-template #description>
+  <p>Me gustaría conocer mediante que medio ha llegado hasta aquí: </p>
+  <nz-radio-group [(ngModel)]="knowhowRadioValue" (ngModelChange)="emitKnowhow()">
+    <label nz-radio nzValue="linkedIn">LinkedIn</label>
+    <label nz-radio nzValue="google">Google</label>
+    <label nz-radio nzValue="friends">Friends</label>
+    <label nz-radio nzValue="other">Other</label>
+  </nz-radio-group>
+</ng-template>
+
+

@@ -1,0 +1,46 @@
+<h1 nz-typography>{{'home.title' | translate}}</h1>
+<h2 nz-typography>{{'home.subtitle' | translate}}</h2>
+
+<ambm-modal></ambm-modal>
+
+<nz-space nzDirection="vertical">
+  <nz-space-item>
+    <nz-card nzTitle="{{'home.sitePresentation.title' | translate}}" [nzHoverable]="true">
+      <p nz-typography>{{'home.sitePresentation.text1'| translate}}</p>
+      <p [innerHTML]="'home.sitePresentation.text2' | translate: {
+            'angular': angularCliLink,
+            'firebase': firebaseLink,
+            'github': thisRepoGitHubLink
+            }">
+      </p>
+      <p [innerHTML]="'home.sitePresentation.text3' | translate: {
+      'antDesign': antDesignLink}"> </p>
+      <p [innerHTML]="'home.sitePresentation.text4' | translate"> </p>
+    </nz-card>
+  </nz-space-item>
+
+  <nz-space-item>
+    <div id="ads-custom">
+      <img alt="Alejandro Dev" src="{{image}}"/>
+    </div>
+  </nz-space-item>
+
+  <nz-space-item>
+    <nz-card nzTitle="{{'home.personalSummary.title' | translate}}"
+             [nzHoverable]="true"
+             [nzActions]="[linkToAboutMe]">
+      <p *ngFor="let i of [1,2,3,4,5]" nz-typography
+         [innerHTML]="getPersonalSummaryTextVariable(i) | translate"></p>
+    </nz-card>
+  </nz-space-item>
+</nz-space>
+
+<ng-template #linkToAboutMe>
+  <div class="link-aboutMe" (click)="redirectToAboutMe()">
+    <em nz-icon nzType="project" nzTheme="outline" ></em>
+    <span>{{'home.more'| translate}}</span>
+  </div>
+</ng-template>
+
+
+

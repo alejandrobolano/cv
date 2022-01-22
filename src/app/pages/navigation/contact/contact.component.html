@@ -1,0 +1,91 @@
+<ng-container *ngIf="!isSuccessfulFlagMessage && !isErrorFlagMessage; else notification">
+  <h1 nz-typography>{{'contact.title' |translate}}</h1>
+
+  <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm(validateForm.value)">
+    <nz-form-item>
+      <nz-form-label [nzSm]="4" [nzXs]="12" nzRequired>{{'contact.name'|translate}}</nz-form-label>
+      <nz-form-control [nzSm]="14" [nzXs]="12" nzHasFeedback nzValidatingTip="Validating..."
+                       [nzErrorTip]="userErrorTpl">
+        <input nz-input formControlName="name" placeholder="{{'contact.name'|translate}}"/>
+        <ng-template #userErrorTpl let-control>
+          <ng-container *ngIf="control.hasError('required')">
+            Please input your username!
+          </ng-container>
+          <ng-container *ngIf="control.hasError('duplicated')">
+            The username is redundant!
+          </ng-container>
+        </ng-template>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label [nzSm]="4" [nzXs]="12" nzRequired>{{'contact.email'|translate}}</nz-form-label>
+      <nz-form-control [nzSm]="14" [nzXs]="12" nzHasFeedback [nzErrorTip]="emailErrorTpl">
+        <input nz-input formControlName="email" placeholder="{{'contact.email'|translate}}" type="email"/>
+        <ng-template #emailErrorTpl let-control>
+          <ng-container *ngIf="control.hasError('email')">
+            The input is not valid E-mail!
+          </ng-container>
+          <ng-container *ngIf="control.hasError('required')">
+            Please input your E-mail!
+          </ng-container>
+        </ng-template>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="4" [nzXs]="12" nzRequired>{{'contact.country'|translate}}</nz-form-label>
+      <nz-form-control [nzSm]="14" [nzXs]="12" nzHasFeedback nzErrorTip="{{'contact.country'|translate}}">
+        <nz-select nzAllowClear
+                   formControlName="country"
+                   nzPlaceHolder="{{'contact.selectCountry'|translate}}"
+                   [(ngModel)]="country"
+                   (ngModelChange)="changeCountry($event)"
+                   [nzShowSearch]="true"
+        >
+          <nz-option [nzValue]=""></nz-option>
+          <nz-option *ngFor="let option of countries"
+                     [nzLabel]="option.name"
+                     [nzValue]="option">
+          </nz-option>
+        </nz-select>
+
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="4" [nzXs]="12" nzRequired>{{'contact.subject'|translate}}</nz-form-label>
+      <nz-form-control [nzSm]="14" [nzXs]="12" nzHasFeedback nzErrorTip="Please input your subject!">
+        <input nz-input formControlName="subject" placeholder="{{'contact.subjectDescription'|translate}}"/>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label [nzSm]="4" [nzXs]="12" nzRequired>{{'contact.message'|translate}}</nz-form-label>
+      <nz-form-control [nzSm]="14" [nzXs]="12" nzHasFeedback nzErrorTip="Please write something here!">
+        <textarea formControlName="message" nz-input [nzAutosize]="{ minRows: 1, maxRows: 6 }"
+                  placeholder="{{'contact.messageDescription'|translate}}"></textarea>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+
+      <nz-form-control>
+        <div id="buttons-area">
+        <button nz-button [nzType]="'primary'" [disabled]="!validateForm.valid">{{'contact.sendForm'|translate}}</button>
+        <button nz-button (click)="resetForm($event)">{{'contact.clearValues'|translate}}</button>
+        </div>
+      </nz-form-control>
+
+    </nz-form-item>
+  </form>
+</ng-container>
+
+<ng-template #notification>
+  <ng-container *ngIf="isErrorFlagMessage">
+    <ambm-error-message [error-message]="errorMessage"
+                        (flag-message)="isErrorFlagMessage = $event"></ambm-error-message>
+  </ng-container>
+  <ng-container *ngIf="isSuccessfulFlagMessage">
+    <ambm-successful-message [new-value-id]="newValueId"
+                             (flag-message)="isSuccessfulFlagMessage = $event"></ambm-successful-message>
+  </ng-container>
+</ng-template>

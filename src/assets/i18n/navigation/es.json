@@ -1,0 +1,49 @@
+{
+  "home": {
+    "subtitle": "Desarrollador de Software en Vueling ✈️ Full-stack \uD83D\uDCBB",
+    "title": "Ingeniero Informático",
+    "more": "Conocer más...",
+    "sitePresentation": {
+      "title": "Presentación del sitio",
+      "text1": "\uD83D\uDCBB Sitio web creado para presentar mi currículum vitae.",
+      "text2": "✏ Desarrollado usando el framework de código libre de programación <a href=\"{{angular}}\" target=\"_blank\">Angular Cli</a>, se usa <a href=\"{{firebase}}\" target=\"_blank\">Firebase de Google</a> que es una plataforma en la nube donde me ha permitido gestionar base de datos en tiempo real y autenticación para este sitio, usando esta plataforma para alojar la aplicación en su servidor de forma gratuita.",
+      "text3": "\uD83D\uDC49 Para el diseño: <a href=\"{{antDesign}}\" target=\"_blank\">NgZorro</a>, que es una librería de interfaz de usuario para Angular.",
+      "text4": "\uD83D\uDCCB El código de este sitio está publicado en <a href=\"{{github}}\" target=\"_blank\">GitHub</a>"
+    },
+    "personalSummary": {
+      "title": "Resumen personal",
+      "text1": "\uD83D\uDCBB <strong>Alejandro Manuel Bolaño Méndez</strong>, Ingeniero Informático, con deseos de superación personal y profesional.",
+      "text2": "〽 Me gustan los retos del día a día porque así puedo ganar nuevas experiencias, tratando de desafiarme cada día a mi mismo para ser mejor que ayer.",
+      "text3": "\uD83D\uDC49 Me especializo en el mundo del desarrollo web, aunque soy amante a la programación Android, pero esto es un capítulo que tengo que retomar nuevamente. Me gusta el mundo del marketing y las ventas, además. me gusta darle importancia a la calidad de lo que realizo.",
+      "text4": "\uD83C\uDF0E Por supuesto, no todo es trabajo por lo que también me gusta viajar, caminar, hacer ejercicios, estar en contacto con la naturaleza y poder descubrir nuevos rincones en este mundo y nuevas comidas.",
+      "text5": "\uD83D\uDC49 En resumen, me considero un joven trabajador, entregado, discreto, humilde, sacrificado, viajero, explorador, familiar, ambicioso y apasionado al trabajo en equipo."
+    },
+    "modal": {
+      "continue": "Continuar en el sitio",
+      "exitToLinkedIn": "Salir a LinkedIn"
+    }
+
+  },
+  "portfolio": {
+    "title": "Este es mi portafolio y emprendimiento personal"
+  },
+  "contact": {
+    "title": "Rellene el formulario para ponerse en contacto conmigo",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "country": "País",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "messageDescription": "Escriba cualquier mensaje que quiera enviarme",
+    "subjectDescription": "Escriba el asunto ",
+    "selectCountry": "Seleccione tu país",
+    "sendForm": "Enviar formulario",
+    "clearValues": "Borrar valores"
+  },
+  "backHome": "Regresa al principio",
+  "backForm": "Regresa al formulario",
+  "underConstruction": {
+    "title": "¡Houston, estamos reparando!",
+    "subtitle": "Lo sentimos, la página que intentas visitar está en pleno desarrollo."
+  }
+}

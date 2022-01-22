@@ -1,0 +1,89 @@
+{
+  "sites": {
+    "title": "Sitios interesantes"
+  },
+  "cubaApk": {
+  "description": "Apps created by cubans."
+},
+  "downloadBooks": {
+    "description": "Download free books online",
+    "summary": "Download free books"
+  },
+  "eliteTorrent": {
+    "description": "Download and view movies and series online.",
+    "summary": "Series and movies online"
+  },
+  "fossHub": {
+    "description": "Download free windows apps of free source, no malware, no bundles.",
+    "summary": "Download free apps"
+  },
+  "googleExample": {
+    "description": "Google Apps examples of different programming languages.",
+    "summary": "Google examples"
+  },
+  "hubicCloud": {
+    "description": "A great storage cloud. Up to 25Gb free.",
+    "summary": "Storage Cloud"
+  },
+  "kickAss": {
+    "description": "Download movies and series online.",
+    "summary": "Film Torrent"
+  },
+  "linksOfTorrents": {
+    "description": "Links of better Torrents for downloads",
+    "summary": "Links of Torrents"
+  },
+  "megaCloud": {
+    "description": "One of the best free storage cloud with the greatest capacity. Up to 50Gb free.",
+    "summary": "Storage Cloud"
+  },
+  "mejorTorrent": {
+    "description": "Download movies and series online.",
+    "summary": "Film Torrent"
+  },
+  "mybookingtravel": {
+    "alt": "Travel Agency My Booking Travel",
+    "description": "Travel Agency online, located in Barcelona, Spain. This website is personal business, is a white label of travel agencies online.",
+    "name": "My Booking Travel"
+  },
+  "pCloud": {
+    "description": "Up to 11Gb free.",
+    "summary": "Storage Cloud"
+  },
+  "pelisPlay": {
+    "description": "View movies and series online.",
+    "summary": "Series and movies online"
+  },
+  "poseidon": {
+    "description": "View movies and series online.",
+    "summary": "Series and movies online"
+  },
+  "redCuba": {
+    "description": "Directory, network of Cuba.",
+    "summary": "Cuba network"
+  },
+  "repelis": {
+    "description": "View movies and series online.",
+    "summary": "Series and movies online"
+  },
+  "seriesOnline": {
+    "description": "View series online.",
+    "summary": "Series and movies online"
+  },
+  "shodan": {
+    "description": "The search engine for webcams, refrigerators, OS, power plants, and others. Shodan is the world\\'s first search engine for Internet-connected devices.",
+    "summary": "Search engine"
+  },
+  "torrentLocura": {
+    "description": "Download movies and series online.",
+    "summary": "Film Torrent"
+  },
+  "oneTimeSecret": {
+    "description": "Create a link with a secret information.",
+    "summary": "Secret Info"
+  },
+  "freecodecamp": {
+    "description": "Music for programming. Code Radio",
+    "summary": "Free Code Camp"
+  }
+}

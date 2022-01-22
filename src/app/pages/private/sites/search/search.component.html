@@ -1,0 +1,10 @@
+<nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+  <input type="text" nz-input placeholder="input search text"
+         (ngModelChange)="searchEvent(searchValue)"
+         [(ngModel)]="searchValue"/>
+</nz-input-group>
+
+<ng-template #suffixIconButton>
+  <button nz-button nzType="primary" nzSearch (click)="searchEvent(searchValue)"><i nz-icon nzType="search"></i></button>
+  <button nz-button nzType="default" nzSearch (click)="resetEvent()"><i nz-icon nzType="delete"></i></button>
+</ng-template>

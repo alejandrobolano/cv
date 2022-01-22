@@ -1,13 +1,30 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {WindowResizeService} from './core/service/window-resize.service';
 
 @Component({
-  selector: 'app-root',
+  selector: 'ambm-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.less']
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
   isCollapsed = false;
   theme = 'dark';
   title = 'Alejandro M. Bolaño M.';
-  imgLogo = 'https://ng.ant.design/assets/img/logo.svg';
+
+
+  constructor(private windowResize: WindowResizeService) {
+  }
+
+  ngOnInit(): void {
+  }
+
+  get isMobile(): boolean {
+    return this.windowResize.IsMobile;
+  }
+
+  setCollapsed(event: boolean): void {
+    this.isCollapsed = event;
+  }
+
 }

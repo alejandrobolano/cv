@@ -1,0 +1,33 @@
+@import "src/theme";
+
+.ant-card-hoverable {
+  cursor: auto;
+}
+
+
+
+#ads-custom {
+  display: flex;
+  img {
+    border-radius: @border-radius-base;
+    height: 20em;
+    width: 100%;
+  }
+
+  div[dir=ltr] {
+    .LI-badge-container.horizontal.dark {
+      border-radius: @border-radius-base;
+    }
+  }
+
+  :hover {
+    box-shadow: 0 10px 20px 1px rgba(33, 33, 33, 0.2);
+    opacity: 0.9;
+  }
+}
+
+.link-aboutMe {
+  span {
+    margin-left: 5px;
+  }
+}

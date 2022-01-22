@@ -1,0 +1,129 @@
+{
+  "curriculum": {
+    "experience": "Experiencia",
+    "education": "Educación"
+  },
+  "education": [
+    {
+      "title": "Centro de Informática Profesional (CIPSA)",
+      "date": "[2019 - 2020]",
+      "subtitle": "Máster Programación .NET",
+      "country": "España",
+      "countryCode": "es"
+    },
+    {
+      "title": "Centro de Informática Profesional (CIPSA)",
+      "date": "[2018 - 2019]",
+      "subtitle": "Curso de Diseño Web",
+      "country": "España",
+      "countryCode": "es"
+    },
+    {
+      "title": "Centro de Informática Profesional (CIPSA)",
+      "date": "[2017 - 2018]",
+      "subtitle": "Curso de Marketing Digital 2.0 y Gestión de Contenidos",
+      "country": "España",
+      "countryCode": "es"
+    },
+    {
+      "title": "Universidad Tecnológica de la Habana \"Jose Antonio Echeverria\" (CUJAE)",
+      "date": "[2011 - 2016]",
+      "subtitle": "Ingeniería Informática",
+      "country": "Cuba",
+      "countryCode": "cu"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Vueling",
+      "date": "August 2019 - Present",
+      "country": "España",
+      "subtitle": "Desarrollador Full-Stack",
+      "list": [
+        "Responsabilidad: Mantenimiento y desarrollo del sitio web de la empresa.",
+        "Arquitectura: N-Capas",
+        "Metodología: Scrum",
+        "Herramientas: Git, TFS, Azure,Navitaire Products",
+        "Lenguajes y frameworks: ASP.Net, MVC, Entity Framework, Autofac, XSLT, XML, JavaScript, jQuery, C#, LINQ, Azure DevOps",
+        "Negocio: Dentro de la propia web de la aerolínea, soy parte del pequeño equipo (2-4) que se encarga de la denominación Low Funnel (a lo que se refiere en términos de conversión de Funnel Comercial). Además, del trabajo relacionado a los Ancillaries de Vueling mediante Merchandising, para presentar los productos en el momento adecuado, en el lugar, con la cantidad y el precio adecuado para maximizar las ventas. Y por otra parte, respecto a los Ancillaries, pues también se contempla todo lo que sea Post Booking."
+      ],
+      "countryCode": "es",
+      "link": "https://vueling.com"
+    },
+    {
+      "title": "Cuba Blue Diving",
+      "date": "Marzo 2018 - Presente",
+      "country": "España",
+      "subtitle": "Freelance - Desarrollo de diseño web",
+      "list": [
+        "Tecnologías: CSS3, HTML5, JS",
+        "Herramientas: Photoshop, Wordpress",
+        "Encargado web y de las redes sociales de Cuba Blue Diving. Manejo del servidor, dominio y gestión de servidores de correos."
+      ],
+      "countryCode": "es",
+      "link": "http://cubabluediving.com"
+    },
+    {
+      "title": "NGX Smart Skeleton",
+      "date": "Marzo 2020 - Agosto 2020",
+      "country": "España",
+      "subtitle": "Freelance - Desarrollador web",
+      "list": [
+        "Biblioteca UX de angular que contiene un conjunto completo de componentes skeletons para la carga asíncrona de aplicaciones web",
+        "Metodología: Ágil con el Proceso Scrum",
+        "Heramientas: Git, GitHub, Firebase Google",
+        "Lenguaje: Angular"
+      ],
+      "countryCode": "es",
+      "link": "https://ngxsmartskeleton.web.app"
+    },
+    {
+      "title": "Combray Solutions",
+      "date": "Octubre 2017 - Enero 2019",
+      "country": "España",
+      "subtitle": "Jefe de equipo",
+      "list": [
+        "Encargado de equipo de diez comerciales de ventas"
+      ],
+      "countryCode": "es"
+    },
+    {
+      "title": "DATYS",
+      "date": "Septiembre 2016 - Agosto 2017",
+      "country": "Cuba",
+      "subtitle": "Desarrollador de aplicaciones Java",
+      "list": [
+        "Proyecto: Herramienta para control de ciudadanos",
+        "Desarrollo de aplicación cliente en Java que se conecta con servicios usando C#.Net",
+        "Arquitectura: MVC",
+        "Tecnologías: Java, C#.Net",
+        "Herramientas: UML"
+      ],
+      "countryCode": "cu"
+    },
+    {
+      "title": "PAM International",
+      "date": "Noviembre 2014 - Abril 2016 ",
+      "country": "Cuba",
+      "subtitle": "Desarrollador de aplicaciones para móviles",
+      "list": [
+        "Proyecto: Herramienta de Inteligencia de Negocios Moviles",
+        "Desarrollo de aplicación nativa en Java para Android",
+        "Tecnologías y herramientas: SQLite, Android, Java, JSON, MPAndroid Chart, Android Studio, ORM (Object Relational Mapping)"
+      ],
+      "countryCode": "cu"
+    },
+    {
+      "title": "PAM International",
+      "date": "November 2014 - July 2015",
+      "country": "Cuba",
+      "subtitle": "Desarrollador web",
+      "list": [
+        "Proyecto: Herramienta de Inteligencia de Negocios",
+        "Arquitectura: N-Tier",
+        "Tecnologías y herramientas: ASP.Net, WebForms, SQL Server, Internet Information Services, Reporting Services"
+      ],
+      "countryCode": "cu"
+    }
+  ]
+}
