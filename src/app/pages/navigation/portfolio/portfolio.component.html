@@ -1,10 +1,14 @@
 <h1 nz-typography>{{'portfolio.title' |translate}}</h1>
 
 <div nz-row [nzGutter]="16"
-     [nzJustify]="windowResize.IsMobile ? 'center' : 'start'" >
+     [nzJustify]="windowResize.IsMobile ? 'center' : 'start'"
+     class="container">
+
+  <nz-spin *ngIf="isLoading" nzSimple [nzSize]="'large'"></nz-spin>
+
   <div *ngFor="let previewLink of linksPreview"
        nz-col
-  class="portfolio-card">
+       class="portfolio-card">
 
     <nz-card nzHoverable
              [nzCover]="coverTemplate"
@@ -26,5 +30,6 @@
 
   </div>
 </div>
+
 
 
