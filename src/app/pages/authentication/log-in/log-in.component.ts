@@ -1,17 +1,23 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {AuthService} from '../../../core/service/authentication/auth.service';
+import {TranslateComponent} from '../../../core/translate/translate.component';
+import {TranslateService} from '@ngx-translate/core';
+import {TranslateWrapperService} from '../../../core/service/translate-wrapper.service';
 
 @Component({
   selector: 'ambm-log-in',
   templateUrl: './log-in.component.html',
   styleUrls: ['./log-in.component.less']
 })
-export class LogInComponent implements OnInit {
+export class LogInComponent extends TranslateComponent implements OnInit {
   validateForm!: FormGroup;
 
-  constructor(private formBuilder: FormBuilder,
+  constructor(public translate: TranslateService,
+              public translateWrapperService: TranslateWrapperService,
+              private formBuilder: FormBuilder,
               private authService: AuthService) {
+    super(translate, translateWrapperService);
   }
 
   ngOnInit(): void {

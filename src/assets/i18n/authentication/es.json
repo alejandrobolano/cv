@@ -4,5 +4,8 @@
   "underConstruction": {
     "title": "¡Houston, estamos reparando!",
     "subtitle": "Lo sentimos, la página que intentas visitar está en pleno desarrollo."
+  },
+  "signIn": {
+    "title": "Iniciar sesión"
   }
 }

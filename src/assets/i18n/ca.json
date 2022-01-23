@@ -24,5 +24,6 @@
     "selectLanguage" : "Selecciona el llenguatge"
   },
   "continue": "Continuar",
-  "showCV": "Ver currículum"
+  "showCV": "Ver currículum",
+  "signIn": "Iniciar sessió"
 }
