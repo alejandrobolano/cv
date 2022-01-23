@@ -1,35 +1,57 @@
 <h1 nz-typography>{{'portfolio.title' |translate}}</h1>
 
-<div nz-row [nzGutter]="16"
-     [nzJustify]="windowResize.IsMobile ? 'center' : 'start'"
-     class="container">
+<nz-space nzDirection="vertical">
+  <nz-space-item>
+    <div nz-row [nzGutter]="16"
+         [nzJustify]="windowResize.IsMobile ? 'center' : 'start'"
+         class="container">
 
-  <nz-spin *ngIf="isLoading" nzSimple [nzSize]="'large'"></nz-spin>
+      <nz-spin *ngIf="isLoading" nzSimple [nzSize]="'large'"></nz-spin>
 
-  <div *ngFor="let previewLink of linksPreview"
-       nz-col
-       class="portfolio-card">
+      <ng-container *ngIf="isFinishLoading">
 
-    <nz-card nzHoverable
-             [nzCover]="coverTemplate"
-             [nzSize]="'default'"
-             [nzActions]="[actionSetting]">
-      <a href="{{previewLink?.url}}" target="_blank">
-        <nz-card-meta nzTitle="{{previewLink?.title}}"
-                      nzDescription="{{previewLink.description}}"></nz-card-meta>
-      </a>
+        <div *ngFor="let previewLink of linksPreview"
+             nz-col
+             class="portfolio-card">
+
+          <nz-card nzHoverable
+                   [nzCover]="coverTemplate"
+                   [nzSize]="'default'"
+                   [nzActions]="[actionSetting]">
+            <a href="{{previewLink?.url}}" target="_blank">
+              <nz-card-meta nzTitle="{{previewLink?.title}}"
+                            nzDescription="{{previewLink.description}}"></nz-card-meta>
+            </a>
+          </nz-card>
+
+          <ng-template #coverTemplate>
+            <img class="img-card" alt="{{previewLink?.title}}" src="{{previewLink?.image}}"/>
+          </ng-template>
+
+          <ng-template #actionSetting>
+            <a *ngIf="previewLink?.url" href="{{previewLink?.url}}" target="_blank">{{previewLink?.url}}</a>
+          </ng-template>
+
+        </div>
+      </ng-container>
+    </div>
+  </nz-space-item>
+
+  <nz-space-item>
+    <nz-card [nzHoverable]="true"
+             [nzActions]="[linkToAboutMe]">
+      <p nz-typography
+        [innerHTML]="'portfolio.moreInfoDescription' | translate"></p>
     </nz-card>
+  </nz-space-item>
 
-    <ng-template #coverTemplate>
-      <img class="img-card" alt="{{previewLink?.title}}" src="{{previewLink?.image}}"/>
-    </ng-template>
-
-    <ng-template #actionSetting>
-      <a *ngIf="previewLink?.url" href="{{previewLink?.url}}" target="_blank">{{previewLink?.url}}</a>
-    </ng-template>
-
-  </div>
-</div>
+  <ng-template #linkToAboutMe>
+    <div class="link-aboutMe" (click)="redirectTo('navigation/about-me')">
+      <em nz-icon nzType="project" nzTheme="outline"></em>
+      <span>{{'home.more'| translate}}</span>
+    </div>
+  </ng-template>
+</nz-space>
 
 
 

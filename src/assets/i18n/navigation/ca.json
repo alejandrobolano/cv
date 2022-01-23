@@ -24,7 +24,8 @@
     }
   },
   "portfolio": {
-    "title": "Aquest és el meu portafoli i emprenedoria personal"
+    "title": "Aquest és el meu portafoli i emprenedoria personal",
+    "moreInfoDescription": "A l'apartat <b>Sobre mi</b> pot abastar tecnològicament encara més sobre aquest portfoli."
   },
   "contact": {
     "title": "Ompli el formulari per posar-se en contacte amb mi",
