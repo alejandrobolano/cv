@@ -25,7 +25,8 @@
 
   },
   "portfolio": {
-    "title": "Este es mi portafolio y emprendimiento personal"
+    "title": "Este es mi portafolio y emprendimiento personal",
+    "moreInfoDescription": "En el apartado <b>Acerca de mi</b> puede abarcar tecnológicamente aún más acerca de este portfolio."
   },
   "contact": {
     "title": "Rellene el formulario para ponerse en contacto conmigo",

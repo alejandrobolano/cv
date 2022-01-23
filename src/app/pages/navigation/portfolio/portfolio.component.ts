@@ -16,9 +16,6 @@ import {Links} from './data/Links';
   styleUrls: ['./portfolio.component.less']
 })
 export class PortfolioComponent extends TranslateComponent implements OnInit {
-  language: string;
-  linksPreview: ILinkPreview[] = [];
-  isLoading = true;
 
   constructor(public translate: TranslateService,
               public translateWrapperService: TranslateWrapperService,
@@ -29,6 +26,22 @@ export class PortfolioComponent extends TranslateComponent implements OnInit {
     super(translate, translateWrapperService);
   }
 
+  get isFinishLoading(): boolean {
+    return Links.length === this.linksPreview.length;
+  }
+  language: string;
+  linksPreview: ILinkPreview[] = [];
+  isLoading = true;
+
+  public static checkUndefinedData(preview): void {
+    if (!preview.title) {
+      preview.title = preview.url;
+    }
+    if (!preview.image) {
+      preview.image = '../../assets/img/code-banner.jpg';
+    }
+  }
+
   ngOnInit(): void {
     this.initLinksPreview();
   }
@@ -36,7 +49,7 @@ export class PortfolioComponent extends TranslateComponent implements OnInit {
   private initLinksPreview(): void {
     const linksPreviewCookie = this.cookiesService.getCookie(CookieNameEnum.LinksPreview);
     let hasLinksPreviewFromCookie = false;
-    if (linksPreviewCookie){
+    if (linksPreviewCookie) {
       const linksPreviewCookieJson = JSON.parse(linksPreviewCookie);
       if (linksPreviewCookieJson) {
         this.linksPreview = linksPreviewCookieJson;
@@ -44,7 +57,7 @@ export class PortfolioComponent extends TranslateComponent implements OnInit {
         this.isLoading = false;
       }
     }
-    if (!hasLinksPreviewFromCookie || Links.length !== this.linksPreview.length){
+    if (!hasLinksPreviewFromCookie || Links.length !== this.linksPreview.length) {
       this.loadLinksPreview();
     }
   }
@@ -54,25 +67,25 @@ export class PortfolioComponent extends TranslateComponent implements OnInit {
     Links.forEach(link => {
       this.linkPreview.getLinkPreview(link)
         .subscribe(preview => {
-          if (!preview.title) {
-            preview.title = preview.url;
+          PortfolioComponent.checkUndefinedData(preview);
+          if (preview.url) {
+            this.linksPreview.push(preview);
+            // TODO change way for obtain linkPreview by cookie and doing filter
+            this.cookiesService.setCookie(CookieNameEnum.LinksPreview, JSON.stringify(this.linksPreview));
           }
-          if (!preview.image) {
-            preview.image = '../../assets/img/code-banner.jpg';
-          }
-          this.linksPreview.push(preview);
-          // TODO change way for obtain linkPreview by cookie and doing filter
-          this.cookiesService.setCookie(CookieNameEnum.LinksPreview, JSON.stringify(this.linksPreview));
-
-          if (Links.length === this.linksPreview.length){
+          if (this.isFinishLoading) {
             this.isLoading = false;
           }
         }, error => {
           if (error.status === 429 || error.status === 426) {
-            this.router.navigate(['/navigation/under-construction']).then(() => '');
+            this.redirectTo('/navigation/under-construction');
           }
         });
     });
+  }
+
+  redirectTo(component: string): void {
+    this.router.navigate([component]).then(() => '');
   }
 
 
