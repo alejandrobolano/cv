@@ -4,7 +4,7 @@ import {CookiesService} from '../../../../core/service/cookies.service';
 import {VisibilityEnum} from '../../../../core/enum/visibility.enum';
 import {MySocialNetworksEnum} from '../../../../core/enum/my-social-networks.enum';
 import {KnowhowService} from '../../../service/knowhow.service';
-import Knowhow from '../../../service/model/knowhow';
+import Knowhow from '../../../service/model/Knowhow';
 import {map} from 'rxjs/operators';
 
 @Component({

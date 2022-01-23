@@ -31,4 +31,7 @@ export class HomeComponent extends TranslateComponent implements OnInit {
     this.router.navigate(['navigation/about-me']);
   }
 
+  getPersonalSummaryTextVariable(i: number): string{
+    return `home.personalSummary.text${i}`;
+  }
 }

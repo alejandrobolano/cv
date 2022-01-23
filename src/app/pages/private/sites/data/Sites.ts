@@ -50,7 +50,7 @@ export const SITES: ISite[] = [
     description : 'Ninja Proxy'},
   {
     name: 'Link of Torrents',
-    url: 'https://proxybay.one/',
+    url: 'https://proxybay.github.io/',
     summary : 'linksOfTorrents.summary',
     description : 'linksOfTorrents.description'
   },

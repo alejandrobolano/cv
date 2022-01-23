@@ -1,18 +1,22 @@
 {
   "home": {
-    "subtitle": "Desenvolupador de programari a Vueling ✈️ Full-stack \uD83D\uDCBB",
+    "subtitle": "Desenvolupador de programari a Vueling ✈️️ Full-stack \uD83D\uDCBB",
     "title": "Enginyer Informàtic",
     "more": "Conèixer més...",
     "sitePresentation": {
       "title": "Presentació de el lloc",
-      "text1": "Lloc web creat per presentar el meu currículum vitae.",
-      "text2": "Desenvolupat usant el framework de codi lliure de programació <a href=\"{{angular}}\" target=\"_blank\"> Angular Cli </a>, s'usa, <a href = \"{{firebase}}\" target = \"_ blank\"> Firebase de Google </a> que és una plataforma en el núvol on m'ha permès gestionar base de dades en temps real i autenticació per a aquest lloc, usant aquesta plataforma per allotjar l'aplicació en el seu servidor de forma gratuïta. El codi d'aquest lloc està publicat a <a href=\"{{github}}\" target=\"_blank\"> GitHub </a>",
-      "text3": "Para el diseño: <a href=\"{{antDesign}}\" target=\"_blank\">NgZorro</a>, que es una librería de interfaz de usuario para Angular."
+      "text1": "\uD83D\uDCBB Lloc web creat per presentar el meu currículum vitae.",
+      "text2": "✏ Desenvolupat usant el framework de codi lliure de programació <a href=\"{{angular}}\" target=\"_blank\"> Angular Cli </a>, s'usa, <a href = \"{{firebase}}\" target = \"_ blank\"> Firebase de Google </a> que és una plataforma en el núvol on m'ha permès gestionar base de dades en temps real i autenticació per a aquest lloc, usant aquesta plataforma per allotjar l'aplicació en el seu servidor de forma gratuïta.",
+      "text3": "\uD83D\uDC49 Para el diseño: <a href=\"{{antDesign}}\" target=\"_blank\">NgZorro</a>, que es una librería de interfaz de usuario para Angular.",
+      "text4": "\uD83D\uDCCB El codi d'aquest lloc està publicat a <a href=\"{{github}}\" target=\"_blank\"> GitHub </a>"
     },
     "personalSummary": {
       "title": "Resum personal",
-      "text1": "Abans de tot em presento, em dic <strong>Alejandro Manuel Bolaño Méndez</strong> i sóc Enginyer Informàtic, graduat a la Universitat Tecnològica de l'Havana \"Jose Antonio Echevarría\" i sóc de nacionalitat cubana.",
-      "text2": "Sóc un jove amb amplis desitjos de superació personal i professional. M'he especialitzat en el món de el desenvolupament web i amant a Android. A més, m'encanta el món de l'màrqueting i les vendes. Em considero un jove treballador, discret, humil, sacrificat i ambiciós."
+      "text1": "\uD83D\uDCBB <strong>Alejandro Manuel Bolaño Méndez</strong>, enginyer informàtic, amb desitjos de superació personal i professional.",
+      "text2": "〽 M'agraden els reptes del dia a dia perquè així puc guanyar noves experiències, tractant de desafiar-me cada dia a mi mateix per ser millor que ahir.",
+      "text3": "\uD83D\uDC49 M'especialitzo en el món del desenvolupament web, encara que sóc amant a la programació Android, però això és un capítol que he de reprendre novament. M'agrada el món del màrqueting i les vendes, a més. agrada donar-li importància a la qualitat del que faig.",
+      "text4": "\uD83C\uDF0E Per descomptat, no tot és feina pel que també m'agrada viatjar, caminar, fer exercicis, estar en contacte amb la natura i poder descobrir nous racons en aquest món i nous àpats.",
+      "text5": "\uD83D\uDC49 En resum, em considero un jove treballador, entregat, discret, humil, sacrificat, viatger, explorador, familiar, ambiciós i apassionat al treball en equip."
     },
     "modal": {
       "continue": "Continuar en el lloc",

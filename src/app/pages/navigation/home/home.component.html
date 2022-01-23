@@ -15,7 +15,7 @@
       </p>
       <p [innerHTML]="'home.sitePresentation.text3' | translate: {
       'antDesign': antDesignLink}"> </p>
-      <p *ngIf="language === 'es'" [innerHTML]="'home.sitePresentation.text4' | translate"> </p>
+      <p [innerHTML]="'home.sitePresentation.text4' | translate"> </p>
     </nz-card>
   </nz-space-item>
 
@@ -29,18 +29,15 @@
     <nz-card nzTitle="{{'home.personalSummary.title' | translate}}"
              [nzHoverable]="true"
              [nzActions]="[linkToAboutMe]">
-      <p nz-typography [innerHTML]="'home.personalSummary.text1' | translate"></p>
-      <p nz-typography [innerHTML]="'home.personalSummary.text2' | translate"></p>
-      <p *ngIf="language === 'es'" nz-typography [innerHTML]="'home.personalSummary.text3' | translate"></p>
-      <p *ngIf="language === 'es'" nz-typography [innerHTML]="'home.personalSummary.text4' | translate"></p>
-      <p *ngIf="language === 'es'" nz-typography [innerHTML]="'home.personalSummary.text5' | translate"></p>
+      <p *ngFor="let i of [1,2,3,4,5]" nz-typography
+         [innerHTML]="getPersonalSummaryTextVariable(i) | translate"></p>
     </nz-card>
   </nz-space-item>
 </nz-space>
 
 <ng-template #linkToAboutMe>
   <div class="link-aboutMe" (click)="redirectToAboutMe()">
-    <i nz-icon nzType="project" nzTheme="outline" ></i>
+    <em nz-icon nzType="project" nzTheme="outline" ></em>
     <span>{{'home.more'| translate}}</span>
   </div>
 </ng-template>
