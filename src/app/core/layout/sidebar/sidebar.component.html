@@ -41,7 +41,7 @@
   <li *ngIf="!isLoggedIn" nz-menu-item nzMatchRouter (click)="collapseEvent()">
     <a routerLink="/authentication/log-in">
       <em nz-icon nzType="login" nzTheme="outline"></em>
-      <span *ngIf="!isCollapsed">Log in</span>
+      <span *ngIf="!isCollapsed">{{'signIn'|translate}}</span>
     </a>
   </li>
   <li *ngIf="isLoggedIn" nz-menu-item nzMatchRouter (click)="collapseEvent()">
