@@ -6,6 +6,7 @@ import {MySocialNetworksEnum} from '../../../../core/enum/my-social-networks.enu
 import {KnowhowService} from '../../../service/knowhow.service';
 import Knowhow from '../../../service/model/Knowhow';
 import {map} from 'rxjs/operators';
+import {CookieNameEnum} from '../../../../core/enum/cookie-name.enum';
 
 @Component({
   selector: 'ambm-modal',
@@ -24,10 +25,10 @@ export class ModalComponent implements OnInit {
   }
 
   processVisibilityOfCookie(): void {
-    if (this.cookies.getCookie('modal') === '1') {
+    if (this.cookies.getCookie(CookieNameEnum.Modal) === '1') {
       this.isPossibleToShow = true;
       this.setVisibilityOfCookie(false);
-    } else if (!this.cookies.getCookie('modal')) {
+    } else if (!this.cookies.getCookie(CookieNameEnum.Modal)) {
       this.setVisibilityOfCookie(true);
     }
   }
@@ -38,7 +39,7 @@ export class ModalComponent implements OnInit {
   }
 
   setVisibilityOfCookie(showModal: boolean): void {
-    this.cookies.setCookie('modal',
+    this.cookies.setCookie(CookieNameEnum.Modal,
       showModal ? VisibilityEnum.Visible : VisibilityEnum.NotVisible,
       7,
       '/');

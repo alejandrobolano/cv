@@ -11,11 +11,12 @@ const routes: Routes = [
   children: [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent},
-    { path: 'portfolio', component: PageUnderConstructionComponent },
+    { path: 'portfolio', component: PortfolioComponent },
     { path: 'cv', pathMatch: 'full', redirectTo: 'about-me'},
     { path: 'curriculum', pathMatch: 'full', redirectTo: 'about-me'},
     { path: 'about-me', loadChildren: () => import('./about-me/about-me.module').then(m => m.AboutMeModule)},
-    { path: 'contact', component: ContactComponent }
+    { path: 'contact', component: ContactComponent },
+    { path: 'under-construction', component: PageUnderConstructionComponent }
   ]},
 ];
 

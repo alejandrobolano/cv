@@ -1,19 +1,57 @@
 <h1 nz-typography>{{'portfolio.title' |translate}}</h1>
 
-<nz-card nzHoverable [nzCover]="coverTemplate">
-  <a href="http://cubabluediving.com" target="_blank">
-    <nz-card-meta nzTitle="Cuba Blue Diving"
-                  nzDescription="Centro de buceo y experiencias extremas Cuba Blue Diving, este club se encuentra en La Habana, Cuba. Es un sitio web de negocio personal"></nz-card-meta>
-  </a>
-</nz-card>
+<nz-space nzDirection="vertical">
+  <nz-space-item>
+    <div nz-row [nzGutter]="16"
+         [nzJustify]="windowResize.IsMobile ? 'center' : 'start'"
+         class="container">
 
-<ng-template #coverTemplate>
-  <img alt="example" src="{{img}}"/>
-</ng-template>
+      <nz-spin *ngIf="isLoading" nzSimple [nzSize]="'large'"></nz-spin>
 
-<!--
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6722161654848737280"
-      height="{{height}}" width="555"
-      style="border:none" allowfullscreen="true" title="Publicación integrada"></iframe>
--->
+      <ng-container *ngIf="isFinishLoading">
+
+        <div *ngFor="let previewLink of linksPreview"
+             nz-col
+             class="portfolio-card">
+
+          <nz-card nzHoverable
+                   [nzCover]="coverTemplate"
+                   [nzSize]="'default'"
+                   [nzActions]="[actionSetting]">
+            <a href="{{previewLink?.url}}" target="_blank">
+              <nz-card-meta nzTitle="{{previewLink?.title}}"
+                            nzDescription="{{previewLink.description}}"></nz-card-meta>
+            </a>
+          </nz-card>
+
+          <ng-template #coverTemplate>
+            <img class="img-card" alt="{{previewLink?.title}}" src="{{previewLink?.image}}"/>
+          </ng-template>
+
+          <ng-template #actionSetting>
+            <a *ngIf="previewLink?.url" href="{{previewLink?.url}}" target="_blank">{{previewLink?.url}}</a>
+          </ng-template>
+
+        </div>
+      </ng-container>
+    </div>
+  </nz-space-item>
+
+  <nz-space-item>
+    <nz-card [nzHoverable]="true"
+             [nzActions]="[linkToAboutMe]">
+      <p nz-typography
+        [innerHTML]="'portfolio.moreInfoDescription' | translate"></p>
+    </nz-card>
+  </nz-space-item>
+
+  <ng-template #linkToAboutMe>
+    <div class="link-aboutMe" (click)="redirectTo('navigation/about-me')">
+      <em nz-icon nzType="project" nzTheme="outline"></em>
+      <span>{{'home.more'| translate}}</span>
+    </div>
+  </ng-template>
+</nz-space>
+
+
 

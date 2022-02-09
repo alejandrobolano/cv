@@ -1,13 +1,39 @@
-/*@import "src/theme";
+@import "src/theme";
+
+nz-space {
+  width: 100% !important;
+}
+
+.ant-card-hoverable {
+  cursor: auto;
+}
+
+.container {
+  text-align: center;
+  nz-spin {
+    margin:auto;
+  }
+}
+
+.portfolio-card {
+  margin: 0 auto !important;
+  width: 32em !important;
+  .img-card{
+    height: 25em;
+  }
+}
 
 nz-card {
-  width: 340px;
-  margin-bottom: @margin-md;
+  margin: 0 auto !important;
+  width: 100% !important;
+  margin-bottom: @margin-md !important;
 }
 
 @media screen and (max-width: 768px) {
-  nz-card {
-    width: 100%
+  .portfolio-card {
+    width: 100% !important;
+    margin-bottom: @margin-md !important;
+    //width: calc(100% - 80px) !important;
   }
 }
-*/
+

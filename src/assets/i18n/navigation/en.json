@@ -24,7 +24,8 @@
     }
   },
   "portfolio": {
-    "title": "This is my portfolio and personal enterprise"
+    "title": "This is my portfolio and personal entrepreneurship",
+    "moreInfoDescription": "In <b>About me</b> section you can technologically cover even more about this portfolio."
   },
   "contact": {
     "title": "Fill the contact form to get in touch",
