@@ -5,7 +5,7 @@
 
 <nz-space nzDirection="vertical">
   <nz-space-item>
-    <nz-card nzTitle="{{'home.sitePresentation.title' | translate}}" [nzHoverable]="true">
+    <nz-card nzTitle="{{'home.sitePresentation.title' | translate}}" [nzHoverable]="false">
       <p nz-typography>{{'home.sitePresentation.text1'| translate}}</p>
       <p [innerHTML]="'home.sitePresentation.text2' | translate: {
             'angular': angularCliLink,
@@ -14,8 +14,9 @@
             }">
       </p>
       <p [innerHTML]="'home.sitePresentation.text3' | translate: {
-      'antDesign': antDesignLink}"> </p>
-      <p [innerHTML]="'home.sitePresentation.text4' | translate"> </p>
+      'antDesign': antDesignLink}"></p>
+      <p [innerHTML]="'home.sitePresentation.text4' | translate:{
+      'github': thisRepoGitHubLink}"></p>
     </nz-card>
   </nz-space-item>
 
@@ -27,7 +28,7 @@
 
   <nz-space-item>
     <nz-card nzTitle="{{'home.personalSummary.title' | translate}}"
-             [nzHoverable]="true"
+             [nzHoverable]="false"
              [nzActions]="[linkToAboutMe]">
       <p *ngFor="let i of [1,2,3,4,5]" nz-typography
          [innerHTML]="getPersonalSummaryTextVariable(i) | translate"></p>
@@ -37,7 +38,7 @@
 
 <ng-template #linkToAboutMe>
   <div class="link-aboutMe" (click)="redirectToAboutMe()">
-    <em nz-icon nzType="project" nzTheme="outline" ></em>
+    <em nz-icon nzType="project" nzTheme="outline"></em>
     <span>{{'home.more'| translate}}</span>
   </div>
 </ng-template>
