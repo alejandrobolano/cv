@@ -12,7 +12,7 @@ import {Router} from '@angular/router';
 })
 export class HomeComponent extends TranslateComponent implements OnInit {
   language;
-  image = '/assets/img/code-banner.jpg';
+  image = LinksEnum.ImageProfile;
   thisRepoGitHubLink = LinksEnum.ThisRepoGitHub;
   angularCliLink = LinksEnum.AngularCli;
   firebaseLink = LinksEnum.Firebase;

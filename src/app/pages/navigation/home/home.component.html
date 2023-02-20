@@ -14,8 +14,9 @@
             }">
       </p>
       <p [innerHTML]="'home.sitePresentation.text3' | translate: {
-      'antDesign': antDesignLink}"> </p>
-      <p [innerHTML]="'home.sitePresentation.text4' | translate"> </p>
+      'antDesign': antDesignLink}"></p>
+      <p [innerHTML]="'home.sitePresentation.text4' | translate:{
+      'github': thisRepoGitHubLink}"></p>
     </nz-card>
   </nz-space-item>
 
@@ -37,7 +38,7 @@
 
 <ng-template #linkToAboutMe>
   <div class="link-aboutMe" (click)="redirectToAboutMe()">
-    <em nz-icon nzType="project" nzTheme="outline" ></em>
+    <em nz-icon nzType="project" nzTheme="outline"></em>
     <span>{{'home.more'| translate}}</span>
   </div>
 </ng-template>

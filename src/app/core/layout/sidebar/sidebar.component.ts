@@ -4,6 +4,7 @@ import {TranslateService} from '@ngx-translate/core';
 import {TranslateWrapperService} from '../../service/translate-wrapper.service';
 import {WindowResizeService} from '../../service/window-resize.service';
 import {AuthService} from '../../service/authentication/auth.service';
+import {MySocialNetworksEnum} from '../../enum/my-social-networks.enum';
 
 @Component({
   selector: 'ambm-sidebar',
@@ -15,7 +16,8 @@ export class SidebarComponent extends TranslateComponent implements OnInit {
   @Input() language: string;
   @Output() collapseEmitter = new EventEmitter<boolean>();
   theme = 'dark';
-  imgLogo = '/assets/img/web-programming.svg';
+  imgLogo = '/assets/img/profile-new.jpeg';
+  linkedInLink = MySocialNetworksEnum.LinkedIn;
 
   constructor(public translate: TranslateService,
               public translateWrapperService: TranslateWrapperService,
