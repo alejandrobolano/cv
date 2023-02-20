@@ -1,6 +1,6 @@
 <nz-list *ngFor="let item of curriculumList" nzItemLayout="horizontal" [nzLoading]="loading" [nzSize]="'large'">
 
-  <nz-card [nzTitle]="titleTemplate" [nzExtra]="countryTemplate" [nzHoverable]="true" [nzActions]="[actionSetting]">
+  <nz-card [nzTitle]="titleTemplate" [nzExtra]="countryTemplate" [nzHoverable]="false" [nzActions]="[actionSetting]">
     <ng-template #titleTemplate>
       <h3 class="title">{{item.title}}</h3>
     </ng-template>

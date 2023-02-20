@@ -5,7 +5,7 @@
 
 <nz-space nzDirection="vertical">
   <nz-space-item>
-    <nz-card nzTitle="{{'home.sitePresentation.title' | translate}}" [nzHoverable]="true">
+    <nz-card nzTitle="{{'home.sitePresentation.title' | translate}}" [nzHoverable]="false">
       <p nz-typography>{{'home.sitePresentation.text1'| translate}}</p>
       <p [innerHTML]="'home.sitePresentation.text2' | translate: {
             'angular': angularCliLink,
@@ -28,7 +28,7 @@
 
   <nz-space-item>
     <nz-card nzTitle="{{'home.personalSummary.title' | translate}}"
-             [nzHoverable]="true"
+             [nzHoverable]="false"
              [nzActions]="[linkToAboutMe]">
       <p *ngFor="let i of [1,2,3,4,5]" nz-typography
          [innerHTML]="getPersonalSummaryTextVariable(i) | translate"></p>
