@@ -59,7 +59,7 @@ export class AdminMessagesComponent extends TranslateComponent implements OnInit
     this.messageService.getAll().snapshotChanges().pipe(
       map(changes =>
         changes.map(c =>
-          ({id: c.payload.doc.id, ...c.payload.doc.data()})
+          ({id: c.payload.doc.data(), ...c.payload.doc.data()})
         )
       )
     ).subscribe(messages => {

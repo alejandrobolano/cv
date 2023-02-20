@@ -69,8 +69,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "60kb",
-                  "maximumError": "500kb"
+                  "maximumWarning": "600kb",
+                  "maximumError": "700kb"
                 }
               ]
             }
@@ -143,5 +143,8 @@
       }
     }
   },
-  "defaultProject": "alejandrobolano"
+  "defaultProject": "alejandrobolano",
+  "cli": {
+    "analytics": "966a3810-1479-4b27-ba67-b3c0b09f5fa0"
+  }
 }

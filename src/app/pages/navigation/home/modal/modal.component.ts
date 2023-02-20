@@ -89,7 +89,7 @@ export class ModalComponent implements OnInit {
 
   getAllData(): void {
     this.knowhowService.getAll().snapshotChanges().pipe(
-      map(changes => changes.map(c => ({id: c.payload.doc.id, ...c.payload.doc.data()})
+      map(changes => changes.map(c => ({id: c.payload.doc.data(), ...c.payload.doc.data()})
         )
       )
     ).subscribe(messages => {
