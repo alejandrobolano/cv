@@ -51,7 +51,7 @@ export class AdminErrorsComponent extends TranslateComponent implements OnInit {
     this.errorService.getAll().snapshotChanges().pipe(
       map(changes =>
         changes.map(c =>
-          ({id: c.payload.doc.id, ...c.payload.doc.data()})
+          ({id: c.payload.doc.data(), ...c.payload.doc.data()})
         )
       )
     ).subscribe(errors => {

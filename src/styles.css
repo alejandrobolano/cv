@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+h1, h3 {
+  font-style: italic;
+}
+
+.ant-card-head{
+  border-bottom: 2px dashed #f0f0f0;
+}
+
+.ant-list-split .ant-list-item {
+  border-bottom: 2px dashed #f0f0f0;
+}
+
