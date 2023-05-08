@@ -6,8 +6,10 @@
     </ng-template>
 
     <ng-template #countryTemplate>
-      <nz-divider nzType="vertical"></nz-divider>
-      <span class="flag-icon flag-icon-{{item.countryCode}}"> </span>
+      <nz-divider *ngIf="item.country || item.countryCode"
+                  nzType="vertical"></nz-divider>
+      <span *ngIf="item.countryCode"
+            class="flag-icon flag-icon-{{item.countryCode}}"> </span>
       <span>{{item.country}}</span>
     </ng-template>
 
@@ -27,7 +29,7 @@
   </nz-card>
 
   <nz-divider nzDashed [nzText]="dateTemplate">
-    <ng-template #dateTemplate>
+    <ng-template *ngIf="item.date" #dateTemplate>
       <i nz-icon nzType="calendar" nzTheme="outline"></i>
       <p>{{item.date}}</p>
     </ng-template>

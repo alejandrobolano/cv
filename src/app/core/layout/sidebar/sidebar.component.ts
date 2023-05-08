@@ -16,7 +16,7 @@ export class SidebarComponent extends TranslateComponent implements OnInit {
   @Input() language: string;
   @Output() collapseEmitter = new EventEmitter<boolean>();
   theme = 'dark';
-  imgLogo = '/assets/img/profile-new.jpeg';
+  imgLogo = '/assets/img/profile-pic-logo.png';
   linkedInLink = MySocialNetworksEnum.LinkedIn;
 
   constructor(public translate: TranslateService,

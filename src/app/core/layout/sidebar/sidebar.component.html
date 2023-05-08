@@ -10,7 +10,7 @@
       <li nz-menu-item nzMatchRouter (click)="collapseEvent()">
         <a routerLink="/navigation/home">{{'navigation.welcome'|translate}}</a>
       </li>
-      <li nz-menu-item nzMatchRouter (click)="collapseEvent()">
+      <li *ngIf="isLoggedIn" nz-menu-item nzMatchRouter (click)="collapseEvent()">
         <a routerLink="/navigation/portfolio">{{'navigation.portfolio'|translate}}</a>
       </li>
       <li nz-menu-item nzMatchRouter (click)="collapseEvent()">

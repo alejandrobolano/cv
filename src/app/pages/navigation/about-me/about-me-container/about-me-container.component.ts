@@ -13,7 +13,7 @@ import {NzSizeLDSType} from 'ng-zorro-antd/core/types/size';
   styleUrls: ['./about-me-container.component.css']
 })
 export class AboutMeContainerComponent extends TranslateComponent implements OnInit {
-  avatar = '/assets/img/profile-new.jpeg';
+  avatar = '/assets/img/profile-pic-logo.png';
   size: NzSizeLDSType = 'large';
   tabs = [CurriculumEnum.EXPERIENCE, CurriculumEnum.EDUCATION];
   experience: IExperience[];
