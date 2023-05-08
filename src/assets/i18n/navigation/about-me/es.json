@@ -1,8 +1,22 @@
 {
   "curriculum": {
     "experience": "Experiencia",
-    "education": "Educación"
+    "education": "Educación",
+    "skill": "Habilidades"
   },
+  "skill": [
+    {
+      "title": "Habilidades",
+      "list": [
+        "ASP.Net | C# | LINQ | SOLID | POO",
+        "MVC | WPF | Razor MVC | Wordpress | HTML | CSS",
+        "AngularJS | JavaScript | jQuery | VueJS | XSLT | XML | Angular | MAUI",
+        "Azure DevOps | WebApi | Firebase | IIS | GitHub (+actions)",
+        "Autofac | Omniture | Json | Marketing | Agile | Scrum",
+        "Android Studio | WebStorm | Visual Studio | VSCode"
+      ]
+    }
+  ],
   "education": [
     {
       "title": "Centro de Informática Profesional (CIPSA)",
@@ -35,14 +49,29 @@
   ],
   "experience": [
     {
-      "title": "Vueling",
-      "date": "August 2019 - Present",
+      "title": "LEVEL",
+      "date": "Septiembre 2022 - Presente",
       "country": "España",
       "subtitle": "Desarrollador Full-Stack",
       "list": [
         "Responsabilidad: Mantenimiento y desarrollo del sitio web de la empresa.",
         "Arquitectura: N-Capas",
-        "Metodología: Scrum",
+        "Metodología: Agile con el proceso Scrum",
+        "Herramientas: Git, Azure, Navitaire Products, Resiber, GitFlow, CI/CD con Azure Pipelines, Umbraco",
+        "Lenguajes y frameworks: ASP.Net, MVC, AngularJS, WPF, Razor MVC, JavaScript, jQuery, C#, LINQ, Azure DevOps, Angular, WebApi, VueJS."
+      ],
+      "countryCode": "es",
+      "link": "https://flylevel.com"
+    },
+    {
+      "title": "Vueling",
+      "date": "Agosto 2019 - Presente",
+      "country": "España",
+      "subtitle": "Desarrollador Full-Stack",
+      "list": [
+        "Responsabilidad: Mantenimiento y desarrollo del sitio web de la empresa.",
+        "Arquitectura: N-Capas",
+        "Metodología: Agile con el proceso Scrum",
         "Herramientas: Git, TFS, Azure,Navitaire Products",
         "Lenguajes y frameworks: ASP.Net, MVC, Entity Framework, Autofac, XSLT, XML, JavaScript, jQuery, C#, LINQ, Azure DevOps",
         "Negocio: Dentro de la propia web de la aerolínea, soy parte del pequeño equipo (2-4) que se encarga de la denominación Low Funnel (a lo que se refiere en términos de conversión de Funnel Comercial). Además, del trabajo relacionado a los Ancillaries de Vueling mediante Merchandising, para presentar los productos en el momento adecuado, en el lugar, con la cantidad y el precio adecuado para maximizar las ventas. Y por otra parte, respecto a los Ancillaries, pues también se contempla todo lo que sea Post Booking."
@@ -51,8 +80,21 @@
       "link": "https://vueling.com"
     },
     {
+      "title": "ANS Insurance Services",
+      "date": "Diciembre 2022 - Presente",
+      "country": "Estados Unidos",
+      "subtitle": "Freelance - Desarrollo de diseño web",
+      "list": [
+        "Tecnologías: CSS3, HTML5, JS",
+        "Herramientas: Photoshop, Wordpress, Hubspot, Ionos, Call Center",
+        "Encargado web y de las redes sociales de ANS Insurance Services. Manejo del servidor, dominio y gestión de servidores de correos."
+      ],
+      "countryCode": "us",
+      "link": "https://ansinsuranceservices.com"
+    },
+    {
       "title": "Cuba Blue Diving",
-      "date": "Marzo 2018 - Presente",
+      "date": "Marzo 2018 - Diciembre 2022",
       "country": "España",
       "subtitle": "Freelance - Desarrollo de diseño web",
       "list": [

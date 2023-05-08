@@ -1,8 +1,22 @@
 {
   "curriculum": {
     "experience": "Experiència",
-    "education": "Educaciò"
+    "education": "Educaciò",
+    "skill": "Habilidades"
   },
+  "skill": [
+    {
+      "title": "Habilitats",
+      "list": [
+        "ASP.Net | C# | LINQ | SOLID | POO",
+        "MVC | WPF | Razor MVC | Wordpress | HTML | CSS",
+        "AngularJS | JavaScript | jQuery | VueJS | XSLT | XML | Angular | MAUI",
+        "Azure DevOps | WebApi | Firebase | IIS | GitHub (+actions)",
+        "Autofac | Omniture | Json | Marketing | Agile | Scrum",
+        "Android Studio | WebStorm | Visual Studio | VSCode"
+      ]
+    }
+  ],
   "education": [
     {
       "title": "Centro de Informática Profesional (CIPSA)",
@@ -35,6 +49,21 @@
   ],
   "experience": [
     {
+      "title": "LEVEL",
+      "date": "Setembre 2022 - Present",
+      "country": "Espanya",
+      "subtitle": "Desenvolupador Full-Stack",
+      "list": [
+        "Responsabilitat: Manteniment i desenvolupament de la pàgina web de l'empresa",
+        "Arquitectura: N-Capes",
+        "Metodologia: Agile con el proceso Scrum",
+        "Eines: Git, Azure, Navitaire Products, Resiber, GitFlow, CI/CD con Azure Pipelines, Umbraco",
+        "Llenguatges i frameworks: ASP.Net, MVC, AngularJS, WPF, Razor MVC, JavaScript, jQuery, C#, LINQ, Azure DevOps, Angular, WebApi, VueJS."
+      ],
+      "countryCode": "es",
+      "link": "https://flylevel.com"
+    },
+    {
       "title": "Vueling",
       "date": "August 2019 - Present",
       "country": "Espanya",
@@ -42,17 +71,30 @@
       "list": [
         "Responsabilitat: Manteniment i desenvolupament de la pàgina web de l'empresa",
         "Arquitectura: N-Capes",
-        "Metodologia: Scrum",
+        "Metodologia: Agile con el proceso Scrum",
         "Eines: Git, TFS, Azure, Navitaire Products",
         "Llenguatges i frameworks: ASP.Net, MVC, Entity Framework, Autofac, XSLT, XML, JavaScript, jQuery, C #, LINQ, Azure devops",
         "Negoci: Dins de la pròpia web de l'aerolínia, sóc part de l'petit equip (2-4) que s'encarrega de la denominació Low Funnel (al que es refereix en termes de conversió de Funnel Comercial). A més, de la feina relacionat als Ancillaries de Vueling mitjançant Marxandatge, per presentar els productes en el moment adequat, en el lloc, amb la quantitat i el preu adequat per a maximitzar les vendes. i d'altra banda, pel que fa als Ancillaries, ja que també es contempla tot el que sigui Post Booking."
       ],
-      "countryCode": "es",
+      "countryCode": "ca",
       "link": "https://vueling.com"
     },
     {
+      "title": "ANS Insurance Services",
+      "date": "Març 2018 - Present",
+      "country": "Estados Unidos",
+      "subtitle": "Freelance - Desenvolupament de disseny web",
+      "list": [
+        "Tecnologías: CSS3, HTML5, JS",
+        "Herramientas: Photoshop, Wordpress, Hubspot, Ionos, Call Center",
+        "Encarregat web i de les xarxes socials de ANS Insurance Services. Maneig de servidor, domini i gestió de servidors de correus"
+      ],
+      "countryCode": "us",
+      "link": "https://ansinsuranceservices.com"
+    },
+    {
       "title": "Cuba Blue Diving",
-      "date": "March 2018 - Present",
+      "date": "March 2018 - Desembre 2022",
       "country": "Espanya",
       "subtitle": "Freelance - Desenvolupament de disseny web",
       "list": [
@@ -65,7 +107,7 @@
     },
     {
       "title": "NGX Smart Skeleton",
-      "date": "Marzo 2020 - Agosto 2020",
+      "date": "Març 2020 - Agost 2020",
       "country": "Espanya",
       "subtitle": "Freelance - Desenvolupador web",
       "list": [

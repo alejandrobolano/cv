@@ -15,9 +15,10 @@ import {NzSizeLDSType} from 'ng-zorro-antd/core/types/size';
 export class AboutMeContainerComponent extends TranslateComponent implements OnInit {
   avatar = '/assets/img/profile-pic-logo.png';
   size: NzSizeLDSType = 'large';
-  tabs = [CurriculumEnum.EXPERIENCE, CurriculumEnum.EDUCATION];
+  tabs = [CurriculumEnum.EXPERIENCE, CurriculumEnum.EDUCATION, CurriculumEnum.SKILL];
   experience: IExperience[];
   education: ICurriculum[];
+  skill: IExperience[];
 
 
   constructor(public translate: TranslateService,
@@ -26,7 +27,6 @@ export class AboutMeContainerComponent extends TranslateComponent implements OnI
     super(translate, translateWrapperService);
     this.onLangChange();
   }
-
 
   ngOnInit(): void {
     this.fillCurriculumArray();
@@ -42,6 +42,8 @@ export class AboutMeContainerComponent extends TranslateComponent implements OnI
       return 'curriculum.experience';
     } else if (type === CurriculumEnum.EDUCATION) {
       return 'curriculum.education';
+    } else if (type === CurriculumEnum.SKILL) {
+      return 'curriculum.skill';
     } else {
       return '';
     }
@@ -52,6 +54,8 @@ export class AboutMeContainerComponent extends TranslateComponent implements OnI
       return this.experience;
     } else if (type === CurriculumEnum.EDUCATION) {
       return this.education;
+    } else if (type === CurriculumEnum.SKILL) {
+      return this.skill;
     } else {
       return [];
     }
@@ -66,6 +70,7 @@ export class AboutMeContainerComponent extends TranslateComponent implements OnI
   private fillCurriculumArray(): void {
     this.education = this.fillArray(CurriculumEnum.EDUCATION);
     this.experience = this.fillArray(CurriculumEnum.EXPERIENCE);
+    this.skill = this.fillArray(CurriculumEnum.SKILL);
   }
 
 
