@@ -1,7 +1,8 @@
 export const Links: string[] =
   [
-    'cubabluediving.com',
-    'ansinsuranceservices.com',
-    'ngxsmartskeleton.web.app',
-    'm.vueling.com'
+    'http://cubabluediving.com',
+    'https://ansinsuranceservices.com',
+    'https://ngxsmartskeleton.web.app',
+    'https://m.vueling.com',
+    'https://flylevel.com'
   ];

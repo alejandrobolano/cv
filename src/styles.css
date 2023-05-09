@@ -4,9 +4,26 @@ h1, h3 {
 
 .ant-card-head{
   border-bottom: 2px dashed #f0f0f0;
+  background: #09073a;
+}
+
+.ant-card-head-title {
+  color: white;
+}
+
+.ant-card-extra {
+  color: white;
 }
 
 .ant-list-split .ant-list-item {
   border-bottom: 2px dashed #f0f0f0;
+}
+
+.ant-list-split .ant-list-item:hover {
+  font-size: 16px;
+}
+
+.ant-card-actions > li > span:not([a]) {
+  cursor: default !important;
 }
 
