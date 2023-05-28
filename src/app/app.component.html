@@ -18,8 +18,20 @@
       <div
         class="inner-content">
         <router-outlet></router-outlet>
+
       </div>
     </nz-content>
+
+    <button
+      [hidden]="isCollapsed"
+      class="button-fab"
+      nz-button nzType="primary"
+      [nzSize]="'default'"
+      nzShape="circle"
+      (click)="setCollapsed(true)">
+      <span nz-icon nzType="menu-fold"></span>
+    </button>
+
     <nz-footer
       [class.disabled]="isMobile && !isCollapsed">
       <ambm-footer></ambm-footer>
