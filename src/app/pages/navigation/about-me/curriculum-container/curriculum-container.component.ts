@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {WindowResizeService} from '../../../../core/service/window-resize.service';
 
 @Component({
   selector: 'ambm-curriculum-container',
@@ -10,7 +11,7 @@ export class CurriculumContainerComponent implements OnInit {
   @Input('curriculum-list') curriculumList = [];
   loading = true;
 
-  constructor() {
+  constructor(private windowResize: WindowResizeService) {
   }
 
   ngOnInit(): void {
@@ -21,6 +22,10 @@ export class CurriculumContainerComponent implements OnInit {
     setTimeout(() => {
       this.loading = false;
     }, 500);
+  }
+
+  get isMobile(): boolean {
+    return this.windowResize.IsMobile;
   }
 
 

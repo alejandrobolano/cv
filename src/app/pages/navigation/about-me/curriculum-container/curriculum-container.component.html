@@ -10,7 +10,7 @@
                   nzType="vertical"></nz-divider>
       <span *ngIf="item.countryCode"
             class="flag-icon flag-icon-{{item.countryCode}}"> </span>
-      <span>{{item.country}}</span>
+      <span *ngIf="!isMobile">{{item.country}}</span>
     </ng-template>
 
     <ng-template *ngTemplateOutlet="subtitleTemplate; context: { subtitle:item.subtitle}"></ng-template>
