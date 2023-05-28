@@ -1,8 +1,22 @@
 {
   "curriculum": {
     "experience": "Experience",
-    "education": "Education"
+    "education": "Education",
+    "skill": "Skills"
   },
+  "skill": [
+    {
+      "title": "Skills",
+      "list": [
+        "ASP.Net | C# | LINQ | SOLID | POO",
+        "MVC | WPF | Razor MVC | Wordpress | HTML | CSS",
+        "AngularJS | JavaScript | jQuery | VueJS | XSLT | XML | Angular | MAUI",
+        "Azure DevOps | WebApi | Firebase | IIS | GitHub (+actions)",
+        "Autofac | Omniture | Json | Marketing | Agile | Scrum",
+        "Android Studio | WebStorm | Visual Studio | VSCode"
+      ]
+    }
+  ],
   "education": [
     {
       "title": "Professional Computing Center (CIPSA)",
@@ -35,6 +49,21 @@
   ],
   "experience": [
     {
+      "title": "Level",
+      "date": "September 2022 - Present",
+      "country": "Spain",
+      "subtitle": "Full-Stack developer",
+      "list": [
+        "Responsibility: Maintenance and development of the company's website.",
+        "Architecture: N-Layers",
+        "Methodology: Agile with Scrum process",
+        "Tools: Git, Azure, Navitaire Products, Resiber, GitFlow, CI/CD con Azure Pipelines, Umbraco",
+        "Languages and frameworks: ASP.Net, MVC, AngularJS, WPF, Razor MVC, JavaScript, jQuery, C#, LINQ, Azure DevOps, Angular, WebApi, VueJS."
+      ],
+      "countryCode": "es",
+      "link": "https://flylevel.com"
+    },
+    {
       "title": "Vueling",
       "date": "August 2019 - Present",
       "country": "Spain",
@@ -42,7 +71,7 @@
       "list": [
         "Responsibility: Maintenance and development of the company's website.",
         "Architecture: N-Layers",
-        "Methodology: Scrum",
+        "Methodology: Agile with Scrum process",
         "Tools: Git, TFS, Azure, Navitaire Products",
         "Languages and frameworks: ASP.Net, MVC, Entity Framework, Autofac, XSLT, XML, JavaScript, jQuery, C #, LINQ, Azure DevOps",
         "Business: Within the airline's own website, I am part of the small team (2-4) that is responsible for the Low Funnel denomination (as it refers in terms of Commercial Funnel conversion). In addition, the related work to Vueling Ancillaries through Merchandising, to present the products at the right time, in the place, with the right quantity and price to maximize sales. And on the other hand, with respect to the Ancillaries, since everything that be Post Booking."
@@ -51,8 +80,21 @@
       "link": "https://vueling.com"
     },
     {
+      "title": "ANS Insurance Services",
+      "date": "December 2022 - Present",
+      "country": "United State of America",
+      "subtitle": "Freelance - Development of web design",
+      "list": [
+        "Technology: CSS3, HTML5, JS",
+        "Tools: Photoshop, Wordpress, Hubspot, Ionos, Call Center",
+        "Web and social media manager of ANS Insurance Services. Server management, domain and mail server management."
+      ],
+      "countryCode": "us",
+      "link": "https://ansinsuranceservices.com/en/"
+    },
+    {
       "title": "Cuba Blue Diving",
-      "date": "March 2018 - Present",
+      "date": "March 2018 - December 2022",
       "country": "Spain",
       "subtitle": "Freelance - Development of web design",
       "list": [
@@ -61,7 +103,7 @@
         "Web and social media manager of Cuba Blue Diving. Server management, domain and mail server management."
       ],
       "countryCode": "es",
-      "link": "http://cubabluediving.com"
+      "link": "http://cubabluediving.com/en/"
     },
     {
       "title": "NGX Smart Skeleton",

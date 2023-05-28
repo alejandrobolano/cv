@@ -6,7 +6,7 @@ import {Component, OnInit, Output, EventEmitter} from '@angular/core';
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
-  avatar = '/assets/img/profile-new.jpeg';
+  avatar = '/assets/img/profile-pic-logo.png';
   @Output() knowhow  = new EventEmitter<string>();
   knowhowRadioValue = '';
 

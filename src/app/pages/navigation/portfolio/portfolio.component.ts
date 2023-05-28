@@ -27,7 +27,7 @@ export class PortfolioComponent extends TranslateComponent implements OnInit {
   }
 
   get isFinishLoading(): boolean {
-    return Links.length === this.linksPreview.length;
+    return true;
   }
   language: string;
   linksPreview: ILinkPreview[] = [];

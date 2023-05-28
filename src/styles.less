@@ -1,0 +1,62 @@
+@import "src/theme";
+
+h1, h3 {
+  font-style: italic;
+}
+
+nz-card {
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.12),
+  0 2px 10px 0 rgba(0,0,0,0.12),
+  0 4px 4px 0 rgba(0,0,0,0.12),
+  0 8px 8px 0 rgba(0,0,0,0.12),
+  0 16px 16px 0 rgba(0,0,0,0.12);
+  border-inline: none !important;
+}
+
+.ant-tabs-bar{
+  border-bottom: 0 !important;
+}
+
+.ant-card-head{
+  border-bottom: 2px dashed #f0f0f0;
+  background: @primary-color;
+}
+
+.ant-card-head-title {
+  color: white;
+}
+
+.ant-card-extra {
+  color: white;
+}
+
+.ant-list-split .ant-list-item {
+  border-bottom: 2px dashed #f0f0f0;
+}
+
+.ant-list-split .ant-list-item:hover {
+  font-size: 16px;
+}
+
+.ant-tabs-tabpane {
+  padding: 0 @padding-xs 0 @padding-xs;
+
+}
+
+.ant-card-actions {
+  border-bottom-right-radius: @border-radius-base;
+  border-bottom-left-radius: @border-radius-base;
+}
+
+.ant-card-actions > li > span:not([a]) {
+  cursor: default !important;
+}
+
+
+@media screen and (max-width: @screen-md) {
+  .ant-card-actions {
+    span {
+      font-size: @font-size-sm !important;
+    }
+  }
+}
