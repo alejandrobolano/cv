@@ -5,7 +5,8 @@
 
 <nz-space nzDirection="vertical">
   <nz-space-item>
-    <nz-card nzTitle="{{'home.sitePresentation.title' | translate}}" [nzHoverable]="false">
+    <nz-card nzTitle="{{'home.sitePresentation.title' | translate}}" [nzHoverable]="false"
+             [class]="'swing-in-top-fwd'">
       <p nz-typography>{{'home.sitePresentation.text1'| translate}}</p>
       <p [innerHTML]="'home.sitePresentation.text2' | translate: {
             'angular': angularCliLink,
@@ -21,7 +22,8 @@
   </nz-space-item>
 
   <nz-space-item>
-    <div id="ads-custom">
+    <div id="ads-custom"
+         [class]="'swing-in-top-fwd'">
       <img alt="Alejandro Dev" src="{{image}}"/>
     </div>
   </nz-space-item>
@@ -29,7 +31,8 @@
   <nz-space-item>
     <nz-card nzTitle="{{'home.personalSummary.title' | translate}}"
              [nzHoverable]="false"
-             [nzActions]="[linkToAboutMe]">
+             [nzActions]="[linkToAboutMe]"
+             [class]="'swing-in-top-fwd'">
       <p *ngFor="let i of [1,2,3,4,5]" nz-typography
          [innerHTML]="getPersonalSummaryTextVariable(i) | translate"></p>
     </nz-card>
